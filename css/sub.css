@@ -103,6 +103,7 @@ section h4::before{
   position:absolute;
   top:50%;
   right:18px;
+  z-index:2;
   transform:translateY(-50%);
   background:url("../images/common/btn_arrow_down_b.png") no-repeat;
   width:24px;
