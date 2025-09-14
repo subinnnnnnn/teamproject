@@ -87,7 +87,7 @@ section h4::before{
 #container .sub_menu .lnb_inner #lnb{
   display:flex;
   justify-content:center;
-  font-size:2.5rem;
+  font-size:2.2rem;
 }
 #container .sub_menu .lnb_inner #lnb > li{
   position:relative;
