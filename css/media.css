@@ -342,7 +342,9 @@
     margin-top:5px;
     font-size:1.5rem;   
   }
-
+  ul.paging{
+    margin-top:50px;
+  }
   /*고강도타일*/
   /*특장점*/
   #container .features_inner li{
