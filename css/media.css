@@ -47,7 +47,7 @@
   /*서브타이틀 메뉴*/
   #container .sub_menu .lnb_inner #lnb{
     padding:0 35px;
-    font-size:2.2rem;
+    font-size:2.0rem;
   }
   #container .sub_menu .lnb_inner #lnb > li{
     width:calc(100%/3);
