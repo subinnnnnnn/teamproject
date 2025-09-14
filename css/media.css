@@ -1,0 +1,485 @@
+@charset "UTF-8";
+@media (max-width: 1340px) and (min-width: 1200px) {
+  .inner{
+    width:100%;
+    padding:0 40px;
+  }
+   /*석재타일*/
+  /*서브타이틀이미지*/
+  #container .sub_tite .img{
+    width:600px;
+  }
+  #container .sub_tite .text_box{
+    width: calc(100% - 600px);
+  }
+  /*포스톤블럭*/
+  section.tile03 h4{
+    letter-spacing:-0.30rem;
+  }
+}
+@media screen and (max-width:1200px){
+  /*공통*/
+  #wrap{
+    width:100%;
+    height:100%;
+  }
+  .inner{
+    max-width:100%;
+    padding:0 35px;
+  }
+  .mt150{
+    margin-top:90px;
+  }
+  /*석재타일*/
+  /* 서브타이틀이미지*/
+  #container .sub_tite{
+    flex-direction:column;
+  }
+  #container .sub_tite .img{
+    width:100%;
+  }
+  #container .sub_tite .text_box{
+    padding:70px 50px 80px;
+    width:100%
+  }
+  /*서브타이틀 메뉴*/
+  #container .sub_menu .lnb_inner #lnb{
+    padding:0 35px;
+  }
+  #container .sub_menu .lnb_inner #lnb > li{
+    width:calc(100%/3);
+  }
+  #container .sub_menu .lnb_inner #lnb > li > a{
+    padding:30px 120px 30px 30px;
+  }
+  #container .sub_menu .lnb_inner #lnb ul.depth2{
+    font-size:1.8rem;
+  }
+  #container .sub_menu .lnb_inner #lnb ul.depth2 li{
+    line-height:340%;
+  }
+  #container .sub_visual .img{
+    background-size:cover;
+    background-attachment:inherit;
+  }
+  /*컬러차트*/
+  #container .color_chart .swiper-button-next, 
+  #container .color_chart .swiper-button-prev{
+    display:none;
+  }
+  #container .color_chart .chart .swiper-slide img{
+    width:100%;
+    max-width:100%;
+  }
+  /*고강도타일*/
+  /*시공방법소개*/
+  #container .method_wrap .method_inner li{
+    width:calc((100% - 50px) / 2);
+  }
+   /*포스톤블럭*/
+   /*시공전후*/
+   #container .method_wrap.tile03 .method_inner{
+    column-gap:30px;
+   }
+   #container .method_wrap.tile03 .method_inner li{
+    width:calc((100% - 60px) / 3);
+   }
+  #container .method_wrap.tile03 .method_inner li .txt{
+    padding:30px 50px;
+  }
+}
+
+@media screen and (max-width:768px){
+  .mt150{
+    margin-top:90px;
+  }
+  section h4{
+    font-size:3.8rem;
+  }
+   /*석재타일*/
+  /* 서브타이틀이미지*/
+  #container .sub_tite{
+    flex-direction:column;
+  }
+  #container .sub_tite .img{
+    width:100%;
+  }
+  #container .sub_tite .text_box{
+    padding:70px 50px 80px;
+    width:100%
+  }
+  #container .sub_visual .tite{
+    padding:0 80px;
+  }
+  #container .sub_visual .tite p{
+    margin-top:10px;
+    font-size:2.0rem;
+    line-height:160%;
+    word-break:keep-all;
+  }
+  /*서브타이틀 메뉴*/
+  #container .sub_menu .lnb_inner #lnb{
+    padding:0 35px;
+    font-size:2.0rem;
+  }
+  #container .sub_menu .lnb_inner #lnb > li{
+    width:50%;
+  }
+  #container .sub_menu .lnb_inner #lnb > li:first-child{
+    display:none;
+  }
+  #container .sub_menu .lnb_inner #lnb > li:nth-child(2) > a{
+    border-radius:20px 0 0 0;
+  }
+  #container .sub_menu .lnb_inner #lnb > li > a{
+    padding:25px 0 25px 30px;
+  }
+  #container .sub_menu .lnb_inner #lnb ul.depth2{
+    font-size:1.8rem;
+  }
+  #container .sub_menu .lnb_inner #lnb ul.depth2 li{
+    line-height:340%;
+  }
+  #container .sub_visual .img{
+    background-size:cover;
+    background-attachment:inherit;
+  }
+  /*특장점*/
+  #container .features .text_box p{
+    word-break:keep-all;
+  }
+  /*컬러차트*/
+  #container .color_chart .swiper-button-next, 
+  #container .color_chart .swiper-button-prev{
+    display:none;
+  }
+  #container .color_chart .chart .swiper-slide img{
+    width:100%;
+    max-width:100%;
+  }
+  /*갤러리*/
+  .search_wrap{
+    margin-top:30px;
+  }
+  #container .gallery_wrap ul.gallery{
+   column-gap:20px;
+  }
+  #container .gallery_wrap ul.gallery li{
+    width:calc((100% - 20px)/2);
+  }
+  /*고강도타일*/
+  /*시공방법*/
+  #container .method_wrap .method_inner{
+    gap:50px 30px;
+  }
+  #container .method_wrap .method_inner li{
+    width:calc((100% - 30px) / 2);
+  }
+   /*포스톤블럭*/
+   /*시공전후*/
+  #container .method_wrap.tile03 .method_inner li{
+    width:calc((100% - 50px) / 2);
+  }
+  #container .method_wrap.tile03 .method_inner.tile03 li .txt{
+    padding:30px;
+  }
+
+
+
+}
+/*480px*/
+@media all and (max-width:480px) {
+  /*공통*/
+  #wrap{
+    overflow:hidden;
+  }
+  .inner{
+    padding:0 20px;
+  }
+  .mt150, .mt150{
+    margin-top:50px;
+  }
+  section h4{
+    padding-left:30px;
+    font-size:2.2rem;
+  }
+  section h4::before{
+    width:20px;
+    height:20px;
+    background-size:contain;
+  }
+  ul.paging li a{
+    font-size:1.8rem;
+  }
+   /*석재타일*/
+  /*서브비주얼*/
+  #container .sub_tite{
+    margin-top:70px;
+  }
+  #container .sub_visual .tite h2{
+    font-size:2.2rem;
+  }
+  #container .sub_visual .tite p{
+    font-size:1.5rem;
+  }
+  #container .sub_visual .img{
+    height:216px;
+  }
+  /*서브메뉴*/
+  #container .sub_menu .lnb_inner #lnb > li{
+    width:100%;
+  }
+  #container .sub_menu .lnb_inner #lnb > li > a{
+    padding: 20px 0 20px 30px;
+  }
+  #container .sub_menu .lnb_inner #lnb > li:nth-child(2){
+    display:none;
+  }
+  #container .sub_menu .lnb_inner #lnb > li:last-child > a{
+    border-radius:20px 0 20px 0;
+  }
+  /*서브타이틀이미지*/
+  #container .sub_tite .img{
+    height:210px;
+  }
+  #container .sub_tite .text_box{
+    padding:50px;
+    text-align:center;
+  }
+  #container .sub_tite .text_box .round{
+    margin:0 auto 15px;
+    width:100px;
+  }
+  #container .sub_tite .text_box .round,
+  #container .sub_tite .text_box strong,
+  #container .sub_tite .text_box p{
+    font-size:1.5rem;
+  }
+  #container .sub_tite .text_box h2{
+    font-size:2.2rem;
+  }
+  /*특장점*/
+  #container .features .text_box{
+    margin-top:20px;
+  }
+  #container .features .text_box p{
+    font-size:1.3rem;
+  }
+  /*컬러차트*/
+  #container .color_chart .text_box{
+    margin:20px 0;
+  }
+  #container .color_chart .text_box p{
+    font-size:1.5rem;
+    word-break:break-all;
+  }
+  #container .color_chart .chart .swiper-slide p{
+    margin-top:10px;
+    font-size:1.5rem;
+  }
+  /*specifications*/
+  #container .spec .table_graph{
+    overflow-x:auto;
+  }
+  #container .spec .table_graph table{
+    margin-top:30px;
+    width:800px;
+  }
+  #container .spec .ref{
+    font-size:1.3rem;
+  }
+  /*Standard Size*/
+  #container .standard_size .img{
+    display:none;
+  }
+  #container .standard_size .m_img{
+    display:block;
+    margin-top: 30px;
+    padding: 50px 20px;
+    border: 1px solid #ddd;
+    border-radius: 20px;
+    overflow: hidden;
+  }
+  /*갤러리*/
+  .search_wrap{
+   flex-direction:column;
+   align-items:flex-start;
+  }
+  .search_wrap form{
+    width:100%;
+  }
+  .search_box .select_area select,
+  .search_box .submit_box input{
+    font-size:1.4rem;
+  }
+  .search_box .select_area select{
+    padding:16px 40px 16px 10px;
+    width:100%;  
+  }
+  .search_box .submit_box input{
+    padding:0 22px;
+  }
+  .search_wrap p{
+    display:none;
+    font-size:1.5rem;
+  }
+  #container .gallery_wrap ul.gallery li .txt{
+    margin-top:15px;
+  }
+  #container .gallery_wrap ul.gallery li .txt p{
+    font-size:1.3rem;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:2;
+    white-space:normal;
+    text-overflow:ellipsis;     
+  }
+  #container .gallery_wrap ul.gallery li .txt strong{
+    display:block;
+    margin-top:5px;
+    font-size:1.5rem;   
+  }
+
+  /*고강도타일*/
+  /*특장점*/
+  #container .features_inner li{
+    flex-direction:column;
+    column-gap:0;
+    border:1px solid #ddd;
+    border-radius:20px 0;
+  }
+  #container .features_inner li:first-child{
+    margin-top:0;
+  }  
+  #container .features_inner li .ico{
+    padding:35px 0;
+    width:100%;
+    height:auto;
+  }
+  #container .features_inner li .txt{
+    padding:30px 20px;
+    width:100%;
+    text-align:center;
+    border-bottom:none;
+  }
+  #container .features_inner li .txt strong{
+    font-size:1.8rem;
+  }
+  /*Color Chart*/
+  #container .color_chart .img_chart ul li{
+    width:100%;
+  }
+  #container .color_chart .img_chart ul li p{
+    margin-top: 10px;
+    font-size: 1.5rem;    
+  }
+  /*시공방법*/
+  #container .method_wrap .method_inner{
+    gap:50px 0;
+  }
+  #container .method_wrap .method_inner li{
+    width:100%;
+  }
+  #container .method_wrap .method_inner li .img::before,
+  #container .method_wrap .method_inner li .txt strong{
+    font-size:2.2rem;
+  }
+  #container .method_wrap .method_inner li .txt{
+    padding:30px;
+  }  
+  #container .method_wrap .method_inner li .txt p{
+    font-size:1.5rem;
+  }
+  #container .method_wrap .method_inner li .img img{
+    height:150px;
+  }
+   /*포스톤블럭*/
+   /*시공전후*/
+   #container .color_chart .text_box.tile03 p{
+    display:inline;
+   }
+   #container .method_wrap.tile03 p.s_tite{
+    font-size:1.6rem;
+   }
+   #container .method_wrap.tile03 .method_inner{
+    column-gap:0;
+   }
+   #container .method_wrap.tile03 .method_inner li,
+   #container .method_wrap.tile03 .method_inner.tile03 li{
+    width:100%;
+   }
+   /*시공사례비교*/
+   #container .spec ul.ex_list{
+    flex-wrap:wrap;
+   }
+   #container .spec ul.ex_list li{
+    margin-bottom:30px;
+    width:100%;
+   }
+   #container .spec ul.ex_list li p{
+    margin-top:20px;
+    font-size:1.5rem;
+   }
+   
+}
+@media all and (max-width:320px){
+  /*공통*/
+  ul.paging{
+    margin-top:50px;
+  }
+  ul.paging li a{
+    font-size:1.6rem;
+  }
+  /*서브타이틀*/
+  #container .sub_visual .tite{
+    padding:0 20px;
+  }
+  /*서브 메뉴*/
+  #container .sub_menu .lnb_inner #lnb{
+    padding:0 20px;
+    font-size:1.8rem;
+  }
+    #container .sub_menu .lnb_inner #lnb ul.depth2 li{
+    line-height:200%;
+  }
+  #container .sub_menu .lnb_inner #lnb ul.depth2{
+    font-size:1.6rem;
+  }
+  #container .sub_menu .lnb_inner #lnb > li:last-child > a{
+    padding:15px 0 15px 30px;
+  }
+  /*서브이미지*/
+  #container .sub_tite .text_box{
+    padding:20px 20px 50px;
+  }
+  #container .sub_tite .text_box .round{
+    margin:0 auto 10px;
+    padding:5px 0;
+  }
+  #container .sub_tite .text_box .round, 
+  #container .sub_tite .text_box strong, 
+  #container .sub_tite .text_box p{
+    font-size:1.3rem;
+  }
+  /*갤러리*/
+  .search_box{
+    flex-wrap:wrap;
+  }
+  .search_wrap .submit_box{
+    border-top:1px solid #ddd;
+  }
+  .search_box .select_area{
+    width:100%;
+  }
+  .search_box .select_area select{
+    padding:10px 40px 10px 10px;
+    background-color:#f4f4f4;
+  }
+  .search_box .submit_box input {
+    padding: 10px 35px;
+  }
+  #container .gallery_wrap ul.gallery {
+    gap:30px 10px;
+  }
+
+}
