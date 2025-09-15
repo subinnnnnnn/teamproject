@@ -216,6 +216,9 @@
   }
    /*석재타일*/
   /*서브비주얼*/
+  #container{
+    padding-top:55px;
+  }
   #container .sub_tite{
     margin-top:70px;
   }
