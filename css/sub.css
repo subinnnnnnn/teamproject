@@ -35,7 +35,9 @@ section h4::before{
 
 /*석재타일*/
 #container{
-  overflow:hidden;
+  /*overflow:hidden;*/
+  padding-top:90px;
+  font-size:2.0rem;
 }
 #container .sub_visual{
   position:relative;
@@ -87,7 +89,6 @@ section h4::before{
 #container .sub_menu .lnb_inner #lnb{
   display:flex;
   justify-content:center;
-  font-size:2.2rem;
 }
 #container .sub_menu .lnb_inner #lnb > li{
   position:relative;
@@ -95,6 +96,7 @@ section h4::before{
 #container .sub_menu .lnb_inner #lnb > li > a{
   position:relative;
   padding:20px 120px 20px 30px;
+  font-size:2.2rem;
   background-color:#f4f4f4;
 }
 #container .sub_menu .lnb_inner #lnb > li > a::after{
@@ -131,14 +133,15 @@ section h4::before{
   z-index:-1;
   padding:20px;  
   width:100%;
-  font-size:1.6rem;
   color:#555;
   letter-spacing:-0.12rem;
   background-color:#fff;
   border-radius:0 0 20px 0;
   box-shadow:0 5px 9px rgba(0,0,0,0.18);
 }
-#container .sub_menu .lnb_inner #lnb ul.depth2 li{
+
+#container .sub_menu .lnb_inner #lnb ul.depth2 li a{
+  font-size:1.6rem;
   line-height:240%;
 }
 #container .sub_menu .lnb_inner #lnb ul.depth2 li:hover a{
@@ -174,6 +177,8 @@ section h4::before{
   border-radius:30px;
 }
 #container .sub_tite .text_box strong{
+  display:block;
+  margin-bottom:5px;
   font-size:2.5rem;
 }
 #container .sub_tite .text_box h2{
@@ -181,6 +186,7 @@ section h4::before{
   letter-spacing:-0.24rem;
 }
 #container .sub_tite .text_box h2 i{
+  font-size:4.5rem;
   font-weight:500;
 }
 #container .sub_tite .text_box p{
@@ -212,6 +218,7 @@ section h4::before{
   color:#555;
 }
 #container .color_chart .text_box p i{
+  font-size:2.0rem;
   font-weight:600;
 }
 #container .color_chart .color_wrap{
@@ -257,7 +264,6 @@ section h4::before{
 }
 #container .spec table{
   margin-top:40px;
-  font-size:1.6rem;
   text-align:center;
 }
 #container .spec table caption{
@@ -266,10 +272,14 @@ section h4::before{
 #container .spec table th,
 #container .spec table td{
   padding:8px;
+  font-size:1.6rem;
   border:1px solid #ddd;
 }
 #container .spec table td{
   color:#555;
+}
+#container .spec table td ul li{
+  font-size:1.6rem;
 }
 #container .spec table thead{
   background-color:#003975;
