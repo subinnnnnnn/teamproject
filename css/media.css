@@ -324,9 +324,9 @@
     padding:16px 40px 16px 10px;
     width:100%;  
   }
-  .search_box .submit_box input{
+  /*.search_box .submit_box input{
     padding:0 10px;
-  }
+  }*/
   .search_wrap p{
     display:none;
     font-size:1.5rem;
