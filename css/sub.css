@@ -83,7 +83,7 @@ section h4::before{
   top:50%;
   left:50%;
   transform:translate(-50%,-50%);
-  z-index:3;
+  z-index:55;
   width:100%;
 }
 #container .sub_menu .lnb_inner #lnb{
@@ -105,7 +105,7 @@ section h4::before{
   position:absolute;
   top:50%;
   right:18px;
-  z-index:2;
+  z-index:50;
   transform:translateY(-50%);
   background:url("../images/common/btn_arrow_down_b.png") no-repeat;
   width:24px;
