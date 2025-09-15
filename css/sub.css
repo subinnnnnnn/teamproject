@@ -405,7 +405,10 @@ section h4::before{
   appearance:none;
   cursor:pointer;
 }
-
+.search_box .submit_box{
+  display:flex;
+  align-items:center;
+}
 .search_box .submit_box input{
   font-family:"S-CoreDream", sans-serif;
   font-size:1.8rem;
