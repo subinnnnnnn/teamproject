@@ -416,7 +416,7 @@ section h4::before{
 .search_box .submit_box button{
   padding:15px;
   background:url("../images/common/icon_search.png") no-repeat 50% 50%;
-  text-indent:100%;
+  text-indent:-9999em;
   white-space:nowrap;
   overflow:hidden;
   cursor:pointer;
