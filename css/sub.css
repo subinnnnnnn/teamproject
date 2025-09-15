@@ -379,7 +379,7 @@ section h4::before{
 /*검색*/
 .search_box{
   display:flex;
-  align-items:center;
+  align-items:baseline;
   border-bottom:1px solid #ddd;
 }
 .search_box .select_area{
@@ -414,6 +414,7 @@ section h4::before{
   border:none;
 }
 .search_box .submit_box button{
+  padding:15px;
   background:url("../images/common/icon_search.png") no-repeat 50% 50%;
   text-indent:100%;
   white-space:nowrap;
