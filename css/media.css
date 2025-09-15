@@ -236,6 +236,7 @@
     width:100%;
   }
   #container .sub_menu .lnb_inner #lnb > li > a{
+    font-size:1.8rem;
     padding: 20px 0 20px 30px;
   }
   #container .sub_menu .lnb_inner #lnb > li:nth-child(2){
