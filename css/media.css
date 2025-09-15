@@ -45,20 +45,20 @@
     width:100%
   }
   /*서브타이틀 메뉴*/
-  #container .sub_menu .lnb_inner #lnb{
+  #container .sub_depth .lnb_inner #lnb{
     padding:0 35px;
     font-size:2.0rem;
   }
-  #container .sub_menu .lnb_inner #lnb > li{
+  #container .sub_depth .lnb_inner #lnb > li{
     width:calc(100%/3);
   }
-  #container .sub_menu .lnb_inner #lnb > li > a{
+  #container .sub_depth .lnb_inner #lnb > li > a{
     padding:30px 120px 30px 30px;
   }
-  #container .sub_menu .lnb_inner #lnb ul.depth2{
+  #container .sub_depth .lnb_inner #lnb ul.depth2{
     font-size:1.8rem;
   }
-  #container .sub_menu .lnb_inner #lnb ul.depth2 li{
+  #container .sub_depth .lnb_inner #lnb ul.depth2 li{
     line-height:340%;
   }
   #container .sub_visual .img{
@@ -121,26 +121,26 @@
     word-break:keep-all;
   }
   /*서브타이틀 메뉴*/
-  #container .sub_menu .lnb_inner #lnb{
+  #container .sub_depth .lnb_inner #lnb{
     padding:0 35px;
     font-size:2.0rem;
   }
-  #container .sub_menu .lnb_inner #lnb > li{
+  #container .sub_depth .lnb_inner #lnb > li{
     width:50%;
   }
-  #container .sub_menu .lnb_inner #lnb > li:first-child{
+  #container .sub_depth .lnb_inner #lnb > li:first-child{
     display:none;
   }
-  #container .sub_menu .lnb_inner #lnb > li:nth-child(2) > a{
+  #container .sub_depth .lnb_inner #lnb > li:nth-child(2) > a{
     border-radius:20px 0 0 0;
   }
-  #container .sub_menu .lnb_inner #lnb > li > a{
+  #container .sub_depth .lnb_inner #lnb > li > a{
     padding:25px 0 25px 30px;
   }
-  #container .sub_menu .lnb_inner #lnb ul.depth2{
+  #container .sub_depth .lnb_inner #lnb ul.depth2{
     font-size:1.8rem;
   }
-  #container .sub_menu .lnb_inner #lnb ul.depth2 li{
+  #container .sub_depth .lnb_inner #lnb ul.depth2 li{
     line-height:340%;
   }
   #container .sub_visual .img{
@@ -232,17 +232,17 @@
     height:216px;
   }
   /*서브메뉴*/
-  #container .sub_menu .lnb_inner #lnb > li{
+  #container .sub_depth .lnb_inner #lnb > li{
     width:100%;
   }
-  #container .sub_menu .lnb_inner #lnb > li > a{
+  #container .sub_depth .lnb_inner #lnb > li > a{
     font-size:1.8rem;
     padding: 20px 0 20px 30px;
   }
-  #container .sub_menu .lnb_inner #lnb > li:nth-child(2){
+  #container .sub_depth .lnb_inner #lnb > li:nth-child(2){
     display:none;
   }
-  #container .sub_menu .lnb_inner #lnb > li:last-child > a{
+  #container .sub_depth .lnb_inner #lnb > li:last-child > a{
     border-radius:20px 0 20px 0;
   }
   /*서브타이틀이미지*/
@@ -446,17 +446,17 @@
     padding:0 20px;
   }
   /*서브 메뉴*/
-  #container .sub_menu .lnb_inner #lnb{
+  #container .sub_depth .lnb_inner #lnb{
     padding:0 20px;
     font-size:1.8rem;
   }
-    #container .sub_menu .lnb_inner #lnb ul.depth2 li{
+    #container .sub_depth .lnb_inner #lnb ul.depth2 li{
     line-height:200%;
   }
-  #container .sub_menu .lnb_inner #lnb ul.depth2{
+  #container .sub_depth .lnb_inner #lnb ul.depth2{
     font-size:1.6rem;
   }
-  #container .sub_menu .lnb_inner #lnb > li:last-child > a{
+  #container .sub_depth .lnb_inner #lnb > li:last-child > a{
     padding:15px 0 15px 30px;
   }
   /*서브이미지*/

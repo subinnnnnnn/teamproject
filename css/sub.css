@@ -75,10 +75,10 @@ section h4::before{
   font-size:2.5rem;
 }
 /*서브메뉴*/
-#container .sub_menu{
+#container .sub_depth{
  position:relative;
 }
-#container .sub_menu .lnb_inner{
+#container .sub_depth .lnb_inner{
   position:absolute;
   top:50%;
   left:50%;
@@ -86,20 +86,20 @@ section h4::before{
   z-index:55;
   width:100%;
 }
-#container .sub_menu .lnb_inner #lnb{
+#container .sub_depth .lnb_inner #lnb{
   display:flex;
   justify-content:center;
 }
-#container .sub_menu .lnb_inner #lnb > li{
+#container .sub_depth .lnb_inner #lnb > li{
   position:relative;
 }
-#container .sub_menu .lnb_inner #lnb > li > a{
+#container .sub_depth .lnb_inner #lnb > li > a{
   position:relative;
   padding:20px 120px 20px 30px;
   font-size:2.2rem;
   background-color:#f4f4f4;
 }
-#container .sub_menu .lnb_inner #lnb > li > a::after{
+#container .sub_depth .lnb_inner #lnb > li > a::after{
   content:"";
   display:block;
   position:absolute;
@@ -111,21 +111,21 @@ section h4::before{
   width:24px;
   height:24px;
 }
-#container .sub_menu .lnb_inner #lnb > li:last-child > a::after{
+#container .sub_depth .lnb_inner #lnb > li:last-child > a::after{
   background:url("../images/common/btn_arrow_down_w.png") no-repeat;
 }
-#container .sub_menu .lnb_inner #lnb > li:first-child > a{
+#container .sub_depth .lnb_inner #lnb > li:first-child > a{
   border-radius:20px 0 0 0;
   border-right:1px solid #c3c3c3;
 }
-#container .sub_menu .lnb_inner #lnb > li:last-child > a{
+#container .sub_depth .lnb_inner #lnb > li:last-child > a{
   background-color:#003975;
   border-radius:0 0 20px 0;
 }
-#container .sub_menu .lnb_inner #lnb > li:last-child > a{
+#container .sub_depth .lnb_inner #lnb > li:last-child > a{
   color:#fff;
 }
-#container .sub_menu .lnb_inner #lnb ul.depth2{
+#container .sub_depth .lnb_inner #lnb ul.depth2{
   display:none;
   position:absolute;
   top:80%;
@@ -140,11 +140,11 @@ section h4::before{
   box-shadow:0 5px 9px rgba(0,0,0,0.18);
 }
 
-#container .sub_menu .lnb_inner #lnb ul.depth2 li a{
+#container .sub_depth .lnb_inner #lnb ul.depth2 li a{
   font-size:1.6rem;
   line-height:240%;
 }
-#container .sub_menu .lnb_inner #lnb ul.depth2 li:hover a{
+#container .sub_depth .lnb_inner #lnb ul.depth2 li:hover a{
   color:#555;
   text-decoration:underline;
 }
