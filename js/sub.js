@@ -43,8 +43,6 @@ $(function(){
     });
 
   AOS.init();
-  
-
   //지우
   //04_06_오시는길
   //오시는길 탭 영역
@@ -55,5 +53,5 @@ $(function(){
     $(this).addClass("on").siblings().removeClass("on");
     let indexNum = $(this).index();
     $("#container .google_map .map_container").eq(indexNum).show().siblings().hide();
-  });
+  });  
 });
