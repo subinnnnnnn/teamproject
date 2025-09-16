@@ -283,6 +283,9 @@
     padding:30px;
     width:calc((100% - 60px) /2);
   }
+  #container .cert_tite p{
+    display:inline;
+  }
 
 }
 /*480px*/
