@@ -1,0 +1,861 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">  
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="../css/media.css">   
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/aos.js"></script>
+  <script src="../js/sub.js"></script>
+  <script src="../js/common.js"></script>
+  <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">  
+  <title>제품정보-제품규격</title>
+</head>
+<body>
+<!--wrap-->
+<div id="wrap">
+  <!--header영역-->
+  <header id="header">
+    <div class="inner header">
+      <h1 class="logo"><a href="../index.html"><img src="../images/main/logo.png" alt="한국요업"></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="#">제품소개</a>
+            <ul class="sub_menu">
+              <li><a href="../01_products/01_01tile.html">외장타일</a></li>
+              <li><a href="../01_products/02_01tile.html">수입타일</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">제품정보</a>
+            <ul class="sub_menu">
+              <li><a href="../02_productinfo/01_testreport.html">시험성적서</a></li>
+              <li><a href="../02_productinfo/02_certificate.html">인증서</a></li>
+              <li><a href="../02_productinfo/03_colorsize.html">제품규격</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">시공납품</a>
+            <ul class="sub_menu">
+              <li><a href="../03_construction/01_productcus.html">납품실적</a></li>
+              <li><a href="../03_construction/02_productgallery.html">시공사진</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="sub_menu">
+              <li><a href="../04_about/01_ceo.html">CEO인사말</a></li>
+              <li><a href="../04_about/02_history.html">회사연혁</a></li>
+              <li><a href="../04_about/03_organization.html">조직도</a></li>
+              <li><a href="../04_about/04_production.html">생산공정</a></li>
+              <li><a href="../04_about/05_jobs.html">채용정보</a></li>
+              <li><a href="../04_about/06_map.html">오시는길</a></li>
+              <li><a href="../04_about/07_introgallery.html">회사전경</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">고객지원</a>
+            <ul class="sub_menu">
+              <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
+              <li><a href="../05_customer/02_agency.html">대리점</a></li>
+              <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
+              <li><a href="#">면적계산기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="global"><a href="#" target="_blank"><img src="../images/main/icon_global.png" alt="글로벌 아이콘"></a></div>
+      <div class="media_menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="media_gnb">
+          <li>
+            <a href="#">제품소개</a>
+            <ul class="media_submenu">
+              <li><a href="../01_products/01_01tile.html">외장타일</a></li>
+              <li><a href="../01_products/02_01tile.html">수입타일</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">제품정보</a>
+            <ul class="media_submenu">
+              <li><a href="../02_productinfo/01_testreport.html">시험성적서</a></li>
+              <li><a href="../02_productinfo/02_certificate.html">인증서</a></li>
+              <li><a href="../02_productinfo/03_colorsize.html">제품규격</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">시공납품</a>
+            <ul class="media_submenu">
+              <li><a href="../03_construction/01_productcus.html">납품실적</a></li>
+              <li><a href="../03_construction/02_productgallery.html">시공사진</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="media_submenu">
+              <li><a href="../04_about/01_ceo.html">CEO인사말</a></li>
+              <li><a href="../04_about/02_history.html">회사연혁</a></li>
+              <li><a href="../04_about/03_organization.html">조직도</a></li>
+              <li><a href="../04_about/04_production.html">생산공정</a></li>
+              <li><a href="../04_about/05_jobs.html">채용정보</a></li>
+              <li><a href="../04_about/06_map.html">오시는길</a></li>
+              <li><a href="../04_about/07_introgallery.html">회사전경</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">고객지원</a>
+            <ul class="media_submenu">
+              <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
+              <li><a href="../05_customer/02_agency.html">대리점</a></li>
+              <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
+              <li><a href="#">면적계산기</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="media_submenu_bg"></div>
+      </div>
+    </div>
+    <div class="header_bg"></div>
+  </header>
+  <!--//헤더영역끝-->
+
+  <!--container-->
+  <main id="container">
+    <!--서브비주얼-->
+    <div class="sub_visual productinfo">
+      <div class="img"></div>
+      <div class="tite">
+        <h2>제품규격</h2>
+        <p>최고의 제품, 최상의 품질과 차별화된 서비스로 고객과 함께 건설문화 발전에 기여하는 기업</p>
+      </div>
+    </div>
+    <!--서브메뉴-->
+    <div class="sub_depth inner">
+      <div class="lnb_inner depth_menu">
+        <ul id="lnb">
+          <li><a href="#">제품정보</a>
+            <ul class="depth2">
+              <li><a href="../01_products/01_01tile.html">제품소개</a></li>
+              <li><a href="../02_productinfo/01_testreport.html">제품정보</a></li>
+              <li><a href="../03_construction/01_productcus.html">시공납품</a></li>
+              <li><a href="../04_about/01_ceo.html">회사소개</a></li>
+              <li><a href="../05_customer/01_inquiry.html">고객지원</a></li>
+            </ul>
+          </li>
+          <li><a href="#">제품규격</a>
+            <ul class="depth2">
+              <li><a href="../02_productinfo/01_testreport.html">시험성적서</a></li>
+              <li><a href="../02_productinfo/02_certificate.html">인증서</a></li>
+              <li><a href="../02_productinfo/03_colorsize.html">제품규격</a></li>
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--//서브메뉴-->
+
+    <!--고강도타일-->
+    <section class="spec mt150 inner">
+      <h4 class="letter">고강도 타일</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar; / 특수칼라 가격별도</p>  
+      <div class="table_graph tile02">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>ITEM NO.</th>
+              <th>SIZE(mm)</th>
+              <th>THICKNESS(mm)</th>
+              <th>JOINT(mm)</th>
+              <th>PCS/m²</th>
+              <th>PCS/BOX</th>
+              <th>m²/BOX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>7083</td>
+              <td>100 x 200</td>
+              <td>13</td>
+              <td>8</td>
+              <td>44.5</td>
+              <td>34</td>
+              <td>0.763</td>
+            </tr>
+            <tr>
+              <td>7083NB</td>
+              <td>100 x 200</td>
+              <td>13</td>
+              <td>8</td>
+              <td>44.5</td>
+              <td>34</td>
+              <td>0.763</td>
+            </tr>
+            <tr>
+              <td>7035</td>
+              <td>200 x 200</td>
+              <td>15</td>
+              <td>8</td>
+              <td>23</td>
+              <td>18</td>
+              <td>0.778</td>
+            </tr>
+            <tr>
+              <td>7035NB</td>
+              <td>200 x 200</td>
+              <td>15</td>
+              <td>8</td>
+              <td>23</td>
+              <td>18</td>
+              <td>0.778</td>
+            </tr>
+            <tr>
+              <td>7083EV</td>
+              <td>100 x 200</td>
+              <td>13</td>
+              <td>8</td>
+              <td>44.5</td>
+              <td>34</td>
+              <td>0.763</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+
+    <!--파스텔타일-->
+    <section class="spec mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">파스텔타일</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph tile02">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>ITEM NO.</th>
+              <th>SIZE(mm)</th>
+              <th>THICKNESS(mm)</th>
+              <th>JOINT(mm)</th>
+              <th>PCS/m²</th>
+              <th>m²/BOX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PA701</td>
+              <td>100 x 100</td>
+              <td>8</td>
+              <td>8</td>
+              <td>86</td>
+              <td>1.003</td>
+            </tr>
+            <tr>
+              <td>PA702</td>
+              <td>150 x 150</td>
+              <td>9</td>
+              <td>8</td>
+              <td>40</td>
+              <td>0.998</td>
+            </tr>
+            <tr>
+              <td>PA703</td>
+              <td>200 x 200</td>
+              <td>9</td>
+              <td>8</td>
+              <td>23</td>
+              <td>0.995</td>
+            </tr>
+            <tr>
+              <td>PA707</td>
+              <td>92 x 192</td>
+              <td>9</td>
+              <td>8</td>
+              <td>50</td>
+              <td>1.000</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!--포스톤블럭-->
+    <section class="spec mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">포스톤 타일</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph tile02">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>ITEM NO.</th>
+              <th>SIZE(mm)</th>
+              <th>THICKNESS(mm)</th>
+              <th>JOINT(mm)</th>
+              <th>PCS/m²</th>
+              <th>PCS/PLT</th>
+              <th>REMARK</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>PBN 1035</td>
+              <td>98 x 98</td>
+              <td>35</td>
+              <td>2</td>
+              <td>100</td>
+              <td>2,700</td>
+              <td>Regular Edge</td>
+            </tr>
+            <tr>
+              <td>PBN 1535</td>
+              <td>148 x 148</td>
+              <td>35</td>
+              <td>2</td>
+              <td>45</td>
+              <td>1,200</td>
+              <td>Regular Edge</td>
+            </tr>
+            <tr>
+              <td>PBN 2135</td>
+              <td>98 x 198</td>
+              <td>35</td>
+              <td>2</td>
+              <td>50</td>
+              <td>1,350</td>
+              <td>Regular Edge</td>
+            </tr>
+            <tr>
+              <td>PBN 3135</td>
+              <td>148 x 298</td>
+              <td>35</td>
+              <td>2</td>
+              <td>23</td>
+              <td>600</td>
+              <td>Regular Edge</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!--석재타일-->
+    <section class="spec mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">석재타일</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+          <tr>
+            <th colspan="3">ITEM NO.</th>
+            <th rowspan="2">SIZE(mm)</th>
+            <th rowspan="2">JOINT(mm)</th>
+            <th rowspan="2">m²/BOX</th>
+            <th rowspan="2">PCS/BOX</th>
+            <th rowspan="2">PCS/㎡</th>
+          </tr>
+          <tr>
+            <th>Thickness 18mm</th>
+            <th>Thickness 15mm</th>
+            <th>Thickness 12mm</th>
+          </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GN 1018</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x 100</td>
+              <td>10</td>
+              <td>0.871</td>
+              <td>72</td>
+              <td>83</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>GN 1015</td>
+              <td>GN 1012</td>
+              <td>100 x 100</td>
+              <td>10</td>
+              <td>0.762</td>
+              <td>63</td>
+              <td>83</td>
+            </tr>
+            <tr>
+              <td>GN 1918</td>
+              <td>-</td>
+              <td>-</td>
+              <td>90 x 190</td>
+              <td>10</td>
+              <td>0.76</td>
+              <td>38</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>GN 1915</td>
+              <td>-</td>
+              <td>90 x 190</td>
+              <td>10</td>
+              <td>0.92</td>
+              <td>46</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>-</td>
+              <td>GN 1912</td>
+              <td>90 x 190</td>
+              <td>10</td>
+              <td>1.08</td>
+              <td>54</td>
+              <td>50</td>
+            </tr>
+            <tr>
+              <td>GN 2118</td>
+              <td>GN 2115</td>
+              <td>GN 2112</td>
+              <td>100 x 210</td>
+              <td>10</td>
+              <td>0.774</td>
+              <td>32</td>
+              <td>42</td>
+            </tr>
+            <tr>
+              <td>GN 1518</td>
+              <td>GN 1515</td>
+              <td>GN 1512</td>
+              <td>150 x 150</td>
+              <td>10</td>
+              <td>0.768</td>
+              <td>30</td>
+              <td>39</td>
+            </tr>
+            <tr class="colspan">
+              <td colspan="3">GN 1520 (Thickness 20mm)</td>
+              <td>150 x 150</td>
+              <td>10</td>
+              <td>0.768</td>
+              <td>30</td>
+              <td>39</td>
+            </tr>
+            <tr>
+              <td>GN 2018</td>
+              <td>-</td>
+              <td>-</td>
+              <td>200 x 200</td>
+              <td>10</td>
+              <td>0.661</td>
+              <td>15</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>GN 2015</td>
+              <td>-</td>
+              <td>200 x 200</td>
+              <td>10</td>
+              <td>0.97</td>
+              <td>22</td>
+              <td>22</td>
+            </tr>
+            <tr class="colspan">
+              <td colspan="3">GN 2020 (Thickness 20mm)</td>
+              <td>200 x 200</td>
+              <td>10</td>
+              <td>0.485</td>
+              <td>11</td>
+              <td>22</td>
+            </tr>
+            <tr>
+              <td>GN 2318</td>
+              <td>-</td>
+              <td>-</td>
+              <td>300 x 200</td>
+              <td>15</td>
+              <td>0.812</td>
+              <td>12</td>
+              <td>15</td>
+            </tr>
+            <tr>
+              <td>GN 3018</td>
+              <td>-</td>
+              <td>-</td>
+              <td>300 x 300</td>
+              <td>15</td>
+              <td>0.694</td>
+              <td>7</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>-</td>
+              <td>GN 3015</td>
+              <td>-</td>
+              <td>300 x 300</td>
+              <td>15</td>
+              <td>0.793</td>
+              <td>8</td>
+              <td>10</td>
+            </tr>
+            <tr class="colspan">
+              <td colspan="3">GN 3020 (Thickness 20mm)</td>
+              <td>300 x 300</td>
+              <td>15</td>
+              <td>0.694</td>
+              <td>7</td>
+              <td>10</td>
+            </tr>
+            <tr>
+              <td>GN 118</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x (100 · 10)</td>
+              <td>15</td>
+              <td>0.805</td>
+              <td>100</td>
+              <td>125</td>
+            </tr>
+            <tr>
+              <td>GN 218</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x (100 · 60)</td>
+              <td>15</td>
+              <td>0.874</td>
+              <td>80</td>
+              <td>92</td>
+            </tr>
+            <tr>
+              <td>GN 318</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x 100</td>
+              <td>15</td>
+              <td>0.871</td>
+              <td>72</td>
+              <td>83</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+
+    <!--그라스톤타일-->
+    <section class="spec mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">그라스톤타일</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th colspan="3">ITEM NO.</th>
+              <th rowspan="2">SIZE(mm)</th>
+              <th rowspan="2">JOINT(mm)</th>
+              <th rowspan="2">m²/BOX</th>
+              <th rowspan="2">PCS/BOX</th>
+              <th rowspan="2">REMARK</th>
+            </tr>
+            <tr>
+              <th>Thickness 18mm</th>
+              <th>Thickness 15mm</th>
+              <th>Thickness 12mm</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>GR 2118</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x 210</td>
+              <td>10</td>
+              <td>0.77</td>
+              <td>32</td>
+              <td>Regular Edge</td>
+            </tr>
+            <tr>
+              <td>GR 1018</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x 100</td>
+              <td>10</td>
+              <td>0.87</td>
+              <td>72</td>
+              <td>"</td>
+            </tr>
+            <tr>
+              <td>GR 1518</td>
+              <td>-</td>
+              <td>-</td>
+              <td>150 x 150</td>
+              <td>10</td>
+              <td>0.76</td>
+              <td>30</td>
+              <td>"</td>
+            </tr>
+            <tr>
+              <td>GR 3018</td>
+              <td>-</td>
+              <td>-</td>
+              <td>300 x 300</td>
+              <td>15</td>
+              <td>0.69</td>
+              <td>7</td>
+              <td>"</td>
+            </tr>
+            <tr>
+              <td>GR 3618</td>
+              <td>-</td>
+              <td>-</td>
+              <td>300 x 600</td>
+              <td>15</td>
+              <td>0.58</td>
+              <td>3</td>
+              <td>"</td>
+            </tr>
+            <tr>
+              <td>GRE 118</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x (100 · 10)</td>
+              <td>10</td>
+              <td>0.80</td>
+              <td>100</td>
+              <td>Irregular Edge</td>
+            </tr>
+            <tr>
+              <td>GRE 218</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x (100 · 60)</td>
+              <td>10</td>
+              <td>0.87</td>
+              <td>80</td>
+              <td>"</td>
+            </tr>
+            <tr>
+              <td>GRE 318</td>
+              <td>-</td>
+              <td>-</td>
+              <td>100 x 100</td>
+              <td>10</td>
+              <td>0.76</td>
+              <td>63</td>
+              <td>"</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+
+    <!--시각장애인타일-->
+    <section class="spec mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">시각장애인타일</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph tile02">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>ITEM NO.</th>
+              <th>SIZE(mm)</th>
+              <th>THICKNESS(mm)</th>
+              <th>PCS/m²</th>
+              <th>m²/BOX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>ALL ITEMS</td>
+              <td>300 x 300</td>
+              <td>15, 18</td>
+              <td>11</td>
+              <td>10(15mm), 8(18mm)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+ 
+    <!--그라스톤석재타일-->
+    <section class="spec mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">그라스톤 석재 타일(OEM)</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph tile02">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>ITEM NO.</th>
+              <th>SIZE(mm)</th>
+              <th>THICKNESS(mm)</th>
+              <th>JOINT(mm)</th>
+              <th>PCS/m²</th>
+              <th>PCS/BOX</th>
+              <th>m²/BOX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>KC GR200</td>
+              <td rowspan="3">200 x 200</td>
+              <td rowspan="3">18</td>
+              <td rowspan="3">10</td>
+              <td rowspan="3">22</td>
+              <td rowspan="3">15</td>
+              <td rowspan="3">0.661</td>
+            </tr>
+            <tr>
+              <td>KC GR202</td>
+            </tr>
+            <tr>
+              <td>KC GR201</td>
+            </tr>
+            <tr>
+              <td>KC GR300</td>
+              <td rowspan="3">300 x 300</td>
+              <td rowspan="3">18</td>
+              <td rowspan="3">15</td>
+              <td rowspan="3">10</td>
+              <td rowspan="3">7</td>
+              <td rowspan="3">0.694</td>
+            </tr>
+            <tr>
+              <td>KC GR302</td>
+            </tr>
+            <tr>
+              <td>KC GR301</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+ 
+    <!--고강도 타일-->
+    <section class="spec mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">고강도 타일(OEM)</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph tile02">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>ITEM NO.</th>
+              <th>SIZE(mm)</th>
+              <th>THICKNESS(mm)</th>
+              <th>JOINT(mm)</th>
+              <th>PCS/m²</th>
+              <th>PCS/BOX</th>
+              <th>m²/BOX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>KC 768</td>
+              <td rowspan="3">100 x 200</td>
+              <td rowspan="3">15</td>
+              <td rowspan="3">8</td>
+              <td rowspan="3">44</td>
+              <td rowspan="3">22</td>
+              <td rowspan="3">0.5</td>
+            </tr>
+            <tr>
+              <td>KC 769</td>
+            </tr>
+            <tr>
+              <td>KC 770</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+
+    <!--석재타일-->
+    <section class="spec mt150 mb150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4 class="letter">석재타일(OEM)</h4>
+      <p class="ref">다양한 색상 주문 가능 &lpar;줄눈 포함&rpar;</p>  
+      <div class="table_graph tile02">
+        <table>
+          <caption>제품 사양에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>ITEM NO.</th>
+              <th>SIZE(mm)</th>
+              <th>THICKNESS(mm)</th>
+              <th>JOINT(mm)</th>
+              <th>PCS/m²</th>
+              <th>PCS/BOX</th>
+              <th>m²/BOX</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>KC 100</td>
+              <td rowspan="3">200 x 200</td>
+              <td rowspan="3">15</td>
+              <td rowspan="3">10</td>
+              <td rowspan="3">22</td>
+              <td rowspan="3">22</td>
+              <td rowspan="3">1</td>
+            </tr>
+            <tr>
+              <td>KC 802</td>
+            </tr>
+            <tr>
+              <td>KC 711</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+    <!--위로가기-->
+    <div class="btn_top">
+      <a href="#wrap">Top</a>
+    </div>     
+  </main>
+  <!--//container-->
+  <!--푸터영역-->
+  <footer id="footer">
+    <div class="inner footer">
+      <div class="fot_logo"><img src="../images/main/logo.png" alt="한국요업"></div>
+      <address>
+        <div class="address_wrap">
+          <span>한국요업주식회사</span>
+          <span>사업자등록번호 617-81-66610</span>
+          <span>689-892 울산광역시 울주군 온산읍 학남리 60-5</span>
+          <span>TEL. 052-237-6700</span>
+          <span>FAX. 052-237-6701</span>
+          <span>MAIL. master@kcmkr.com</span>
+          <span>개인정보관리책임자 정지훈</span>
+        </div>
+        <div class="copy">Copyright (c) 2013 KOREA CERAMICS CO., LTD. All Rights Reserved</div>
+      </address>
+      <ul class="fnb">
+        <li><a href="../06_policy/01_policy.html">개인정보취급방침</a></li>
+        <li><a href="../06_policy/02_email.html">이메일무단수집거부</a></li>
+      </ul>
+      <div class="fot_sns">
+        <a href="https://blog.naver.com/korea_ceramics" target="_blank"><img src="../images/main/icon_blog.png" alt="블로그바로가기"></a>
+        <a href="https://www.instagram.com/koreaceramics_official/" target="_blank"><img src="../images/main/icon_instar.png" alt="인스타바로가기"></a>
+      </div>
+    </div>
+  </footer>
+  <!--//푸터영역끝-->
+</div>
+<!--//wrap-->
+</body>
+</html>
