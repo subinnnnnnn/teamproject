@@ -48,6 +48,9 @@
     padding:70px 50px 80px;
     width:100%
   }
+  #container .sub_tite.tile05 .text_box{
+    padding:70px 50px 80px;
+  }
   /*서브타이틀 메뉴*/
   #container .sub_depth .lnb_inner #lnb{
     padding:0 35px;
@@ -365,7 +368,7 @@
 
   #container .sub_tite .text_box .round{
     margin:0 auto 15px;
-    width:100px;
+    width:120px;
   }
   #container .sub_tite .text_box .round,
   #container .sub_tite .text_box strong,
@@ -376,6 +379,7 @@
   #container .sub_tite .text_box h2 i{
     font-size:2.2rem;
     letter-spacing:-0.04rem;
+    line-height:140%;
   }
   /*특장점*/
   #container .features .text_box{

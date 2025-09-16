@@ -408,9 +408,11 @@ section h4::before{
   padding:16px 20px 16px 10px;
   border:none;
   font-size:1.8rem;
-  font-family:"S-CoreDream", sans-serif;
+  font-family:"Escoredream", sans-serif;
   appearance:none;
   cursor:pointer;
+  color:#252525;
+  -webkit-appearance:none;
 }
 .search_box .submit_box{
   display:flex;
@@ -419,7 +421,7 @@ section h4::before{
   width:100%;
 }
 .search_box .submit_box input{
-  font-family:"S-CoreDream", sans-serif;
+  font-family:"Escoredream", sans-serif;
   font-size:1.8rem;
   color:#999;
   letter-spacing:-0.02rem;
