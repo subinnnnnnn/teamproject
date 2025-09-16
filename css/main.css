@@ -2,32 +2,53 @@
 #wrap{
   overflow: hidden;
 }
+
+.inner {
+  width: 1340px;
+  margin: 0 auto;
+}
+
 .swiper.main_visual {
   position: relative;
   width: 100%;
+  height: 900px;
   margin-bottom: 150px;
 }
 
-.main_visual img {
-  display: block;
-  width: 100%;
-  height: 900px;
-  object-fit: cover;
-}
-
-.main_visual span::before {
+.main_visual .swiper-slide::after {
   content: "";
   position: absolute;
   left: 0;
+  top: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0));
+
+}
+
+.main_visual .visual01 {
+  display: block;
+  width: 100%;
+  height: 900px;
+  background: url(../images/main/visual01.jpg) 0 0 / cover no-repeat;
+
+}
+
+.main_visual .visual02 {
+  display: block;
+  width: 100%;
+  height: 900px;
+  background: url(../images/main/visual02.jpg) 0 0 / cover no-repeat;
+}
+
+.main_visual .visual03 {
+  display: block;
+  width: 100%;
+  height: 900px;
+  background: url(../images/main/visual03.jpg) 0 0 /cover no-repeat;
 }
 
 .main_visual .visual_text {
-  position: absolute;
-  left: 290px;
-  top: 240px;
+  margin-top: 235px;
   line-height: 1.6;
   color: #fff;
 }
@@ -64,9 +85,11 @@
 /*메인비주얼 화살표*/
 #main .main_visual .visual_arrow {
   position: relative;
-  right: -1532px;
+  right: 0;
   bottom: 66px;
+  float: right;
   width: 287px;
+  margin-right: 89px;
 }
 
 #main .main_visual .visual_arrow .swiper-button-next, #main .main_visual .visual_arrow .swiper-button-prev {
@@ -74,13 +97,13 @@
 }
 
 #main .main_visual .visual_scroll {
+  float: right;
   position: relative;
-  left: 1213px;
+  right: 390px;
   bottom: 40px;
   z-index: 999;
   width: 300px;
 }
-
 
 #main .main_visual .swiper-scrollbar-drag {
   background: #FFDC2E;
@@ -89,6 +112,25 @@
 #main .main_visual .swiper-scrollbar {
   background: rgba(255,255,255,0.5);
 }
+
+#main .main_visual .visual_page {
+  position: relative;
+  right: 198px;
+  bottom: 39px;
+}
+
+#main .main_visual .visual_page .swiper-pagination-fraction {
+  font-size: 2.5rem;
+  color: #fff;
+  word-spacing: 5px;
+  text-align: right;
+}
+
+#main .main_visual .visual_page .swiper-pagination-current, #main .main_visual .visual_page .swiper-pagination-total {
+  font-size: 3.0rem;
+  color: #fff;
+}
+
 
 /*section 공통*/
 #main section {
@@ -191,19 +233,15 @@
 /*상품 리스트 화살표*/
 #main .product .product_arrow {
   position: relative;
-  top: -215px;
+  top: -214px;
   margin: 0 180px;
+  /* width: 1496px; */
 }
 
-#main .product .product_arrow .swiper-button-next, #main .product .product_arrow .swiper-button-prev {
-  width: 50px;
-  height: 50px;
-  border: 1px solid #BABABA;
-  border-radius: 50%;
-  --swiper-navigation-size: 24px;
-  font-weight: 600;
-  color: #003975;
+#main .product .product_arrow .swiper-button-prev::after, #main .product .product_arrow .swiper-button-next::after {
+  display: none;
 }
+
 
 /*메이드 영역*/
 #main .ourmade {
@@ -276,9 +314,13 @@
 }
 
 #main .ourmade .ourmade_content .made .made_infor .infor_text p {
-  margin-bottom: 10px;
+  margin-bottom: 5px;
   font-size: 1.8rem;
   font-weight: 500;
+}
+
+#main .ourmade .ourmade_content .made .made_infor .infor_text span {
+  font-size: 1.8rem;
 }
 
 #main .ourmade .ourmade_content .made .made_infor img.arrow {
@@ -453,14 +495,17 @@
 }
 
 #main .certificate .marquee_track li {
-  width: calc((100% - 48px) / 3);
+  width: 335px;
   text-align: center;
 }
 
 #main .certificate .marquee_track li img {
   display: block;
+  width: 50%;
+  margin: 0 auto;
   margin-bottom: 40px;
   border-radius: 20px;
+  overflow: hidden;
   box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
 }
 
@@ -642,12 +687,17 @@
 
 #main .customer .calc_popup .calcpop_wrap table th, #main .customer .calc_popup .calcpop_wrap table td {
   padding: 30px 20px;
+  font-size: 2.0rem;
   font-weight: 300;
 }
 
 #main .customer .calc_popup .calcpop_wrap table th {
   border: 1px solid #ddd;
   border-left: none;
+}
+
+#main .customer .calc_popup .calcpop_wrap table th span {
+  font-size: 2.0rem;
 }
 
 #main .customer .calc_popup .calcpop_wrap table tr:nth-child(1) {
@@ -664,6 +714,7 @@
   padding: 22px 40px;
   border-radius: 10px;
   background: #39B54A;
+  font-size: 2.0rem;
   color: #fff;
 }
 
@@ -724,8 +775,7 @@
 /*반응형 테블릿 영역*/
 @media screen and (max-width:834px) {
   .inner {
-    max-width: 764px;
-    margin: 0 35px;
+    max-width: 100%;
   }
 
   .swiper.main_visual {
@@ -767,23 +817,45 @@
   /*메인비주얼 화살표*/
   #main .main_visual .visual_arrow {
     position: relative;
-    right: -523px;
-    bottom: 47px;
-    width: 269px;
+    right: 0;
+    bottom: 48px;
+    float: right;
+    width: 270px;
+    margin-right: 10px;
     --swiper-navigation-size: 32px;
   }
 
+  
   #main .main_visual .visual_arrow .swiper-button-next, #main .main_visual .visual_arrow .swiper-button-prev {
     font-weight: 600;
     color: #fff;
   }
 
   #main .main_visual .visual_scroll {
+    float: left;
     position: relative;
     left: 35px;
     bottom: 25px;
     z-index: 999;
-    width: 480px;
+    width: 55%;
+  }
+  
+  #main .main_visual .visual_page {
+    position: relative;
+    right: 114px;
+    bottom: 22px;
+  }
+
+  #main .main_visual .visual_page .swiper-pagination-fraction {
+    font-size: 2.5rem;
+    color: #fff;
+    word-spacing: 5px;
+    text-align: right;
+  }
+
+  #main .main_visual .visual_page .swiper-pagination-current, #main .main_visual .visual_page .swiper-pagination-total {
+    font-size: 3.0rem;
+    color: #fff;
   }
 
   /*section 공통*/
@@ -1039,9 +1111,21 @@
   }
 
   #main .certificate .marquee_track li {
-    width: calc((100% - 48px) / 3);
+    width: 335px;
     text-align: center;
   }
+
+  #main .certificate .marquee_track li img {
+    display: block;
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 40px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+  }
+
+
 
   #main .certificate .marquee_track li img.ks {
     width: 29px;
@@ -1243,7 +1327,7 @@
 @media all and (max-width:480px) {
   .inner {
     max-width: 440px;
-    margin: 0 20px;
+    padding: 0 20px;
     overflow: hidden;
   }
   .swiper.main_visual {
@@ -1254,7 +1338,7 @@
 
   .main_visual img {
     width: 100%;
-    height: 210px;
+    height: 270px;
   }
 
   .main_visual .visual_text {
@@ -1288,19 +1372,41 @@
   /*메인비주얼 화살표*/
   #main .main_visual .visual_arrow {
     position: relative;
-    right: -297px;
-    bottom: 31px;
-    width: 170px;
+    right: 0;
+    bottom: 32px;
+    float: right;
+    width: 169px;
+    margin-right: 10px;
     --swiper-navigation-size: 22px;
   }
 
   #main .main_visual .visual_scroll {
+    float: left;
     position: relative;
     left: 20px;
     bottom: 15px;
     z-index: 999;
-    width: 277px;
+    width: 55%;
     --swiper-scrollbar-size:3px;
+  }
+
+  
+  #main .main_visual .visual_page {
+    position: relative;
+    right: 62px;
+    bottom: 9px;
+  }
+
+  #main .main_visual .visual_page .swiper-pagination-fraction {
+    font-size: 2.1rem;
+    color: #fff;
+    word-spacing: 5px;
+    text-align: right;
+  }
+
+  #main .main_visual .visual_page .swiper-pagination-current, #main .main_visual .visual_page .swiper-pagination-total {
+    font-size: 2.0rem;
+    color: #fff;
   }
 
   /*상품영역*/
@@ -1427,7 +1533,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: calc((100% - 30px) / 3);
     padding: 10px;
     border-radius: 5px;
     background: #fff;
@@ -1435,8 +1541,8 @@
 
   #main .ourmade .ourmade_content .made .made_infor img {
     display: block;
-    width: 332px;
-    height: 70px;
+    width: 100%;
+    height: 80px;
     object-fit: cover;
     border-radius: 5px;
   }
@@ -1741,8 +1847,7 @@
 /*반응형 모바일 영역02*/
 @media screen and (max-width:390px) {
   .inner {
-    max-width: 350px;
-    margin: 0 20px;
+    max-width: 100%;
   }
 
   .swiper.main_visual {
@@ -1753,7 +1858,7 @@
 
   .main_visual img {
     width: 100%;
-    height: 210px;
+    height: 270px;
   }
 
   .main_visual .visual_text {
@@ -1787,11 +1892,32 @@
   /*메인비주얼 화살표*/
   #main .main_visual .visual_arrow {
     position: relative;
-    right: -236px;
-    bottom: 31px;
-    width: 150px;
-    --swiper-navigation-size: 22px;
+    right:  0;
+    bottom: 29px;
+    float: right;
+    width: 143px;
+    margin-right: 10px;
+    --swiper-navigation-size: 17px;
   }
+
+  #main .main_visual .visual_page {
+    position: relative;
+    right: 54px;
+    bottom: 9px;
+  }
+
+  #main .main_visual .visual_page .swiper-pagination-fraction {
+    font-size: 1.8rem;
+    color: #fff;
+    word-spacing: 5px;
+    text-align: right;
+  }
+
+  #main .main_visual .visual_page .swiper-pagination-current, #main .main_visual .visual_page .swiper-pagination-total {
+    font-size: 1.8rem;
+    color: #fff;
+  }
+
 
   #main .main_visual .visual_arrow .swiper-button-next, #main .main_visual .visual_arrow .swiper-button-prev {
     font-weight: 600;
@@ -1799,11 +1925,12 @@
   }
 
   #main .main_visual .visual_scroll {
+    float: left;
     position: relative;
     left: 20px;
     bottom: 15px;
     z-index: 999;
-    width: 216px;
+    width: 55%;
     --swiper-scrollbar-size:3px;
   }
 
@@ -1943,7 +2070,7 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 240px;
+    width: calc((100% -30px) / 3);
     padding: 10px;
     border-radius: 5px;
     background: #fff;
@@ -1951,7 +2078,7 @@
 
   #main .ourmade .ourmade_content .made .made_infor img {
     display: block;
-    width: 332px;
+    width:100%;
     height: 70px;
     object-fit: cover;
     border-radius: 5px;

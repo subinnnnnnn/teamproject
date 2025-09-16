@@ -1,9 +1,14 @@
-@charset "UTF-8";
-html{
-  scroll-behavior:smooth;
+@charset  "utf-8";
+html {
+  scroll-behavior: smooth;
+  color: #252525;
 }
 
-*{
+body {
+  overflow-x: hidden;
+}
+
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
@@ -12,17 +17,42 @@ html{
   font-size:62.5%;
   font-weight: 400;
 }
-strong,b,h1,h2,h3,h4,h5,h6{
-  font-weight:normal;
+
+strong, b, h1,h2,h3,h4,h5,h6 {
+  font-weight: normal;
 }
-em,i,address{
-  font-style:normal;
+
+em, i, address {
+  font-style: normal;
 }
-ul,ol,li, dd{
-  padding:0;
-  margin:0;
-  list-style:none;
+
+button {
+  border: 0;
+  background-color: transparent;
 }
+a{
+  display:block;
+}
+a:link {
+  color: #252525;
+  text-decoration: none;
+}
+
+a:visited {
+  color: #252525;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #252525;
+  text-decoration: none;
+}
+
+a:active {
+  color: #252525;
+  text-decoration: none;
+}
+
 table {
   width:100%; 
   border-collapse:collapse; 
@@ -30,9 +60,3 @@ table {
   border-spacing:0; 
   word-break:break-all;
 }
- a:link, a:visited, a:hover, a:active{
-  display:block;
-  text-decoration:none;
-  color:#252525;
-}
-
