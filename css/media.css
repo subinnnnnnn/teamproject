@@ -253,7 +253,8 @@
     margin-bottom:30px;
   }
   #container .cond_wrap .img span{
-    width:calc((100% - 20px) /2);
+    width:100%;
+    /*width:calc((100% - 20px) /2);*/
   }
   #container .spec ul.ex_list.testreport li p{
     margin-top:10px;
@@ -290,8 +291,8 @@
   .inner{
     padding:0 20px;
   }
-  .mt150, .mt150{
-    margin-top:50px;
+  .mt150{
+    margin-top:90px;
   }
   section h4{
     padding-left:30px;
@@ -357,6 +358,9 @@
   #container .sub_tite .text_box{
     padding:50px;
     text-align:center;
+  }
+  #container .sub_tite.tile05 .text_box{
+    padding:50px;
   }
 
   #container .sub_tite .text_box .round{
@@ -427,6 +431,9 @@
   .search_box .select_area select,
   .search_box .submit_box input{
     font-size:1.4rem;
+  }
+  .search_box .submit_box input{
+    text-indent:10px;
   }
   .search_box .select_area select{
     padding:16px 40px 16px 10px;
@@ -568,8 +575,9 @@
   }
   /*수입타일*/
   #container .sub_tite .text_box.import{
-    padding:50px ;
+    padding:50px;
   }
+
   /*고강도타일*/
   #container .color_chart .spec ul.ex_list{
     flex-wrap:nowrap;
