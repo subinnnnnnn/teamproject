@@ -22,6 +22,8 @@
     letter-spacing:-0.30rem;
   }
 
+
+
   /*지우*/
   /*04_01_ceo인사말*/
   #container .sub_about .text_box h3 {
@@ -29,8 +31,7 @@
   }
   #container .sub_about .text_box strong {
     font-size: 3.0rem;
-  }  
-
+  }
 }
 
 @media screen and (max-width:1200px){
@@ -57,9 +58,6 @@
   #container .sub_tite .text_box{
     padding:70px 50px 80px;
     width:100%
-  }
-  #container .sub_tite.tile05 .text_box{
-    padding:70px 50px 80px;
   }
   /*서브타이틀 메뉴*/
   #container .sub_depth .lnb_inner #lnb{
@@ -118,47 +116,6 @@
   #container .method_wrap.tile03 .method_inner li .txt{
     padding:30px 50px;
   }
-  /*제품정보*/
-  /*시험성적*/
-  #container .cond_wrap{
-    flex-wrap:wrap;
-  }
-  #container .cond_wrap .img{
-    display:flex;
-    column-gap:20px;
-  }
-  #container .txt_box{
-    width:100%;
-  }
-  /*시공납품*/
-  /*납품실적*/
-  #container .bbs table th,
-  #container .bbs table td,
-  #container .bbs table td a{
-    font-size:1.4rem;
-  }  
-  #container .bbs table tr th:nth-of-type(1),
-  #container .bbs table tr td:nth-child(1){
-    display:none;
-  }
-  #container .bbs table tr th:nth-of-type(2){
-    width:10%;
-  }
-  #container .bbs table tr th:nth-of-type(5){
-    width:14%;
-  }
-  /*고객지원*/
-  /*담당자안내*/
-  #container .customer_list > ul{
-    flex-wrap:wrap;
-    gap:50px 0;
-  }
-  #container .customer_list > ul > li:nth-child(1){
-    width:100%;
-  }
-  #container .customer_list > ul > li:nth-child(2){
-    width:100%;
-  }
 
   /*지우*/
   /*04_01_ceo인사말*/
@@ -213,6 +170,25 @@
     font-size: 2.5rem;
   }
 
+  /*04_02_회사연혁*/
+  #container .company_history .history_text li {
+    margin-bottom: 40px;
+  }
+  #container .company_history .history_text h5 {
+    font-size: 4.5rem;
+    font-weight: 500;
+    line-height: 0.8;
+  }
+  #container .company_history .history_text .text {
+    column-gap: 10px;
+    margin-bottom: 35px;
+    font-size: 2.0rem;
+  }
+
+  /*04_03_조직도*/
+  #container .org {
+    padding-top: 50px;
+  }
 
   /*04_04_생산공정*/
   /*기계설비현황*/
@@ -260,9 +236,129 @@
     font-size: 2.4rem;
   }
 
+  /*04_05_채용정보*/
+  #container .job_intro .text_box {
+    text-align: center;
+  }
+  #container .job_intro .text_box p {
+    font-size: 2.0rem;
+  }
+  #container .job_intro .text_box h3 {
+    margin: 15px 0;
+    font-size: 3.5rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+  }
+  #container .job_intro .text_box strong {
+    font-size: 3.5rem;
+    font-weight: 600;
+  }
+  #container .job_intro .text_box i {
+    font-size: 3.5rem;
+    font-weight: 500;
+    color: #003975;
+  }
+  #container .job_intro .text_box em {
+    font-size: 2.0rem;
+    color: #555;
+    word-break: keep-all;
+  }
+  #container .job_line {
+    margin-top: 80px;
+  }
+  /*인재상*/
+  #container .features_inner.people {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 46px;
+  }
+  #container .features_inner.people li {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+  #container .features_inner.people li .ico{
+    position:relative;
+    width:122px;
+    height: 102px;
+    border-radius:20px 0;
+  }
+  #container .people li:nth-child(1) .ico{
+    background-color:#003975;
+  }
+  #container .people li:nth-child(2) .ico{
+    background-color:#39B54A;
+  }
+  #container .people li:nth-child(3) .ico{
+    background-color:#003975;
+  }
+  #container .people li:nth-child(4) .ico{
+    background-color :#39B54A;
+  }
+  #container .features_inner.people li .txt{
+    width: 100%;
+    margin-top: -7px;
+    border-bottom: none;
+  }
+  /*채용절차*/
+  #container .process .people_process {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 65px;
+    overflow: hidden;
+  }
+  #container .process .people_process li {
+    width: calc((100% - 130px) / 3);
+  }
+  #container .process .people_process .icon {
+    position: relative;
+  }
+  #container .process .people_process li .icon::after {
+    content: "";
+    position: absolute;
+    right: -24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 14px;
+    height: 27px;
+    background: url(../images/sub/04_about/05_jobs/process_arrow.png)0 0 / 14px no-repeat;
+  }
+  #container .process .people_process li:last-child .icon::after {
+    display: none;
+  }
+
+  #container .process .people_process p {
+    padding: 0 10px;
+    font-size: 2.2rem;
+    text-align: center;
+    word-break: keep-all;
+  }
+
+  /*복리후생*/
+  #container .process .people_process.benefits li .icon::after {
+    display: none;
+  }
+
   /*04_06_오시는길*/
   #container .map_container.ulsan .map_infor > div:nth-child(1) {
     width: 100%;
+  }
+
+  /*06_01_개인정보취급방침*/
+  #container .title_text h2 {
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: center;
+    line-height: 1.6;
+  }
+
+  /*06_02_이메일무단수집거부*/
+  #container .email_wrap .text_box img {
+    width: 150px;
+  }
+  #container .email_wrap .text_box p {
+    padding: 60px 0;
+    font-size: 2.0rem;
+    line-height: 1.7;
   }
 
 }
@@ -376,57 +472,9 @@
   #container .sub_tite .text_box.import{
     padding:80px 50px;
   }
-  /*제품정보*/
-  /*시험성적서*/
-  #container .cond_wrap .img{
-    flex-wrap:wrap;
-    margin-bottom:30px;
-  }
-  #container .cond_wrap .img span{
-    width:100%;
-    /*width:calc((100% - 20px) /2);*/
-  }
-  #container .spec ul.ex_list.testreport li p{
-    margin-top:10px;
-  }
-  /*인증서*/
-  #container .cert_tite p{
-    padding-top:8px;
-    font-size:2.2rem;
-  }
-  #container .cert_img ul.cert_list li p, 
-  #container .cert_img ul.cert_list li p i{
-    font-size:1.8rem;
-  }
-  #container .cert_img ul.cert_list li p i{
-    display:inline;
-  }
-  #container .cert_img ul.cert_list{
-    flex-wrap:wrap;
-    justify-content:flex-start;
-    gap:60px;
-  }
-  #container .cert_img ul.cert_list li{
-    padding:30px;
-    width:calc((100% - 60px) /2);
-  }
-  #container .cert_tite p{
-    display:inline;
-  }
-  /*고객지원*/
-  /*고객문의*/
-  #container .bbs table tr th:nth-of-type(5),
-  #container .bbs table tr td:nth-of-type(5){
-    display:none;
-  }
-  #container .bbs table.customer tr th:nth-of-type(2){
-    width:70%;
-  }
-  /*고객지원*/
-  /*담당자안내*/
-  #container .customer_list > ul > li .region_box > ol > li{
-    padding:30px 40px;
-  }
+
+
+
 
   /*지우*/
   /*04_01_ceo인사말*/
@@ -481,6 +529,31 @@
     font-size: 2.2rem;
   }
 
+  /*04_02_회사연혁*/
+  #container .company_history {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  #container .company_history .wep {
+    width: 100%;
+  }
+  #container .company_history .line {
+    display: none;
+  }
+  #container .company_history .history_text {
+    margin-top: 50px;
+  }
+  #container .company_history .history_text li {
+    margin-bottom: 40px;
+  }
+  #container .company_history .history_text h5 {
+    font-size: 3.8rem;
+  }
+  #container .company_history .history_text .text {
+    margin-bottom: 35px;
+  }
+
   /*04_04_생산공정*/
   /*기계설비현황*/
   #container .machine_system .machine {
@@ -522,6 +595,32 @@
   #container .tile_system .tile_production .line {
     margin: 15px 0;
   }
+
+  /*04_05_채용정보*/
+  /*채용절차*/
+  #container .process .people_process {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    overflow: hidden;
+  }
+  #container .process .people_process li {
+    width: calc((100% - 60px) / 3);
+  }
+  #container .process .people_process li .icon {
+    width: 100%;
+    padding: 30px;
+    margin: 80px 0 20px;
+    border-radius: 20px;
+    background: #f4f4f4;
+  }
+  #container .process .people_process p {
+    padding: 0 10px;
+    font-size: 1.6rem;
+    text-align: center;
+    word-break: keep-all;
+  }
+
 
   /*04_06_오시는길*/
   #container .map_tabs {
@@ -565,7 +664,59 @@
     width: 450px;
     font-size: 1.6rem;
   }
+
+  /*06_01_개인정보취급방침*/
+  #container .title_text h2 {
+    font-size: 2.8rem;
+  }
+  /*개인정보 취급방침 순서*/
+  #container .policy_content .mb150 {
+    margin-bottom: 80px;
+  }
+  #container .policy_number h3 {
+    font-size: 2.0rem;
+  }
+  #container .policy_number p {
+    margin: 15px 0;
+    font-size: 1.8rem;
+  }
+  #container .policy_number ul li {
+    font-size: 1.8rem;
+    line-height: 1.7;
+    color: #555;
+  }
+  /*개인정보 취급방침 내용*/
+  #container .policy_content .content h5 {
+    margin-bottom: 20px;
+    font-size: 2.8rem;
+    font-weight: 500;
+    word-break: keep-all;
+  }
+  #container .policy_content .content p {
+    font-size: 1.8rem;
+  }
+  #container .policy_content .content .list {
+    margin:20px 0 30px;
+  }
+  #container .policy_content .content .list span {
+    padding-left: 25px;
+    font-size: 1.8rem;
+    line-height: 1.7;
+  }
+
+  /*06_02_이메일무단수집거부*/
+  #container .email_wrap .text_box img {
+    width: 120px;
+  }
+  #container .email_wrap .text_box p {
+    padding: 40px 0;
+    font-size: 1.6rem;
+    line-height: 1.7;
+  }
+
 }
+
+
 /*480px*/
 @media all and (max-width:480px) {
   /*공통*/
@@ -575,8 +726,8 @@
   .inner{
     padding:0 20px;
   }
-  .mt150{
-    margin-top:90px;
+  .mt150, .mt150{
+    margin-top:50px;
   }
   section h4{
     padding-left:30px;
@@ -643,13 +794,10 @@
     padding:50px;
     text-align:center;
   }
-  #container .sub_tite.tile05 .text_box{
-    padding:50px;
-  }
 
   #container .sub_tite .text_box .round{
     margin:0 auto 15px;
-    width:120px;
+    width:100px;
   }
   #container .sub_tite .text_box .round,
   #container .sub_tite .text_box strong,
@@ -660,7 +808,6 @@
   #container .sub_tite .text_box h2 i{
     font-size:2.2rem;
     letter-spacing:-0.04rem;
-    line-height:140%;
   }
   /*특장점*/
   #container .features .text_box{
@@ -717,9 +864,6 @@
   .search_box .submit_box input{
     font-size:1.4rem;
   }
-  .search_box .submit_box input{
-    text-indent:10px;
-  }
   .search_box .select_area select{
     padding:16px 40px 16px 10px;
     width:100%;  
@@ -727,8 +871,7 @@
   /*.search_box .submit_box input{
     padding:0 10px;
   }*/
-  .search_wrap p,
-  .search_wrap p i{
+  .search_wrap p{
     display:none;
     font-size:1.5rem;
   }
@@ -860,191 +1003,14 @@
   }
   /*수입타일*/
   #container .sub_tite .text_box.import{
-    padding:50px;
+    padding:50px ;
   }
-
   /*고강도타일*/
   #container .color_chart .spec ul.ex_list{
     flex-wrap:nowrap;
     margin-bottom:0;
   }
-  #container .spec ul.ex_list li img{
-    border-radius:10px;
-  }
-  /*제품정보*/
-  /*시험성적서*/
-  #container .cond_wrap .img{
-    flex-wrap:wrap;
-    column-gap:0;
-    margin-bottom:30px;
-  }
-  #container .txt_box{
-    padding:30px;
-  }
-  #container .txt_box h3{
-    font-size:2.2rem;
-  }
-  #container .txt_box p{
-    font-size:1.8rem;
-  }
-  #container .txt_box div{
-    font-size:1.5rem;
-  }
-  #container .color_chart .spec ul.ex_list.testreport{
-    flex-wrap:wrap;
-  }
-  #container .spec ul.ex_list.testreport li strong{
-    font-size:2.0rem;
-  }
-  #container .spec ul.ex_list.testreport li p, 
-  #container .spec ul.ex_list.testreport li p i{
-    font-size:1.5rem;
-  }
-  /*제품정보*/
-  /*시험성적서*/
-  #container ul.report_wrap{
-    gap:20px;
-  }
-  #container ul.report_wrap li{
-    width:calc((100% - 20px)/2);
-  }
-  #container ul.report_wrap li p, 
-  #container ul.report_wrap li p i{
-    font-size:1.5rem;
-  }
-  #container ul.report_wrap li img{
-    border-radius:10px;
-  }
-  /*인증서*/
-  #container .cert_tite p{
-    font-size:2.0rem;
-    line-height:160%;
-    word-break:keep-all;
-  }
-  #container .cert_img ul.cert_list{
-    gap:0;
-  }
-  #container .cert_img ul.cert_list li{
-    display:flex;
-    margin-bottom:30px;
-    padding:20px;
-    width:100%;
-    border-radius:10px;
-  }
-  #container .cert_img ul.cert_list li img{
-    width:60%;
-  }
-  #container .cert_img ul.cert_list li p, 
-  #container .cert_img ul.cert_list li p i{
-    font-size:1.5rem;
-    text-align:left;
-    line-height:160%;
-    word-break:break-all;
-  }
-  #container .cert_img ul.cert_list li p i{
-    display:inline;
-  }  
-  /*시공납품*/
-  /*납품실적*/
-  #container .bbs table tr th:nth-of-type(5), 
-  #container .bbs table tr th:nth-of-type(6),
-  #container .bbs table tr th:nth-of-type(7),
-  #container .bbs table tr th:nth-of-type(8),  
-  #container .bbs table td:nth-child(5),
-  #container .bbs table td:nth-child(6),
-  #container .bbs table td:nth-child(7),     
-  #container .bbs table td:nth-child(8){
-    display:none;
-  }
-  #container .bbs table tr th:nth-of-type(2){
-    width:20%;
-  }
-  #container .bbs table tr th:nth-of-type(3){
-    width:50%;
-  }
-  #container .bbs table th, 
-  #container .bbs table td, 
-  #container .bbs table td a{
-    font-size:1.3rem;
-  }
-  /*고객문의*/
-  #container .bbs table.customer tr th:nth-of-type(4),
-  #container .bbs table.customer tr th:nth-of-type(5),
-  #container .bbs table.customer tr td:nth-of-type(4),
-  #container .bbs table.customer tr td:nth-of-type(5){
-    display:none;
-  }
-  #container .bbs table.customer tr th:nth-of-type(3){
-    width:15%;
-  }
-  /*대리점문의*/
-  #container .spec.customer .table_graph table{
-    width:100%;
-  }
-  #container .spec.customer table th, 
-  #container .spec.customer table td{
-    font-size:1.2rem;
-  }
-  #container .spec.customer table thead tr th:nth-child(1),
-  #container .spec.customer table thead tr th:nth-child(2),  
-  #container .spec.customer table tbody tr td:nth-child(1),
-  #container .spec.customer table tbody tr td:nth-child(2){
-    display:none;
-  }
-  #container .spec.customer table thead tr th:nth-child(4){
-    width:50%;
-  }
-  /*고객지원*/
-  /*담당자안내*/
-  #container .customer_list > ul > li, 
-  #container .customer_list > ul > li > div > strong, 
-  #container .customer_list > ul > li > div > span{
-    font-size:1.8rem;
-  }
-  #container .customer_list > ul > li:nth-child(1) .region_box{
-    padding:20px;
-  }
-  #container .customer_list > ul > li .tel_box{
-    padding:30px 20px;
-    font-size:2.2rem;
-  }
-  #container .customer_list > ul > li:nth-child(1) .tel_box::before{
-    right:26%;
-    width:15px;
-    height:15px;
-  }
-  #container .customer_list > ul > li:nth-child(1) .tel_box::after{
-    right:8%;
-    width:60px;
-    height:60px;
-    background-size:60%;
-  }
-  #container .customer_list > ul > li .region_box > ol{
-    flex-wrap:wrap;
-  }
-  #container .customer_list > ul > li .region_box > ol > li{
-    display:flex;
-    justify-content:space-between;
-    width:100%;
-    padding:20px;
-    border-bottom:1px solid #ddd;
-    border-right:none;
-  }
-  #container .customer_list > ul > li .region_box > ol > li:last-child{
-    border-bottom:none;
-  }
-  #container .customer_list > ul > li .region_box > ol > li > p{
-    font-size:1.8rem;
-  }
-  #container .customer_list > ul > li:nth-child(2) .tel_box::after{
-    right:8%;
-    width:60px;
-    height:60px;
-    background-size:60%;
-  }
-  #container .customer_list > ul > li .region_box.tech > ol > li{
-    width:100%;
-  }
+
 
   /*지우*/
   /*04_01_ceo인사말*/
@@ -1091,6 +1057,34 @@
     font-size: 1.8rem;
   }
   
+  /*04_02_회사연혁*/
+  #container .company_history .history_text {
+    margin-top: 50px;
+  }
+  #container .company_history .history_text li {
+    display: block;
+    margin-bottom: 40px;
+  }
+  #container .company_history .history_text h5 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 0.8;
+  }
+  #container .company_history .history_text .text {
+    column-gap: 10px;
+    margin: 20px 0 25px;
+    font-size: 1.3rem;
+  }
+  #container .company_history .history_text .text strong {
+    font-size: 1.5rem;
+    line-height: 1;
+  }
+  #container .company_history .history_text .text p {
+    margin-top: 0;
+    font-size: 1.3rem;
+    line-height: 1.6;
+  }
+
   /*04_04_생산공정*/
   /*기계설비현황*/
   #container .machine_system .machine {
@@ -1134,6 +1128,85 @@
     font-size: 1.7rem;
   }
 
+  /*04_05_채용정보*/
+  #container .job_intro .text_box p {
+    padding-top: 20px;
+    font-size: 1.3rem;
+  }
+  #container .job_intro .text_box h3 {
+    margin: 15px 0;
+    font-size: 2.2rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+  }
+  #container .job_intro .text_box strong {
+    font-size: 2.2rem;
+  }
+  #container .job_intro .text_box i {
+    font-size: 2.2rem;
+  }
+  #container .job_intro .text_box em {
+    font-size: 1.5rem;
+  }
+  #container .job_line {
+    margin-top: 80px;
+  }
+  /*인재상*/
+  #container .features_inner.people {
+    margin-top: 30px;
+  }
+  #container .features_inner.people li .ico{
+    position:relative;
+    width:100%;
+    height: 102px;
+    border-radius:20px 0;
+  }
+  #container .features_inner.people li .txt{
+    padding: 40px 10px;
+  }
+  #container .people li .txt p.title {
+    margin: 5px 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+  }
+  #container .people li .txt p {
+    font-size: 1.3rem;
+  }
+  /*채용절차*/
+  #container .process .people_process {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 30px;
+    margin-top: -30px;
+    overflow: hidden;
+  }
+  #container .process .people_process li {
+    width: calc((100% - 60px) / 3);
+  }
+  #container .process .people_process li .icon {
+    width: 100%;
+    padding: 30px;
+    margin: 80px 0 20px;
+    border-radius: 10px;
+    background: #f4f4f4;
+  }
+  #container .process .people_process li .icon::after {
+    content: "";
+    position: absolute;
+    right: -25px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 21px;
+    background: url(../images/sub/04_about/05_jobs/process_arrow.png)0 0 / 12px no-repeat;
+  }
+  #container .process .people_process p {
+    padding: 0 10px;
+    font-size: 1.4rem;
+    text-align: center;
+    word-break: keep-all;
+  }
+
   /*04_06_오시는길*/
   #container .map_tabs {
     margin: 20px 0;
@@ -1173,7 +1246,57 @@
   #container .map_container .map_infor p {
     font-size: 1.3rem;
   }
+
+  /*06_01_개인정보취급방침*/
+  #container .title_text h2 {
+    font-size: 1.8rem;
+  }
+  /*개인정보 취급방침 순서*/
+  #container .policy_content .mb150 {
+    margin-bottom: 50px;
+  }
+  #container .policy_number h3 {
+    font-size: 1.5rem;
+  }
+  #container .policy_number p {
+    margin: 15px 0;
+    font-size: 1.3rem;
+  }
+  #container .policy_number ul li {
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+  /*개인정보 취급방침 내용*/
+  #container .policy_content .content h5 {
+    margin-bottom: 20px;
+    font-size: 2.0rem;
+    font-weight: 500;
+    word-break: keep-all;
+  }
+  #container .policy_content .content p {
+    font-size: 1.4rem;
+  }
+  #container .policy_content .content .list {
+    margin:20px 0 30px;
+  }
+  #container .policy_content .content .list span {
+    padding-left: 25px;
+    font-size: 1.4rem;
+    line-height: 1.7;
+  }
+
+  /*06_02_이메일무단수집거부*/
+  #container .email_wrap .text_box img {
+    width: 100px;
+  }
+  #container .email_wrap .text_box p {
+    padding: 40px 0;
+    font-size: 1.3rem;
+    line-height: 1.7;
+  }
+
 }
+
 
 @media all and (max-width:320px){
   /*공통*/
@@ -1235,7 +1358,8 @@
   #container .gallery_wrap ul.gallery {
     gap:30px 10px;
   }
-  
+
+
   /*지우*/
   /*04_01_ceo인사말*/
 
@@ -1268,6 +1392,83 @@
   #container .tile_system .tile_production .line {
     margin: 10px 0;
   }
+
+
+  /*04_05_채용정보*/
+  #container .job_intro .text_box p {
+    padding-top: 20px;
+    font-size: 1.3rem;
+  }
+  #container .job_intro .text_box h3 {
+    margin: 15px 0;
+    font-size: 1.8rem;
+    font-weight: 500;
+    letter-spacing: -2px;
+  }
+  #container .job_intro .text_box strong {
+    font-size: 1.8rem;
+  }
+  #container .job_intro .text_box i {
+    font-size: 1.8rem;
+  }
+  #container .job_intro .text_box em {
+    font-size: 1.3rem;
+  }
+  #container .job_line {
+    margin-top: 50px;
+  }
+  /*인재상*/
+  #container .features_inner.people {
+    margin-top: 30px;
+  }
+  #container .features_inner.people li .ico{
+    position:relative;
+    width:100%;
+    height: 102px;
+    border-radius:20px 0;
+  }
+  #container .features_inner.people li .txt{
+    padding: 40px 20px;
+  }
+  #container .people li .txt p.title {
+    margin: 5px 0;
+    font-size: 1.6rem;
+    font-weight: 500;
+  }
+
+  /*채용절차*/
+  #container .process .people_process {
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 15px;
+    margin-top: -30px;
+    overflow: hidden;
+  }
+  #container .process .people_process li {
+    width: calc((100% - 30px) / 3);
+  }
+  #container .process .people_process li .icon {
+    width: 100%;
+    padding: 22px;
+    margin: 80px 0 20px;
+    border-radius: 10px;
+    background: #f4f4f4;
+  }
+  #container .process .people_process li .icon::after {
+    content: "";
+    position: absolute;
+    right: -20px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 15px;
+    height: 15px;
+    background: url(../images/sub/04_about/05_jobs/process_arrow.png)0 0 / 7px no-repeat;
+  }
+  #container .process .people_process p {
+    padding: 0 3px;
+    font-size: 1.3rem;
+  }
+
 
   /*04_06_오시는길*/
   #container .map_tabs {
@@ -1309,5 +1510,6 @@
   #container .map_container .map_infor p {
     font-size: 1.3rem;
   }
+
 
 }

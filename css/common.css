@@ -126,7 +126,7 @@
   height: 90px;
   line-height: 90px;
   font-weight: 500;
-  font-size: 18px;
+  font-size: 1.8rem;
 }
 
 #header .global a {
@@ -170,7 +170,7 @@
 #header .sub_menu a {
   display: block;
   padding: 12px 0;
-  font-size: 16px;
+  font-size: 1.6rem;
 }
 
 #header .header_bg {
@@ -219,16 +219,16 @@
 
 #footer address span {
   margin-right: 35px;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #footer address span:nth-child(4), #footer address span:nth-child(5), #footer address span:nth-child(6), #footer address span:nth-child(7) {
-  margin-right: 13px;
+  margin-right: 15px;
 }
 
 #footer address .copy {
   margin-top: 35px;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #footer .fnb {
@@ -239,7 +239,7 @@
 
 #footer .fnb a {
   display: block;
-  font-size: 15px;
+  font-size: 1.5rem;
 }
 
 #footer .fot_sns {
@@ -271,6 +271,165 @@
   color:#fff;
 }
 
+/*미디아 영역*/
+@media (max-width: 1340px) and (min-width: 1200px) {
+  .inner {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  /*푸터영역*/
+  #footer {
+    padding: 50px 0;
+  }
+  
+  #footer .footer {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  #footer address {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+
+  #footer address .address_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    width: 804px;    
+  }
+
+  #footer address span {
+    margin-right: 35px;
+    font-size: 1.5rem;
+  }
+
+  #footer address span:nth-child(4), #footer address span:nth-child(5), #footer address span:nth-child(6), #footer address span:nth-child(7) {
+    margin-right: 15px;
+  }
+
+  #footer address .copy {
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+
+  #footer .fnb {
+    display: flex;
+    column-gap: 22px;
+    width: 500px;
+  }
+
+  #footer .fnb a {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  #footer .fot_sns {
+    position: absolute;
+    right: 35px;
+    top: 0;
+    display: flex;
+    column-gap: 15px;
+  }
+
+  #footer .fot_sns a {
+    display: block;
+    width: 40px;
+  }
+
+  #footer .fot_sns a img {
+    display: block;
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:1200px){
+  .inner {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+
+  #header .gnb>li>a {
+    display: block;
+    padding: 0 15px;
+    font-size: 1.8rem;
+  }
+
+/*푸터영역*/
+  #footer {
+    padding: 50px 0;
+  }
+  
+  #footer .footer {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+
+  #footer address {
+    margin-left: 0;
+    margin-top: 35px;
+  }
+
+  #footer address .address_wrap {
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    width: 804px;    
+  }
+
+  #footer address span {
+    margin-right: 35px;
+    font-size: 1.5rem;
+  }
+
+  #footer address span:nth-child(4), #footer address span:nth-child(5), #footer address span:nth-child(6), #footer address span:nth-child(7) {
+    margin-right: 15px;
+  }
+
+  #footer address .copy {
+    margin: 20px 0;
+    font-size: 1.5rem;
+  }
+
+  #footer .fnb {
+    display: flex;
+    column-gap: 22px;
+    width: 500px;
+  }
+
+  #footer .fnb a {
+    display: block;
+    font-size: 1.5rem;
+  }
+
+  #footer .fot_sns {
+    position: absolute;
+    right: 35px;
+    top: 0;
+    display: flex;
+    column-gap: 15px;
+  }
+
+  #footer .fot_sns a {
+    display: block;
+    width: 40px;
+  }
+
+  #footer .fot_sns a img {
+    display: block;
+    width: 100%;
+  }
+  
+
+
+
+}
+
+
+
 /*반응형 테블릿 영역*/
 @media screen and (max-width:834px) {
   /*헤더 영역*/
@@ -293,7 +452,7 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    height: 60px;
+    height: 90px;
   }
 
   #header .logo {
@@ -341,6 +500,7 @@
     transition: all 0.2s linear;
   }
 
+  
   #header .media_menu.on span:nth-of-type(1) {
     position: relative;
     left: 50%;
@@ -384,7 +544,7 @@
   #header .media_menu .media_gnb>li>a {
     display: block;
     padding: 22px 30px;
-    font-size: 22px;
+    font-size: 2.2rem;
     font-weight: 500;
   }
 
@@ -399,7 +559,7 @@
   #header .media_menu .media_submenu a  {
     display: block;
     padding: 15px 30px;
-    font-size: 18px;
+    font-size: 1.8rem;
   }
 
   #header .media_menu .media_submenu_bg {
@@ -413,7 +573,6 @@
 
   /*푸터영역*/
   #footer {
-    max-width: 834px;
     padding: 50px 0;
   }
 
@@ -425,11 +584,6 @@
     position: relative;
     display: block;
     width: 100%;
-    margin: 0 35px;
-  }
-
-  #footer img {
-    display: block;
   }
 
   #footer address {
@@ -441,12 +595,12 @@
     display: flex;
     flex-wrap: wrap;
     row-gap: 15px;
-    width: 650px;
+    width: 100%;
   }
 
   #footer address span {
-    margin-right: 35px;
-    font-size: 12px;
+    margin-right: 15px;
+    font-size: 1.2rem;
   }
 
   #footer address span:nth-child(4), #footer address span:nth-child(5), #footer address span:nth-child(6), #footer address span:nth-child(7) {
@@ -455,23 +609,22 @@
 
   #footer address .copy {
     margin: 30px 0;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   #footer .fnb {
     display: flex;
     column-gap: 22px;
-    width: 500px;
+    width: 100%;
   }
 
   #footer .fnb a {
     display: block;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   #footer .fot_sns {
     position: absolute;
-    right: 35px;
     top: 0;
     display: flex;
     column-gap: 15px;
@@ -480,11 +633,6 @@
   #footer .fot_sns a {
     display: block;
     width: 34px;
-  }
-
-  #footer .fot_sns a img {
-    display: block;
-    width: 100%;
   }
 
 }
@@ -572,7 +720,6 @@
   
   /*푸터영역*/
   #footer {
-    max-width: 480px;
     padding: 30px 0;
     overflow: hidden;
   }
@@ -603,18 +750,17 @@
   #footer address .address_wrap {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 8px;
-    width: 395px
+    width: 100%;
   }
 
   #footer address span {
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   #footer address .copy {
     margin: 25px 0;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   #footer .fnb {
@@ -625,7 +771,7 @@
 
   #footer .fnb a {
     display: block;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   #footer .fot_sns {
@@ -767,7 +913,7 @@
   #header .media_menu .media_gnb>li>a {
     display: block;
     padding: 10px 20px;
-    font-size: 17px;
+    font-size: 1.7rem;
     font-weight: 500;
   }
 
@@ -782,7 +928,7 @@
   #header .media_menu .media_submenu a  {
     display: block;
     padding: 10px 20px;
-    font-size: 14px;
+    font-size: 1.4rem;
   }
 
   #header .media_menu .media_submenu_bg {
@@ -796,7 +942,6 @@
   
   /*푸터영역*/
   #footer {
-    max-width: 390px;
     padding: 30px 0;
     overflow: hidden;
   }
@@ -811,10 +956,6 @@
     width: 100%;
   }
 
-  #footer img {
-    display: block;
-  }
-
   #footer .fot_logo img {
     width: 112px;
   }
@@ -827,37 +968,27 @@
   #footer address .address_wrap {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 8px;
-    width: 395px
+    width: 100%;
   }
 
   #footer address span {
     margin-right: 15px;
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 
   #footer address .copy {
-    margin: 25px 0;
-    font-size: 12px;
+    margin: 15px 0;
+    font-size: 1.2rem;
   }
 
   #footer .fnb {
     display: flex;
     column-gap: 22px;
-    width: 500px;
+    width: 100%;
   }
 
   #footer .fnb a {
-    display: block;
-    font-size: 12px;
-  }
-
-  #footer .fot_sns {
-    position: absolute;
-    right: 20px;
-    top: 0;
-    display: flex;
-    column-gap: 12px;
+    font-size: 1.2rem;
   }
 
   #footer .fot_sns a {
@@ -865,9 +996,5 @@
     width: 28px;
   }
 
-  #footer .fot_sns a img {
-    display: block;
-    width: 100%;
-  }
 }
 
