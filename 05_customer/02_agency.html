@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="format-detection" content="telephone=no">
+  <meta name="format-detection" content="date=no">
+  <meta name="format-detection" content="address=no">
+  <meta name="format-detection" content="email=no">  
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/common.css">
+  <link rel="stylesheet" href="../css/sub.css">
+  <link rel="stylesheet" href="../css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="../css/aos.css">
+  <link rel="stylesheet" href="../css/media.css">   
+  <script src="../js/jquery-3.7.1.min.js"></script>
+  <script src="../js/swiper-bundle.min.js"></script>
+  <script src="../js/aos.js"></script>
+  <script src="../js/sub.js"></script>
+  <script src="../js/common.js"></script>
+  <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
+  <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">  
+  <title>고객지원-대리점</title>
+</head>
+<body>
+<!--wrap-->
+<div id="wrap">
+  <!--header영역-->
+  <header id="header">
+    <div class="inner header">
+      <h1 class="logo"><a href="../index.html"><img src="../images/main/logo.png" alt="한국요업"></a></h1>
+      <nav>
+        <ul class="gnb">
+          <li>
+            <a href="#">제품소개</a>
+            <ul class="sub_menu">
+              <li><a href="../01_products/01_01tile.html">외장타일</a></li>
+              <li><a href="../01_products/02_01tile.html">수입타일</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">제품정보</a>
+            <ul class="sub_menu">
+              <li><a href="../02_productinfo/01_testreport.html">시험성적서</a></li>
+              <li><a href="../02_productinfo/02_certificate.html">인증서</a></li>
+              <li><a href="../02_productinfo/03_colorsize.html">제품규격</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">시공납품</a>
+            <ul class="sub_menu">
+              <li><a href="../03_construction/01_productcus.html">납품실적</a></li>
+              <li><a href="../03_construction/02_productgallery.html">시공사진</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="sub_menu">
+              <li><a href="../04_about/01_ceo.html">CEO인사말</a></li>
+              <li><a href="../04_about/02_history.html">회사연혁</a></li>
+              <li><a href="../04_about/03_organization.html">조직도</a></li>
+              <li><a href="../04_about/04_production.html">생산공정</a></li>
+              <li><a href="../04_about/05_jobs.html">채용정보</a></li>
+              <li><a href="../04_about/06_map.html">오시는길</a></li>
+              <li><a href="../04_about/07_introgallery.html">회사전경</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">고객지원</a>
+            <ul class="sub_menu">
+              <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
+              <li><a href="../05_customer/02_agency.html">대리점</a></li>
+              <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
+              <li><a href="#">면적계산기</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div class="global"><a href="#" target="_blank"><img src="../images/main/icon_global.png" alt="글로벌 아이콘"></a></div>
+      <div class="media_menu">
+        <span></span>
+        <span></span>
+        <span></span>
+        <ul class="media_gnb">
+          <li>
+            <a href="#">제품소개</a>
+            <ul class="media_submenu">
+              <li><a href="../01_products/01_01tile.html">외장타일</a></li>
+              <li><a href="../01_products/02_01tile.html">수입타일</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">제품정보</a>
+            <ul class="media_submenu">
+              <li><a href="../02_productinfo/01_testreport.html">시험성적서</a></li>
+              <li><a href="../02_productinfo/02_certificate.html">인증서</a></li>
+              <li><a href="../02_productinfo/03_colorsize.html">제품규격</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">시공납품</a>
+            <ul class="media_submenu">
+              <li><a href="../03_construction/01_productcus.html">납품실적</a></li>
+              <li><a href="../03_construction/02_productgallery.html">시공사진</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">회사소개</a>
+            <ul class="media_submenu">
+              <li><a href="../04_about/01_ceo.html">CEO인사말</a></li>
+              <li><a href="../04_about/02_history.html">회사연혁</a></li>
+              <li><a href="../04_about/03_organization.html">조직도</a></li>
+              <li><a href="../04_about/04_production.html">생산공정</a></li>
+              <li><a href="../04_about/05_jobs.html">채용정보</a></li>
+              <li><a href="../04_about/06_map.html">오시는길</a></li>
+              <li><a href="../04_about/07_introgallery.html">회사전경</a></li>
+            </ul>
+          </li>
+          <li>
+            <a href="#">대리점</a>
+            <ul class="media_submenu">
+              <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
+              <li><a href="../05_customer/02_agency.html">대리점</a></li>
+              <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
+              <li><a href="#">면적계산기</a></li>
+            </ul>
+          </li>
+        </ul>
+        <div class="media_submenu_bg"></div>
+      </div>
+    </div>
+    <div class="header_bg"></div>
+  </header>
+  <!--//헤더영역끝-->
+
+  <!--container-->
+  <main id="container">
+    <!--서브비주얼-->
+    <div class="sub_visual customer_01">
+      <div class="img"></div>
+      <div class="tite">
+        <h2>대리점</h2>
+        <p>최고의 제품, 최상의 품질과 차별화된 서비스로 고객과 함께 건설문화 발전에 기여하는 기업</p>
+      </div>
+    </div>
+    <!--서브메뉴-->
+    <div class="sub_depth inner">
+      <div class="lnb_inner depth_menu">
+        <ul id="lnb">
+          <li><a href="#">고객지원</a>
+            <ul class="depth2">
+              <li><a href="../01_products/01_01tile.html">제품소개</a></li>
+              <li><a href="../02_productinfo/01_testreport.html">제품정보</a></li>
+              <li><a href="../03_construction/01_productcus.html">시공납품</a></li>
+              <li><a href="../04_about/01_ceo.html">회사소개</a></li>
+              <li><a href="../05_customer/01_inquiry.html">고객지원</a></li>
+            </ul>
+          </li>
+          <li><a href="#">대리점</a>
+            <ul class="depth2">
+              <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
+              <li><a href="../05_customer/02_agency.html">대리점</a></li>
+              <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
+              <li><a href="../05_customer/04_calculator.html">면적계산기</a></li>      
+            </ul>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!--//서브메뉴-->
+    <div class="cert_tite inner mt150">
+      <p>고객 감동을 위하여 언제나 최선을 다하는</p>
+      <p>한국요업 주식회사 입니다.</p>
+    </div>
+    <!--서울지역-->
+    <section class="spec customer mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4>서울지역</h4>
+      <div class="table_graph tile02">
+        <table>
+          <caption>거래처에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>NO.</th>
+              <th>지역</th>
+              <th>상호</th>
+              <th>주소</th>
+              <th>전화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>서울</td>
+              <td>㈜아벨통상</td>
+              <td>서울특별시 구로구 오리로  1356(궁동상가)</td>
+              <td>02-2684-3386</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>서울</td>
+              <td>㈜금산타일</td>
+              <td>서울특별시 강남구 학동로24길 10 202호</td>
+              <td>02-422-0759</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>서울</td>
+              <td>동방세라믹</td>
+              <td>서울특별시 중구 을지로3가 95-6</td>
+              <td> 02-2265-7061</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+    <!--경기도-->
+    <section class="spec customer mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4>경기도</h4>
+      <div class="table_graph tile02">
+        <table>
+          <caption>거래처에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>NO.</th>
+              <th>지역</th>
+              <th>상호</th>
+              <th>주소</th>
+              <th>전화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>경기</td>
+              <td>㈜유송타일앤바스&nbsp;</td>
+              <td>경기도 고양시 덕양구 서오릉로 718</td>
+              <td>031-966-2391</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>경기</td>
+              <td>행복세라믹</td>
+              <td>경기도 하남시 감초로185번길 27</td>
+              <td>010-6768-3146</td>
+            </tr>
+              <td>3</td>
+              <td>의정부</td>
+              <td>호수&amp;로얄</td>
+              <td>경기도 의정부시 호원동 326-37</td>
+              <td>031-877-5612</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>포천</td>
+              <td>DS대성하우징</td>
+              <td>경기도 포천시 소흘읍 호국로 135</td>
+              <td>031-543-4488</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>남양주</td>
+              <td>주식회사 영화세라믹</td>
+              <td>경기도 남양주시 진접읍 내곡리 533-64</td>
+              <td>031-527-2496</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>김포</td>
+              <td>주식회사 호반세라믹</td>
+              <td>경기도 김포시 고촌읍 인향로 244번길 15-14</td>
+              <td>031-997-5469</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>안산</td>
+              <td>동신세라믹</td>
+              <td>경기도 안산시 정재로 35</td>
+              <td>031-502-1382</td>
+            </tr>
+            <tr>
+              <td>8</td>
+              <td>성남</td>
+              <td>㈜서울타일</td>
+              <td>경기도 성남시 중원구 산성대로 310</td>
+              <td>031-748-1212</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>수원</td>
+              <td>㈜역전타일</td>
+              <td>경기도 수원시 권선구 수원천로 57</td>
+              <td>031-232-0400</td>
+            </tr>
+            <tr>
+              <td>10</td>
+              <td>수원</td>
+              <td>중앙타일</td>
+              <td>경기도 수원시 팔달구 인계로 59</td>
+              <td>031-234-1601</td>
+            </tr>
+            <tr>
+              <td>11</td>
+              <td>화성</td>
+              <td>신흥안세라믹</td>
+              <td>경기도 화성시 남양시장로25번길 58-40</td>
+              <td>031-355-6717</td>
+            </tr>
+            <tr>
+              <td>12</td>
+              <td>평택</td>
+              <td>주식회사 코아스 홈센터</td>
+              <td>경기도 평택시 신평로 95-13(유천동)</td>
+              <td>031-656-0812</td>
+            </tr>
+            <tr>
+              <td>13</td>
+              <td>오산</td>
+              <td>㈜씨디타일</td>
+              <td>경기도 오산시 오산로 359</td>
+              <td>031-372-2929</td>
+            </tr>
+            <tr>
+              <td>14</td>
+              <td>여주</td>
+              <td>현대타일</td>
+              <td>경기도 여주시 여주남로 581</td>
+              <td>031-885-5195</td>
+            </tr>
+          </tbody>
+        </table> 
+      </div>         
+    </section>
+    <!--인천-->
+    <section class="spec customer mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4>인천</h4>
+      <div class="table_graph tile02">
+        <table>
+          <caption>거래처에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>NO.</th>
+              <th>지역</th>
+              <th>상호</th>
+              <th>주소</th>
+              <th>전화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>인천</td>
+              <td>코토세라믹 주식회사</td>
+              <td>인천광역시 서구 정서진6로 15(오류동)</td>
+              <td>032-584-0770</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>인천</td>
+              <td>주식회사 효승세라믹스</td>
+              <td>인천광역시 서구 거첨로 295(오류동)</td>
+              <td>032-564-2159</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+    <!--경상도-->
+    <section class="spec customer mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4>경상도</h4>
+      <div class="table_graph tile02">
+        <table>
+          <caption>거래처에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>NO.</th>
+              <th>지역</th>
+              <th>상호</th>
+              <th>주소</th>
+              <th>전화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>대구(총판점)</td>
+              <td>㈜홈센타&nbsp;</td>
+              <td>대구광역시 북구 노원로 139-6</td>
+              <td>053-352-4145</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>경남(총판점)</td>
+              <td>㈜디아이통상</td>
+              <td>경상남도 김해시 금관대로1073번길 25-1(풍유동)</td>
+              <td>055-326-7753</td>
+            </tr>
+              <td>3</td>
+              <td>대구</td>
+              <td>㈜제이씨세라믹</td>
+              <td>대구광역시 북구 검단북로11길 59</td>
+              <td>053-382-1145</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>울산</td>
+              <td>㈜좋은욕실</td>
+              <td>울산광역시 남구 돋질로 329</td>
+              <td>052-227-6084</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>부산</td>
+              <td>㈜티와이세라믹</td>
+              <td>부산광역시 동래구 금정마을로 109</td>
+              <td>051-554-0264</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>부산</td>
+              <td>흥진세라믹</td>
+              <td>부산광역시 강서구 상덕로97번길 35</td>
+              <td>051-941-0717</td>
+            </tr>
+            <tr>
+              <td>7</td>
+              <td>김해</td>
+              <td>로만세라믹 주식회사</td>
+              <td>경상남도 김해시 분성로627번길 15</td>
+              <td>055-322-9312</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+    <!--강원도-->
+    <section class="spec customer mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4>강원도</h4>
+      <div class="table_graph tile02">
+        <table>
+          <caption>거래처에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>NO.</th>
+              <th>지역</th>
+              <th>상호</th>
+              <th>주소</th>
+              <th>전화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>원주</td>
+              <td>시스템타일</td>
+              <td>강원도 원주시 판부면 남원로 274&nbsp;</td>
+              <td>033-763-7062</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>         
+    </section>
+
+    <!--충정도-->
+    <section class="spec customer mt150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4>강원도</h4>
+      <div class="table_graph tile02">
+        <table>
+          <caption>거래처에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>NO.</th>
+              <th>지역</th>
+              <th>상호</th>
+              <th>주소</th>
+              <th>전화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>아산</td>
+              <td>종합타일</td>
+              <td>충청남도 아산시 배방읍 북수동로 9</td>
+              <td>041-548-3395</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>천안</td>
+              <td>동서타일유통</td>
+              <td>충청남도 천안시 동남구 목천읍 천정2길 4</td>
+              <td>041-577-8959</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>천안</td>
+              <td>현대타일</td>
+              <td>충청남도 천안시 미라4길 20</td>
+              <td>041-572-2394</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>청주</td>
+              <td>충북타일상사</td>
+              <td>충청북도 청주시 흥덕구 사운로 153</td>
+              <td>043-275-4149</td>
+            </tr>       
+          </tbody>
+        </table>
+      </div>         
+    </section>
+
+    <!--전라도-->
+     <section class="spec customer mt150 mb150 inner" data-aos="fade-up" data-aos-duration="1500">
+      <h4>전라도</h4>
+      <div class="table_graph tile02">
+        <table>
+          <caption>거래처에 대한 표</caption>
+          <thead>
+            <tr>
+              <th>NO.</th>
+              <th>지역</th>
+              <th>상호</th>
+              <th>주소</th>
+              <th>전화</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>1</td>
+              <td>광주</td>
+              <td>㈜대성위생도기</td>
+              <td>광주광역시 북구 하남대로 553</td>
+              <td>062-515-9054</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td>광주</td>
+              <td>광남타일위생도기 주식회사</td>
+              <td>광주광역시 북구 우치로 15</td>
+              <td>062-525-9995</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td>광주</td>
+              <td>주식회사 대보타일</td>
+              <td>광주광역시 서구 풍서우로 378</td>
+              <td>062-384-5770</td>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td>순천</td>
+              <td>광명타일</td>
+              <td>전라남도 순천시 서면 백강로 577</td>
+              <td>061-754-8904</td>
+            </tr>
+            <tr>
+              <td>5</td>
+              <td>여수</td>
+              <td>대양타일</td>
+              <td>전라남도 여수시 만성로 3</td>
+              <td>061-655-0482</td>
+            </tr>
+            <tr>
+              <td>6</td>
+              <td>전주</td>
+              <td>(유)유영타일상사</td>
+              <td>전라북도 전주시 덕진구 팔달로 297-1</td>
+              <td>063-273-4530</td>
+            </tr>         
+          </tbody>
+        </table>
+      </div>         
+    </section>   
+
+    <!--위로가기-->
+    <div class="btn_top">
+      <a href="#wrap">Top</a>
+    </div>     
+  </main>
+  <!--//container-->
+  <!--푸터영역-->
+  <footer id="footer">
+    <div class="inner footer">
+      <div class="fot_logo"><img src="../images/main/logo.png" alt="한국요업"></div>
+      <address>
+        <div class="address_wrap">
+          <span>한국요업주식회사</span>
+          <span>사업자등록번호 617-81-66610</span>
+          <span>689-892 울산광역시 울주군 온산읍 학남리 60-5</span>
+          <span>TEL. 052-237-6700</span>
+          <span>FAX. 052-237-6701</span>
+          <span>MAIL. master@kcmkr.com</span>
+          <span>개인정보관리책임자 정지훈</span>
+        </div>
+        <div class="copy">Copyright (c) 2013 KOREA CERAMICS CO., LTD. All Rights Reserved</div>
+      </address>
+      <ul class="fnb">
+        <li><a href="../06_policy/01_policy.html">개인정보취급방침</a></li>
+        <li><a href="../06_policy/02_email.html">이메일무단수집거부</a></li>
+      </ul>
+      <div class="fot_sns">
+        <a href="https://blog.naver.com/korea_ceramics" target="_blank"><img src="../images/main/icon_blog.png" alt="블로그바로가기"></a>
+        <a href="https://www.instagram.com/koreaceramics_official/" target="_blank"><img src="../images/main/icon_instar.png" alt="인스타바로가기"></a>
+      </div>
+    </div>
+  </footer>
+  <!--//푸터영역끝-->
+</div>
+<!--//wrap-->
+</body>
+</html>
