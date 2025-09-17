@@ -20,7 +20,7 @@
   <script src="../js/common.js"></script>
   <link rel="shortcut icon" href="../images/common/favicon.ico" type="image/x-icon">
   <link rel="icon" href="../images/common/favicon.ico" type="image/x-icon">  
-  <title>고객지원-담당자안내</title>
+  <title>고객지원-글쓰기</title>
 </head>
 <body>
 <!--wrap-->
@@ -117,7 +117,7 @@
             </ul>
           </li>
           <li>
-            <a href="#">담당자안내</a>
+            <a href="#">고객지원</a>
             <ul class="media_submenu">
               <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
               <li><a href="../05_customer/02_agency.html">대리점</a></li>
@@ -136,10 +136,10 @@
   <!--container-->
   <main id="container">
     <!--서브비주얼-->
-    <div class="sub_visual customer_02">
+    <div class="sub_visual customer">
       <div class="img"></div>
       <div class="tite">
-        <h2>담당자안내</h2>
+        <h2>고객문의</h2>
         <p>최고의 제품, 최상의 품질과 차별화된 서비스로 고객과 함께 건설문화 발전에 기여하는 기업</p>
       </div>
     </div>
@@ -156,7 +156,7 @@
               <li><a href="../05_customer/01_inquiry.html">고객지원</a></li>
             </ul>
           </li>
-          <li><a href="#">담당자안내</a>
+          <li><a href="#">고객문의</a>
             <ul class="depth2">
               <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
               <li><a href="../05_customer/02_agency.html">대리점</a></li>
@@ -168,70 +168,97 @@
       </div>
     </div>
     <!--//서브메뉴-->
-    <!--제품문의-->
-    <section class=" inner mt150 mb150">
-      <h4>제품문의</h4>
-      <div class="customer_list">
-        <ul>
-          <li>
-            <div class="region_box">
-              <strong>서울, 경기, 충청권</strong>
-              <span>장용호</span>
-            </div>
-            <div class="tel_box">02-542-6701</div>
-          </li>
-          <li>
-            <div class="region_box">
-              <ol>
-                <li>
-                  <p>대구, 경북권</p>
-                  <p class="name">박철우</p>
-                </li>
-                <li>
-                  <p>부산, 경남권</p>
-                  <p class="name">고택수</p>
-                </li>
-                <li>
-                  <p>전라권</p>
-                  <p class="name">조영민</p>
-                </li>
-              </ol>
-            </div>
-            <div class="tel_box">02-542-6701</div>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!--고객기술상담-->
-    <section class=" inner mt150 mb150" data-aos="fade-up" data-aos-duration="1500">
-      <h4>고객기술상담</h4>
-      <div class="customer_list">
-        <ul>
-          <li>
-            <div class="region_box tech">
-              <strong>제품구입, 불만처리</strong>
-              <span>장철준</span>
-            </div>
-            <div class="tel_box tech">052-234-6700</div>
-          </li>
-          <li>
-            <div class="region_box tech">
-              <ol>
-                <li>
-                  <p>품질, 성적서관리</p>
-                  <p class="name">이현주</p>
-                </li>
-                <li>
-                  <p>카다로그, 홍보물</p>
-                  <p class="name">이현주</p>
-                </li>
-              </ol>
-            </div>
-            <div class="tel_box">02-542-6701</div>
-          </li>
-        </ul>
-      </div>
-    </section>
+    <div class="write_wrap inner mt150 mb150">
+      <form>
+        <!--table-->
+        <table>
+          <caption>고객문의</caption>
+          <tbody>
+             <tr>
+              <th><label for="wr_subject">제목</label></th>
+              <td><input type="text" maxlength="55" name="wr_subject"></td>
+            </tr>
+            <tr>
+              <th>옵션</th>
+              <td>
+                <input type="checkbox" value="secret" name="secret">
+                <span class="w_title">비밀글</span>
+                <input class="ed" type="password" maxlength="20" name="wr_password">
+              </td>
+            </tr>
+            <tr>
+              <th><label for="wr_name">이름</label></th>
+              <td><input type="text" name="wr_name" value="" id="wr_name" maxlength="20"></td>
+            </tr>
+            <tr>
+              <th><label for="wr_email">이메일</label></th>
+              <td>
+                <label for="wr_email_1" class="hidden">이메일 아이디</label>
+                <input type="text" name="wr_email_1" id="wr_email_1" class="email">@
+                <label for="wr_email_3" class="hidden">이메일 도메인</label>
+                <select name="wr_email_3" id="wr_email_3">
+                <option value="">선택</option>
+                <option value="naver.com">naver.com</option>
+                <option value="gmail.com">gmail.com</option>
+                <option value="hanmail.net">hanmail.net</option>
+                <option value="nate.com">nate.com</option>
+                <option value="직접입력">직접입력</option>
+                </select>
+              </td>
+            </tr>
+            <!--에디터이미지캡쳐-->
+            <tr>
+              <th>내용</th>
+              <td class="wr_content"><img src="../images/sub/05_customer/bbs_img.jpg" alt="에디터이미지"></td>
+            </tr>
+            <tr>
+              <th><label for="wr_link1">링크 #1</label></th>
+              <td><input type="text" name="wr_link1" value="" id="wr_link1"></td>
+            </tr>
+            <tr>
+              <th><label for="wr_link2">링크 #2</label></th>
+              <td><input type="text" name="wr_link2" value="" id="wr_link2"></td>
+            </tr>
+            <tr>
+              <th>파일 #1</th>
+              <td class="file"><input type="file" name="bf_file[]" title="파일첨부1:용량 31,457,280 바이트 이하만 업로드 가능"></td>
+            </tr>
+            <tr>
+              <th>파일 #2</th>
+              <td class="file"><input type="file" name="bf_file[]" title="파일첨부2:용량 31,457,280 바이트 이하만 업로드 가능"></td>
+            </tr>
+            <tr>
+              <th>파일 #3</th>
+              <td class="file"><input type="file" name="bf_file[]" title="파일첨부3:용량 31,457,280 바이트 이하만 업로드 가능"></td>
+            </tr>
+            <tr>
+              <th>파일 #4</th>
+              <td class="file"><input type="file" name="bf_file[]" title="파일첨부4:용량 31,457,280 바이트 이하만 업로드 가능"></td>
+            </tr>
+          </tbody>
+        </table>
+        <!--//table-->
+        <!--개인정보수집동의-->
+        <div class="privacy_comment">
+          <div class="privacy_agree">
+            <strong>개인정보 수집·이용 동의</strong>
+            <p>
+            고객님께서 문의하신 내용을 통해서 상담을 진행하고자 아래와 같은 개인정보를 수집 이용합니다. <br>
+            ① 개인정보의 수집·이용 목적 : 홈페이지 고객 상담 및 고객문의<br>
+            ② 수집하는 개인정보의 항목 : 이름,비밀번호,이메일<br>
+            ③ 개인정보의 보유·이용 기간 : 이용자의 개인정보 수집 및 이용 동의 철회 및 개인정보 삭제·정정의 요청 전 또는 DB 삭제시까지<br>
+            </p>
+          </div>
+          <input type="checkbox" class="checkbox" name="chk_agree" id="chk_agree" value="Y" title="개인정보수집 및 이용동의">
+          <label for="chk_agree"> 개인정보 수집 및 이용에 동의합니다.</label>
+          <!--버튼-->
+          <div class="button_wrap">
+            <button type="button" class="cancel_btn mr10" onclick="history.back()">취소</button>          
+            <button type="button" class="list_btn" onclick="location.href='../05_customer/01_inquiry.html'" >확인</button>
+          </div>          
+        </div>
+      </form>
+    </div>
     <!--위로가기-->
     <div class="btn_top">
       <a href="#wrap">Top</a>
@@ -242,7 +269,7 @@
   <footer id="footer">
     <div class="inner footer">
       <div class="fot_logo"><img src="../images/main/logo.png" alt="한국요업"></div>
-      <address>
+      <address>s
         <div class="address_wrap">
           <span>한국요업주식회사</span>
           <span>사업자등록번호 617-81-66610</span>
