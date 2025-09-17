@@ -412,6 +412,7 @@ section h4::before{
   appearance:none;
   cursor:pointer;
   color:#252525;
+  background-color:#ffffff;
   -webkit-appearance:none;
 }
 .search_box .submit_box{
@@ -1392,6 +1393,7 @@ ul.paging li.on a{
   font-size:1.6rem;
   color:#555;
   vertical-align:bottom;
+  background-color:#fff;
   border:1px solid #ddd;
 }
 .write_wrap table label.hidden{

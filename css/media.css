@@ -410,7 +410,11 @@
     line-height: 1.7;
   }
 }
-
+@media screen and (max-width:1024px){
+  #container .sub_depth .lnb_inner #lnb > li > a{
+    font-size:1.8rem;
+  }
+}
 @media screen and (max-width:768px){
   .mt150{
     margin-top:90px;
@@ -857,6 +861,7 @@
     line-height: 1.7;
   }
 }
+
 /*480px*/
 @media all and (max-width:480px) {
   /*공통*/
@@ -1348,6 +1353,9 @@
   .password_wrap .pw_box form button{
     font-size:1.5rem;
   }
+  .password_wrap .pw_box form button{
+    padding:20px;
+  }
   /*뷰페이지*/
   .view_wrap strong.tite{
     font-size:2.0rem;
@@ -1368,6 +1376,25 @@
   .button_wrap button.list_btn{
     width:100%;
     padding:20px;
+  }
+  /*글쓰기*/
+  .write_wrap table input[type="text"].email{
+    width:40%;
+  }
+  .write_wrap table select {
+    padding:7px 10px;
+    width:30%;
+    font-size:1.4rem;
+  }
+  .write_wrap table td, .write_wrap table th{
+    padding:5px 10px;
+  }
+  .write_wrap table td, 
+  .write_wrap table th, 
+  .write_wrap table label, 
+  .write_wrap .w_title, 
+  .write_wrap table input{
+    font-size:1.2rem;
   }
 
 
