@@ -21,6 +21,7 @@
   section.tile03 h4{
     letter-spacing:-0.30rem;
   }
+
   /*지우*/
   /*04_01_ceo인사말*/
   #container .sub_about .text_box h3 {
@@ -29,6 +30,7 @@
   #container .sub_about .text_box strong {
     font-size: 3.0rem;
   }  
+
 }
 
 @media screen and (max-width:1200px){
@@ -145,7 +147,20 @@
   #container .bbs table tr th:nth-of-type(5){
     width:14%;
   }
-    /*지우*/
+  /*고객지원*/
+  /*담당자안내*/
+  #container .customer_list > ul{
+    flex-wrap:wrap;
+    gap:50px 0;
+  }
+  #container .customer_list > ul > li:nth-child(1){
+    width:100%;
+  }
+  #container .customer_list > ul > li:nth-child(2){
+    width:100%;
+  }
+
+  /*지우*/
   /*04_01_ceo인사말*/
   #container .sub_about .text_box {
     padding: 80px 0;
@@ -398,7 +413,22 @@
   #container .cert_tite p{
     display:inline;
   }
-/*지우*/
+  /*고객지원*/
+  /*고객문의*/
+  #container .bbs table tr th:nth-of-type(5),
+  #container .bbs table tr td:nth-of-type(5){
+    display:none;
+  }
+  #container .bbs table.customer tr th:nth-of-type(2){
+    width:70%;
+  }
+  /*고객지원*/
+  /*담당자안내*/
+  #container .customer_list > ul > li .region_box > ol > li{
+    padding:30px 40px;
+  }
+
+  /*지우*/
   /*04_01_ceo인사말*/
   #container .sub_about .text_box {
     padding: 60px 0;
@@ -535,7 +565,6 @@
     width: 450px;
     font-size: 1.6rem;
   }
-
 }
 /*480px*/
 @media all and (max-width:480px) {
@@ -938,7 +967,86 @@
   #container .bbs table td a{
     font-size:1.3rem;
   }
- /*지우*/
+  /*고객문의*/
+  #container .bbs table.customer tr th:nth-of-type(4),
+  #container .bbs table.customer tr th:nth-of-type(5),
+  #container .bbs table.customer tr td:nth-of-type(4),
+  #container .bbs table.customer tr td:nth-of-type(5){
+    display:none;
+  }
+  #container .bbs table.customer tr th:nth-of-type(3){
+    width:15%;
+  }
+  /*대리점문의*/
+  #container .spec.customer .table_graph table{
+    width:100%;
+  }
+  #container .spec.customer table th, 
+  #container .spec.customer table td{
+    font-size:1.2rem;
+  }
+  #container .spec.customer table thead tr th:nth-child(1),
+  #container .spec.customer table thead tr th:nth-child(2),  
+  #container .spec.customer table tbody tr td:nth-child(1),
+  #container .spec.customer table tbody tr td:nth-child(2){
+    display:none;
+  }
+  #container .spec.customer table thead tr th:nth-child(4){
+    width:50%;
+  }
+  /*고객지원*/
+  /*담당자안내*/
+  #container .customer_list > ul > li, 
+  #container .customer_list > ul > li > div > strong, 
+  #container .customer_list > ul > li > div > span{
+    font-size:1.8rem;
+  }
+  #container .customer_list > ul > li:nth-child(1) .region_box{
+    padding:20px;
+  }
+  #container .customer_list > ul > li .tel_box{
+    padding:30px 20px;
+    font-size:2.2rem;
+  }
+  #container .customer_list > ul > li:nth-child(1) .tel_box::before{
+    right:26%;
+    width:15px;
+    height:15px;
+  }
+  #container .customer_list > ul > li:nth-child(1) .tel_box::after{
+    right:8%;
+    width:60px;
+    height:60px;
+    background-size:60%;
+  }
+  #container .customer_list > ul > li .region_box > ol{
+    flex-wrap:wrap;
+  }
+  #container .customer_list > ul > li .region_box > ol > li{
+    display:flex;
+    justify-content:space-between;
+    width:100%;
+    padding:20px;
+    border-bottom:1px solid #ddd;
+    border-right:none;
+  }
+  #container .customer_list > ul > li .region_box > ol > li:last-child{
+    border-bottom:none;
+  }
+  #container .customer_list > ul > li .region_box > ol > li > p{
+    font-size:1.8rem;
+  }
+  #container .customer_list > ul > li:nth-child(2) .tel_box::after{
+    right:8%;
+    width:60px;
+    height:60px;
+    background-size:60%;
+  }
+  #container .customer_list > ul > li .region_box.tech > ol > li{
+    width:100%;
+  }
+
+  /*지우*/
   /*04_01_ceo인사말*/
   #container .sub_about .text_box {
     padding: 30px 0;
@@ -1065,8 +1173,8 @@
   #container .map_container .map_infor p {
     font-size: 1.3rem;
   }
-
 }
+
 @media all and (max-width:320px){
   /*공통*/
   ul.paging{
@@ -1127,7 +1235,8 @@
   #container .gallery_wrap ul.gallery {
     gap:30px 10px;
   }
- /*지우*/
+  
+  /*지우*/
   /*04_01_ceo인사말*/
 
   /*회사정신*/

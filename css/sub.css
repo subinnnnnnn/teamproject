@@ -973,14 +973,183 @@ ul.paging li.on a{
   text-overflow:ellipsis;
   white-space:nowrap
 }
+/*고객지원*/
+/*고객문의*/
+#container .sub_visual.customer .img {
+  background: url("../images/sub/05_customer/05_customer_subvisual01.jpg") no-repeat;
+}
+#container .bbs table.customer tr th:nth-of-type(2){
+  width:50%;
+}
+#container .bbs table tr th:nth-of-type(3){
+  width:auto;
+}
+#container .bbs table.customer tr td:nth-of-type(2){
+  text-align:left;
+}
+#container .bbs table.customer tr td:nth-of-type(4),
+#container .bbs table.customer tr td:nth-of-type(5){
+  font-size:1.5rem;
+  color:#999;
+}
+#container .bbs table td a{
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space:nowrap;
+}
+#container .bbs table.customer tr td img{
+  vertical-align:bottom;
+}
+/*대리점*/
+#container .sub_visual.customer_01 .img {
+  background:url("../images/sub/05_customer/05_customer_subvisual02.jpg") no-repeat;
+}
+#container .spec.customer table thead tr th:nth-child(1){
+  width:8%;
+}
+#container .spec.customer table thead tr th:nth-child(3){
+  width:20%;
+}
+#container .spec.customer table thead tr th:nth-child(4){
+  width:40%;
+}
+#container .spec.customer table td{
+  word-break:break-all;
+}
+#container .spec.customer table tbody tr td:nth-child(3),
+#container .spec.customer table tbody tr td:nth-child(4){
+  padding-left:10px;
+  text-align:left;
+}
+#container .spec.customer .table_graph{
+  overflow-x:visible;
+}
+/*담당자안내*/
+#container .sub_visual.customer_02 .img {
+  background: url("../images/sub/05_customer/05_customer_subvisual03.jpg") no-repeat;
+}
+#container .customer_list > ul{
+  display:flex;
+  justify-content:space-between;
+  column-gap:20px;
+  margin-top:50px;
+}
+#container .customer_list > ul > li,
+#container .customer_list > ul > li > div > strong,
+#container .customer_list > ul > li > div > span{
+  font-size:2.5rem;
+}
+#container .customer_list > ul > li > div > span,
+#container .customer_list > ul > li .region_box > ol > li > p.name{
+  color:#555;
+}
+#container .customer_list > ul > li{
+  overflow:hidden;
+  border:1px solid #ddd;
+  border-radius:20px 0 0 20px;
+}
+#container .customer_list > ul > li:nth-child(1){
+  width:550px;
+}
+#container .customer_list > ul >li:nth-child(2){
+  width:770px;
+}
+#container .customer_list > ul > li:nth-child(1) .region_box{
+  display:flex;
+  justify-content:space-between;
+  padding:33px 40px;
+}
+#container .customer_list > ul > li .region_box{
+  border-bottom:1px solid #ddd;
+}
+#container .customer_list > ul > li .region_box > ol{
+  display:flex;
+  justify-content:space-between;
+  text-align:center;
+}
+#container .customer_list > ul > li .region_box > ol > li{
+ padding:20px 40px;
+ width:calc(100% /3);
+ border-right:1px solid #ddd;
+}
+#container .customer_list > ul > li .region_box > ol > li:last-child{
+ border-right:none;
+}
+#container .customer_list > ul > li .region_box > ol > li > p{
+  font-size:2.2rem;
+}
+#container .customer_list > ul > li .tel_box{
+  padding:60px 40px;
+  font-size:3.5rem;
+}
+#container .customer_list > ul > li:nth-child(1) .tel_box{
+  position:relative;
+  color:#fff;
+  background-color:#003975;
+}
+#container .customer_list > ul > li:nth-child(1) .tel_box::before{
+  content:"";
+  display:block;
+  position:absolute;
+  top:11px;
+  right:155px;
+  width:21px;
+  height:21px;
+  border-radius:50%;
+  background-color:rgba(217, 232, 255, 0.2);
+}
+#container .customer_list > ul > li:nth-child(1) .tel_box::after{
+ content:"";
+ display:block;
+ position:absolute;
+ top:50%;
+ right:50px;
+ transform:translateY(-50%);
+ width:109px;
+ height:109px;
+ border-radius:50%;
+ background-color:rgba(217, 232, 255, 0.2);
+ background-image:url("../images/sub/05_customer/05_customer_icon01.png");
+ background-repeat:no-repeat;
+ background-position:center;
+}
+#container .customer_list > ul > li:nth-child(2) .tel_box{
+  position:relative;
+  background-color:#f0f0f0;
+}
+#container .customer_list > ul > li:nth-child(2) .tel_box::after{
+ content:"";
+ display:block;
+ position:absolute;
+ top:50%;
+ right:50px;
+ transform:translateY(-50%);
+ width:109px;
+ height:109px;
+ border-radius:50%;
+ background-color:#e2e2e2;
+ background-image:url("../images/sub/05_customer/05_customer_icon02.png");
+ background-repeat:no-repeat;
+ background-position:center;
+}
+/*고객기술상담*/
+#container .customer_list > ul > li .region_box.tech > ol > li{
+  width:calc(100%/2);
+}
+#container .customer_list > ul > li:nth-child(1) .tel_box.tech{
+  background-color:#39B54A;
+}
+#container .customer_list > ul > li:nth-child(1) .tel_box.tech::before{
+  background-color:rgba(220,255,217,0.2);
+}
+#container .customer_list > ul > li:nth-child(1) .tel_box.tech::after{
+ background-color:rgba(220,255,217,0.2);
+}
+
 /*지우*/
 /*04_01_ceo인사말*/
 #container .sub_visual.ceo .img{
-  width:100%;
-  height:360px;  
   background:url("../images/sub/04_about/01_ceo/subvisual.jpg") no-repeat;
-  background-size:cover;
-  animation:scale-up-down 2s ease-in-out alternate;
 }
 #container .sub_about .text_box {
   padding: 100px 0;
@@ -1044,11 +1213,7 @@ ul.paging li.on a{
 
 /*04_03_조직도*/
 #container .sub_visual.organization .img{
-  width:100%;
-  height:360px;  
   background:url("../images/sub/04_about/03_organization/subvisual.jpg") no-repeat;
-  background-size:cover;
-  animation:scale-up-down 2s ease-in-out alternate;
 }
 #container .org img {
   display: block;
@@ -1057,11 +1222,7 @@ ul.paging li.on a{
 
 /*04_04_생산공정*/
 #container .sub_visual.system .img{
-  width:100%;
-  height:360px;  
   background:url("../images/sub/04_about/04_production/subvisual.jpg") no-repeat;
-  background-size:cover;
-  animation:scale-up-down 2s ease-in-out alternate;
 }
 /*기계설비현황*/
 #container .machine_system .machine {
@@ -1130,11 +1291,7 @@ ul.paging li.on a{
 
 /*04_06_오시는길*/
 #container .sub_visual.map .img{
-  width:100%;
-  height:360px;  
   background:url("../images/sub/04_about/06_map/subvisual.jpg") no-repeat;
-  background-size:cover;
-  animation:scale-up-down 2s ease-in-out alternate;
 }
 #container .map_tabs {
   display: flex;
@@ -1201,22 +1358,12 @@ ul.paging li.on a{
 }
 
 /*04_07_회사전경*/
-#container .sub_visual.company_view .img{
-  width:100%;
-  height:360px;  
+#container .sub_visual.company_view .img{ 
   background:url("../images/sub/04_about/07_introgallery/subvisual.jpg") no-repeat;
-  background-size:cover;
-  animation:scale-up-down 2s ease-in-out alternate;
 }
-
-
 /*04_02_회사연혁*/
 #container .sub_visual.history .img{
-  width:100%;
-  height:360px;  
   background:url("../images/sub/04_about/02_history/subvisual.jpg") no-repeat;
-  background-size:cover;
-  animation:scale-up-down 2s ease-in-out alternate;
 }
 #container .company_history {
   display: flex;
