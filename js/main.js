@@ -1,74 +1,26 @@
 $(function(){
-  //메뉴
-  $("#header .gnb").mouseenter(function(){
-    $(".sub_menu").stop().slideDown(250);
-    $(".header_bg").stop().slideDown(250);
-  });
-  $("#header .gnb").mouseleave(function(){
-    $(".sub_menu").stop().slideUp(250);
-    $(".header_bg").stop().slideUp(250);
-  });
-
-  $("#header .sub_menu li").mouseenter(function(){
-    $(this).parents(".sub_menu").addClass("on").siblings().removeClass("on");
-  });
-  $("#header .sub_menu li").mouseleave(function(){
-    $(this).parents(".sub_menu").removeClass("on");
-  });
-
-  //메뉴 반응형
-  $("#header .media_gnb .media_submenu").hide();
-
-  $("#header .media_gnb > li").click(function(e){
-    e.stopPropagation(); // 부모(.media_menu)까지 클릭 이벤트 전달 차단
-
-    let $submenu = $(this).children(".media_submenu");
-
-    if ($submenu.is(":visible")) {
-      $submenu.slideUp();
-    } else {
-      $("#header .media_gnb .media_submenu").slideUp();
-      $submenu.slideDown();
-    }
-  });
-
-  //메뉴 반응형 클릭시
-  $(".media_submenu_bg").hide();
-  $("#header .media_menu").click(function(e){
-    if($(this).hasClass("on")) {
-      $(this).removeClass("on");
-      $(".media_submenu_bg").fadeOut();
-      $(this).find(".media_gnb").removeClass("on");
-      $("#header .media_gnb .media_submenu").slideUp(); // 닫을 때만 전체 닫기
-    } else {
-      $(this).addClass("on");
-      $(".media_submenu_bg").fadeIn();
-      $(this).find(".media_gnb").addClass("on");
-    }
-  });
-
 
   //메인비주얼
   var main_visual = new Swiper(".main_visual", {
     loop: true,
-    autoplay: {
+    autopla: {
       delay: 3500,
       disableOnInteraction: false,
     },
+
+    navigation: {
+      nextEl: ".visual_arrow .swiper-button-next",
+      prevEl: ".visual_arrow .swiper-button-prev",
+    },
     scrollbar: {
-      el: ".swiper-scrollbar",
+      el: ".visual_scroll .swiper-scrollbar",
       hide: false
     },
-    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-    },
-    /*
     pagination: {
       el: ".visual_page .swiper-pagination",
       type: "fraction",
     },
-    */
+
   });
 
   //상품 영역
@@ -92,29 +44,36 @@ $(function(){
       delay: 2500,
       disableOnInteraction: false,
     },
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true,
-    },
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".product_arrow .swiper-button-next",
+      prevEl: ".product_arrow .swiper-button-prev",
     },
 
+
     breakpoints: {
-      390: { // 0 ~ 834px
-        slidesPerView:2.5,
+      0: { 
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+
+      768: { 
+        slidesPerView: 2,
         spaceBetween: 10,
       },
       
-      835: { // 835px 이상
-        slidesPerView:2.5,
+      835: { 
+        slidesPerView: 2.5,
+        spaceBetween: 16,
+      },
+      
+      1200: {
+        slidesPerView: 4,
         spaceBetween: 16,
       },
 
       1340: {
-        slidesPerView:4,
-        spaceBetween:16,
+        slidesPerView: 4,
+        spaceBetween: 16,
       },
 
     },
@@ -122,20 +81,15 @@ $(function(){
 
   });
 
-  /*
+
   //상품 호버시
-  $(".product_content .product_ex").hide();
-  $(".product_content .swiper-slide").mouseenter(function(){
-    $(this).find(".product_img").stop().fadeOut(100);
-    $(this).find(".product_ex").stop().fadeIn(250);
+  $("#main .product .swiper-slide").mouseenter(function(){
+    $(this).find(".product_name").addClass("on");
+  });
+  $("#main .product .swiper-slide").mouseleave(function(){
+    $(this).find(".product_name").removeClass("on");
   });
 
-  $(".product_content .product_ex").hide();
-  $(".product_content .swiper-slide").mouseleave(function(){
-    $(this).find(".product_img").stop().fadeIn(250);
-    $(this).find(".product_ex").stop().fadeOut(250);
-  });
-  */
 
 
   //메이드 영역
