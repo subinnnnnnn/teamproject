@@ -1279,6 +1279,7 @@
   }
   #container .txt_box p{
     font-size:1.8rem;
+    line-height:160%;
   }
   #container .txt_box div{
     font-size:1.5rem;
