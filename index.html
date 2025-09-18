@@ -157,14 +157,10 @@
               <div class="visual_scroll">
                 <div class="swiper-scrollbar"></div>
               </div>
-              <div class="num_control">
-                <div class="visual_arrow">
-                  <div class="swiper-button-next"></div>
+              <div class="visual_arrow">
                   <div class="swiper-button-prev"></div>
-                </div>
-                <div class="visual_page">
                   <div class="swiper-pagination"></div>
-                </div>
+                  <div class="swiper-button-next"></div>
               </div>
             </div>
           </div>
@@ -733,34 +729,29 @@
           </ul>
         </div>
         <div class="helpful">
-          <div class="calc">
+          <div class="calc help">
             <p>면적 계산기</p>
             <i>고객님의 편리함을 위해</i>
           </div>
           <div class="calc_popup">
-            <div class="calcpop_wrap inner">
+            <div class="calcpop_wrap">
+              <span class="mo_close"></span>
               <div class="calc_head">면적계산기</div>
               <div class="calc_content">
                 <table>
                   <caption>넓이단위변환</caption>
-                  <colgroup>
-                    <col width="90px">
-                    <col width="180px">
-                    <col width="90px">
-                    <col width="180px">
-                  </colgroup>
                   <tbody>
                     <tr>
                       <th scope="row" abbr="평 → m²"><span>평 → m²</span></th>
-                      <td><input type="text" id="p1"> 평</td>
+                      <td class="tdm"><input type="text" id="p1"> 평</td>
                       <td class="cen"><a href="javascript:;" id="btn01">변환</a></td>
-                      <td><input type="text" id="m1"> 평방미터(m²)</td>
+                      <td class="tdm"><input type="text" id="m1"> 평방미터(m²)</td>
                     </tr>
                     <tr>
                       <th scope="row" abbr="m² → 평"><span>m² → 평</span></th>
-                      <td><input type="text" id="m2" > 평방미터(m²)</td>
+                      <td class="tdm"><input type="text" id="m2" > 평방미터(m²)</td>
                       <td class="cen"><a href="javascript:;" id="btn02">변환</a></td>
-                      <td><input type="text" id="p2"> 평</td>
+                      <td class="tdm"><input type="text" id="p2"> 평</td>
                     </tr>
                   </tbody>
                 </table>
@@ -768,7 +759,7 @@
               </div>
             </div>
           </div>
-          <div class="call">
+          <div class="call help">
             <p>울산 본사</p>
             <strong>052.237.6700</strong>
             <p>서울 영업 본부</p>
@@ -778,10 +769,12 @@
       </section>
       <!--회사가치, 대리점, 오시는길-->
       <section class="value inner">
-        <p>
-          최고의 제품, 최상의 품질과 차별화된 서비스를 경쟁력으로,
-          <br>고객과 함께 건설문화 발전에 기여하는 기업 KC한국요업입니다.
-        </p>
+        <div class="value_text">
+          <p>
+            최고의 제품, 최상의 품질과 차별화된 서비스를 경쟁력으로,
+            <br>고객과 함께 건설문화 발전에 기여하는 기업 KC한국요업입니다.
+          </p>
+        </div>
         <div class="place">
           <a href="#" class="store">대리점 찾기</a>
           <a href="#" class="directions">오시는 길</a>
