@@ -1455,7 +1455,8 @@
   }
   /*뷰페이지*/
   .view_wrap strong.tite{
-    font-size:2.0rem;
+    padding:10px;
+    font-size:1.8rem;
   }
   .view_wrap .data span,
   .view_wrap .view_content,
