@@ -460,7 +460,7 @@
     margin-bottom:30px;
   }
   #container .cond_wrap .img span{
-    width:100%;
+    width:calc((100% - 20px) / 2);
   }
   #container .txt_box h3{
     font-size:3.5rem;
