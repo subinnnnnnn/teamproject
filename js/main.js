@@ -17,7 +17,7 @@ $(function(){
       hide: false
     },
     pagination: {
-      el: ".visual_page .swiper-pagination",
+      el: ".visual_arrow .swiper-pagination",
       type: "fraction",
     },
 
@@ -167,12 +167,35 @@ $(function(){
 
   });
 
+  document.addEventListener('DOMContentLoaded', function() {
+    const closeBtns = document.querySelectorAll('.close');
+
+    closeBtns.forEach(function(btn) {
+      btn.addEventListener('click', function(event) {
+        event.stopPropagation();    // 이벤트 버블링 막기 (부모 <a>로 올라가는 거 방지)
+        event.preventDefault();     // 기본 동작 차단 (href="#" 링크 방지)
+        
+        // 여기서 닫기 동작을 추가할 수도 있음
+        console.log("닫기 버튼 클릭됨");
+      });
+    });
+  });
+ 
+  $('.close').on('click', function(e) {
+    e.preventDefault();
+    e.stopPropagation();
+    console.log("닫기 버튼 클릭됨");
+  });
+
   //면적계산기 팝업
   $("#main .customer .calc").click(function(){
     $(".calc_popup").show();
   });
 
   $(".calc_popup .close").click(function(){
+    $(".calc_popup").hide();
+  });
+  $(".calc_popup .mo_close").click(function(){
     $(".calc_popup").hide();
   });
 

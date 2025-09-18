@@ -47,6 +47,14 @@ $(function(){
     }
   });
 
+  //메뉴 반응형 클릭시
+  $(".media_submenu_bg").click(function(){
+    $(this).hide();
+    $("#header .media_menu").removeClass("on");
+    $(".media_gnb").removeClass("on");
+  });
+
+
   //위로가기
   $(window).scroll(function(){
   if($(window).scrollTop()>=200){
