@@ -114,6 +114,7 @@
 }
 
 #main .main_visual .visual_arrow {
+  display: flex;
   position: absolute;
   right: 0;
   bottom: 10px;
@@ -124,26 +125,18 @@
   color: #fff;
 }
 
-
-#main .main_visual .visual_page {
-  position: absolute;
-  right: 85px;
-  bottom: -20px;
-  width: 166px;
-}
-
-#main .main_visual .visual_page .swiper-pagination-fraction {
+#main .main_visual .visual_arrow .swiper-pagination-fraction {
+  bottom: var(--swiper-pagination-bottom,-23px);
   font-size: 3.2rem;
   color: #fff;
   word-spacing: 15px;
   text-align: center;
 }
 
-#main .main_visual .visual_page .swiper-pagination-current, #main .main_visual .visual_page .swiper-pagination-total {
+#main .main_visual .visual_arrow .swiper-pagination-current, #main .main_visual .visual_arrow .swiper-pagination-total {
   font-size: 4.0rem;
   color: #fff;
 }
-
 
 /*section 공통*/
 #main section {
@@ -522,7 +515,7 @@
 }
 
 #main .certificate .marquee_track li {
-  width: 335px;
+  width: 295px;
   text-align: center;
 }
 
@@ -537,7 +530,7 @@
 }
 
 #main .certificate .marquee_track li p {
-  font-size:2.5rem;
+  font-size: 2.8rem;
   font-weight: 400;
   opacity: 0.6;
 }
@@ -549,7 +542,7 @@
 }
 
 #main .certificate .marquee_track li img.ks {
-  width: 29px;
+  width: 43px;
   border-radius: 0;
   box-shadow: none;
   opacity: 0.6;
@@ -680,14 +673,14 @@
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
-  width: 1340px;
+  width: 1270px;
   border-radius: 20px;
   overflow: hidden;
   background: #fff;
 }
 
 #main .customer .calc_popup .calcpop_wrap .calc_head {
-  padding: 40px 70px;
+  padding: 40px 35px;
   background: #003975;
   font-size: 4.5rem;
   color: #fff;
@@ -695,12 +688,16 @@
 
 #main .customer .calc_popup .calcpop_wrap .calc_content {
   padding: 0 20px;
-  height: 600px;
+  height: 650px;
+  overflow-y: auto;
 }
 
 #main .customer .calc_popup .calcpop_wrap table {
   width: 1200px;
   margin: 80px auto;
+}
+
+#main .customer .calc_popup .calcpop_wrap table tbody {
   border-top: 2px solid #003975;
   border-bottom: 2px solid #003975;
 }
@@ -719,12 +716,21 @@
 }
 
 #main .customer .calc_popup .calcpop_wrap table th {
+  width: 150px;
   border: 1px solid #ddd;
   border-left: none;
 }
 
 #main .customer .calc_popup .calcpop_wrap table th span {
   font-size: 2.0rem;
+}
+
+#main .customer .calc_popup .calcpop_wrap table .tdm {
+  width: calc((100% - 300px) / 2);
+}
+
+#main .customer .calc_popup .calcpop_wrap table .cen {
+  width: 150px;
 }
 
 #main .customer .calc_popup .calcpop_wrap table tr:nth-child(1) {
@@ -749,7 +755,7 @@
 #main .customer .calc_popup .calcpop_wrap .calc_content .close {
   position: absolute;
   right: 68px;
-  bottom: 68px;
+  bottom: 48px;
   padding: 30px 55px;
   border-radius: 10px;
   overflow: hidden;
@@ -757,6 +763,10 @@
   font-size: 2.5rem;
   cursor: pointer;
   user-select: none;
+}
+
+#main .customer .calc_popup .calcpop_wrap span.mo_close {
+  display: none;
 }
 
 /*회사가치, 대리점, 오시는길 영역*/
@@ -771,15 +781,21 @@
   color: #fff;
 }
 
-#main .value>p {
+#main .value .value_text {
+  width: calc(100% - 385px);
+}
+
+#main .value .value_text p {
   font-size: 2.0rem;
   font-weight: 500;
   line-height: 1.7;
+  word-break: keep-all;
 }
 
 #main .value .place {
   display: flex;
   column-gap: 30px;
+  width: 374px;
 }
 
 #main .value .place a {
@@ -830,6 +846,67 @@
     margin: 0 auto;
     width: 1247px;
   }
+
+  /*고객관련 영역(고객문의, 면적계산기, 전화번호)*/
+  /*면적계산기 영역*/
+  #main .customer .helpful {
+    width: calc(100% - 888px);
+  }
+
+  #main .customer .calc {
+    height: 180px;
+    padding: 48px 35px;
+    border-radius: 0 20px 0 20px;
+    background: #003975;
+  }
+
+  #main .customer .call {
+    height: 230px;
+    padding: 32px 35px;
+    margin-top: 28px;
+    background: none;
+  }
+
+  #main .customer .call p {
+    font-size: 2.0rem;
+  }
+
+  #main .customer .call p:nth-of-type(2) {
+    margin-top: 30px;
+  }
+
+  #main .customer .call strong {
+    font-size: 3.0rem;
+    font-weight: 500;
+  }
+
+  #main .customer .call i {
+    font-size: 2.5rem;
+    font-weight: 500;
+  }
+
+  /*면적계산기 팝업*/
+  #main .customer .calc_popup .calcpop_wrap {
+    width: 90%;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table {
+    width: 100%;
+    margin: 80px auto;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table th {
+    width: 140px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm {
+    width: calc((100% - 280px) / 2);
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .cen {
+    width: 140px;
+  }
+
 }
 
 @media screen and (max-width:1200px){
@@ -895,7 +972,6 @@
     border-radius: 20px;
   }
 
-
   #main .ourmade .ourmade_content .made .add_btn {
     position: relative;
     width: 50px;
@@ -914,7 +990,6 @@
     background: #39B54A;
     color: #fff;
   }
-
 
   #main .ourmade .ourmade_content .made .made_infor {
     position: absolute;
@@ -1014,6 +1089,62 @@
     top: 43%;
   }
 
+  /*고객관련 영역(고객문의, 면적계산기, 전화번호)*/
+  /*면적계산기 영역*/
+  #main .customer .inquiry {
+    width: 550px;
+  }
+
+  #main .customer .inquiry_list a p {
+    display: inline-block;
+    width: 400px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 2.0rem;
+    line-height: 1.4;
+  }
+
+  #main .customer .helpful {
+    width: calc(100% - 600px);
+  }
+
+  #main .customer .calc {
+    height: 180px;
+    padding: 48px 20px;
+    border-radius: 0 20px 0 20px;
+    background: #003975;
+  }
+
+  #main .customer .call {
+    height: 255px;
+    padding: 32px 20px;
+    margin-top: 28px;
+    background: none;
+  }
+
+  /*면적계산기 팝업*/
+  #main .customer .calc_popup .calcpop_wrap {
+    width: 90%;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table {
+    width: 100%;
+    margin: 80px auto;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table th {
+    width: 140px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm {
+    width: calc((100% - 280px) / 2);
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .cen {
+    width: 140px;
+  }
+
 
 }
 
@@ -1053,7 +1184,7 @@
   }
 
   .main_visual .visual_text h2 {
-    font-size: 4.5rem;
+    font-size: 4.0rem;
     margin-bottom: 14px;
     letter-spacing: -2px;
     line-height: 1.4;
@@ -1061,7 +1192,7 @@
 
   .main_visual .visual_text h2 i {
     position: relative;
-    font-size: 4.5rem;
+    font-size: 4.0rem;
   }
 
   .main_visual .visual_text h2 i::before {
@@ -1088,38 +1219,31 @@
     right: 0;
     left: 55px;
     bottom: -19px;
-    width: calc(100% - 350px);
+    width: calc(100% - 320px);
   }
 
   #main .main_visual .visual_arrow {
     position: absolute;
     right: 0;
-    bottom: 10px;
-    width: 270px;
+    bottom: 0;
+    width: 240px;
   }
 
   #main .main_visual .visual_arrow .swiper-button-next, #main .main_visual .visual_arrow .swiper-button-prev {
-    --swiper-navigation-size: 32px;
+    --swiper-navigation-size: 22px;
     color: #fff;
   }
 
-
-  #main .main_visual .visual_page {
-    position: absolute;
-    right: 51px;
-    bottom: -24px;
-    width: 166px;
-  }
-
-  #main .main_visual .visual_page .swiper-pagination-fraction {
-    font-size: 3.2rem;
+  #main .main_visual .visual_arrow .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,-15px);
+    font-size: 2.2rem;
     color: #fff;
     word-spacing: 15px;
     text-align: center;
   }
 
-  #main .main_visual .visual_page .swiper-pagination-current, #main .main_visual .visual_page .swiper-pagination-total {
-    font-size: 4.0rem;
+  #main .main_visual .visual_arrow .swiper-pagination-current, #main .main_visual .visual_arrow .swiper-pagination-total {
+    font-size: 2.5rem;
   }
 
   /*section 공통*/
@@ -1177,11 +1301,6 @@
     color: #fff;
   }
 
-
-
-
-
-
   #main .ourmade .ourmade_content .made .made_infor.infor_media {
     position: fixed;
     left: 50%;
@@ -1206,7 +1325,7 @@
   }
 
   #main .ourmade .ourmade_content .made .made_infor .infor_text {
-    width: 250px;
+    width: calc(100% - 30px);
     margin-top: 20px;
   }
 
@@ -1332,31 +1451,19 @@
     }
   }
 
-  #main .certificate .marquee_track {
-    display: inline-flex;
-    column-gap: 16px;
-    animation: marquee 80s linear infinite;
-  }
-
   #main .certificate .marquee_track li {
-    width: 335px;
+    width: 270px;
     text-align: center;
   }
 
   #main .certificate .marquee_track li img {
     display: block;
-    width: 50%;
-    margin: 0 auto;
     margin-bottom: 40px;
     border-radius: 20px;
-    overflow: hidden;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
   }
 
-
-
   #main .certificate .marquee_track li img.ks {
-    width: 29px;
+    width: 32px;
     border-radius: 0;
     box-shadow: none;
     opacity: 0.6;
@@ -1374,11 +1481,14 @@
     margin-bottom: 80px;
   }
 
-
   #main .customer .inquiry_list {
     margin-top: 24px;
   }
 
+  #main .customer .inquiry_list a p {
+    width: 246px;
+  }
+  
   /*면적계산기 영역*/
   #main .customer .helpful {
     display: flex;
@@ -1386,15 +1496,15 @@
     width: 100%;
   }
 
-  #main .customer .helpful>div {
-    width: calc((100% - 16px) / 2);
+  #main .customer .helpful>div.help {
+    width: calc((100% - 32px) / 2);
     height: 218px;
   }
   #main .customer .calc {
     padding: 66px 22px;
     border-radius: 0 20px 0 20px;
     overflow: hidden;
-    background: #003975 url(../images/main/icon_calculator.png) right 21px top 50% no-repeat;
+    background: #003975 url(../images/main/icon_calculator.png) right 21px top 50% / 40% no-repeat;
     color: #fff;
     cursor: pointer;
   }
@@ -1437,96 +1547,114 @@
   }
 
   /*면적계산기 팝업*/
-  #main .customer .calc_popup {
-    display: none;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 999;
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
     width: 100%;
-    height: 100vh;
-    background: rgba(0,0,0,0.5);
   }
 
   #main .customer .calc_popup .calcpop_wrap {
+    width: 90%;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close {
+    position: relative;
+    display: block;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::before {
+    content: "";
     position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    width: 800px;
-    border-radius: 20px;
-    overflow: hidden;
+    right: 0px;
+    top: 68px;
+    display: block;
+    width: 70px;
+    height: 6px;
+    margin-right: 31px;
+    border-radius: 50px;
     background: #fff;
+    transform: rotate(45deg);
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 68px;
+    display: block;
+    width: 70px;
+    height: 6px;
+    margin-right: 31px;
+    border-radius: 50px;
+    background: #fff;
+    transform: rotate(-45deg);
   }
 
   #main .customer .calc_popup .calcpop_wrap .calc_head {
-    padding: 20px 30px;
-    background: #003975;
-    font-size: 4.5rem;
-    color: #fff;
+    width: 100%;
   }
 
   #main .customer .calc_popup .calcpop_wrap .calc_content {
     padding: 0 20px;
-    height: 500px;
+    height: 550px;
+    overflow-y: auto;
   }
 
   #main .customer .calc_popup .calcpop_wrap table {
-    width: 800px;
+    display: block;
+    width: 100%;
     margin: 80px auto;
-    border-top: 2px solid #003975;
-    border-bottom: 2px solid #003975;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table tbody {
+    border-top: none;
+    border-bottom: none;
   }
 
   #main .customer .calc_popup .calcpop_wrap table caption {
-    margin-bottom: 50px;
-    font-size: 4.5rem;
-    font-weight: 500;
-    text-align: left;
-  }
-
-  #main .customer .calc_popup .calcpop_wrap table th, #main .customer .calc_popup .calcpop_wrap table td {
-    padding: 30px 20px;
-    font-weight: 300;
+    display: block;
   }
 
   #main .customer .calc_popup .calcpop_wrap table th {
-    border: 1px solid #ddd;
+    display: block;
+    width: 100%;
+    border-top: 2px solid #003975;
+    background: rgba(0, 57, 117, 0.1);
   }
 
-  #main .customer .calc_popup .calcpop_wrap table tr:nth-child(1) {
-    border-bottom: 1px solid #ddd;
+  #main .customer .calc_popup .calcpop_wrap table th span {
+    font-size: 2.4rem;
   }
 
-  #main .customer .calc_popup .calcpop_wrap table input {
-    padding: 10px 0;
-    border: 1px solid #ddd;
-    border-radius: 10px;
+  #main .customer .calc_popup .calcpop_wrap table .tdm{
+    display: block;
+    width: 100%;
+    font-size: 2.2rem;
   }
 
-  #main .customer .calc_popup .calcpop_wrap table #btn01, #main .customer .calc_popup .calcpop_wrap table #btn02 {
-    padding: 22px 40px;
-    border-radius: 10px;
-    background: #39B54A;
-    color: #fff;
+  #main .customer .calc_popup .calcpop_wrap table .tdm input {
+    width: calc(100% - 200px);
+    font-size: 2.2rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .cen {
+    display: block;
+    margin: -25px auto;
   }
 
   #main .customer .calc_popup .calcpop_wrap .calc_content .close {
-    position: absolute;
-    right: 68px;
-    bottom: 68px;
-    padding: 30px 55px;
-    border-radius: 10px;
-    overflow: hidden;
-    background: #f0f0f0;
-    font-size: 2.5rem;
-    cursor: pointer;
-    user-select: none;
+    display: none;
   }
+
 
   /*회사가치, 대리점, 오시는길 영역*/
   #main .value {
     display: block;
+    margin: 0 auto 80px;
     padding: 50px 0;
     border-radius: 0 20px 0 20px;
     overflow: hidden;
@@ -1535,7 +1663,13 @@
     text-align: center;
   }
 
-  #main .value>p {
+  #main .value .value_text {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  #main .value .value_text p {
     font-size: 1.9rem;
     font-weight: 500;
     line-height: 1.7;
@@ -1545,13 +1679,17 @@
     display: flex;
     justify-content: center;
     column-gap: 30px;
-    margin-top: 40px;
+    margin: 40px auto 0;
   }
 
 }
 
 
 @media screen and (max-width:768px){
+  .inner {
+    max-width: 100%;
+  }
+
   /*비주얼영역*/
   .swiper.main_visual {
     width: 100%;
@@ -1615,37 +1753,9 @@
     right: 0;
     left: 50px;
     bottom: -19px;
-    width: calc(100% - 283px);
+    width: calc(100% - 320px);
   }
 
-  #main .main_visual .visual_arrow {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    width: 200px;
-  }
-
-  #main .main_visual .visual_arrow .swiper-button-next, #main .main_visual .visual_arrow .swiper-button-prev {
-    --swiper-navigation-size: 24px;
-    color: #fff;
-  }
-
-
-  #main .main_visual .visual_page {
-    position: absolute;
-    right: 20px;
-    bottom: -28px;
-    width: 166px;
-  }
-
-  #main .main_visual .visual_page .swiper-pagination-fraction {
-    font-size: 2.8rem;
-    word-spacing: 8px;
-  }
-
-  #main .main_visual .visual_page .swiper-pagination-current, #main .main_visual .visual_page .swiper-pagination-total {
-    font-size: 3.0rem;
-  }
 
   /*상품 영역*/
   /*상품 탭 영역*/
@@ -1684,10 +1794,9 @@
     padding: 0 5px;
   }
 
-
   /*메이드 영역*/
   #main .ourmade {
-    padding-top: 80px;
+    padding: 80px 0;
   }
 
   #main .ourmade .ourmade_content {
@@ -1745,19 +1854,18 @@
   }
 
   #main .ourmade .ourmade_content .made .made_infor .infor_text {
-    width: 280px;
     margin-top: 20px;
   }
 
   #main .ourmade .ourmade_content .made .made_infor .infor_text p {
     margin-bottom: 4px;
-    font-size: 1.5rem;
+    font-size: 2.2rem;
     font-weight: 500;
   }
 
   #main .ourmade .ourmade_content .made .made_infor .infor_text span {
     display: block;
-    font-size: 1.5rem;
+    font-size: 2.0rem;
     font-weight: 400;
   }
 
@@ -1818,7 +1926,6 @@
     font-size: 1.5rem;
   }
 
-
   /*메이드 화살표*/
   #main .ourmade .made_arrow {
     position: absolute;
@@ -1834,14 +1941,90 @@
     color: #252525;
   }
 
+  /*인증서 영역*/
+  #main .certificate .marquee_track li img {
+    border-radius: 10px;
+  }
+
+  #main .certificate .marquee_track li p {
+    font-size: 2.2rem;
+    font-weight: 400;
+    opacity: 0.6;
+  }
+
+  /*고객관련 영역(고객문의, 면적계산기, 전화번호)*/
+  #main .customer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #main .customer .inquiry {
+    position: relative;
+    width: 888px;
+    margin-bottom: 80px;
+  }
+
+  #main .customer .inquiry_list {
+    margin-top: 24px;
+  }
+
+  /*면적계산기 영역*/
+  #main .customer .calc {
+    background: #003975;
+  }
+
+  #main .customer .call {
+    background: none;
+  }
+
+  /*면적계산기 팝업*/
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 55px;
+    height: 6px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 60px;
+    width: 55px;
+    height: 6px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap .calc_head {
+    padding: 40px 35px;
+    background: #003975;
+    font-size: 3.5rem;
+    color: #fff;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table caption {
+    margin-bottom: 50px;
+    font-size: 3.5rem;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm input {
+    width: calc(100% - 150px);
+    font-size: 2.2rem;
+  }
+
+
 }
 
-
-
-/*반응형 모바일 영역01*/
-@media all and (max-width:480px) {
+/*480*/
+@media all and (max-width:650px) {
   .inner {
-    max-width: 440px;
+    max-width: 100%;
     padding: 0 20px;
   }
   
@@ -1868,15 +2051,20 @@
     height: 400px;
   }
 
+  .main_visual .visual_text h2 {
+    font-size: 2.2rem;
+  }
+
   .main_visual .visual_text h2 i {
     position: relative;
+    font-size: 2.2rem;
   }
 
   .main_visual .visual_text h2 i::before {
     content: "";
-    top: -17px;
-    width: 8px;
-    height: 8px;
+    top: -7px;
+    width: 4px;
+    height: 4px;
   }
   
   #main .main_visual .visual_scroll {
@@ -1885,6 +2073,35 @@
     left: 43px;
     bottom: -19px;
     width: calc(100% - 260px);
+  }
+
+  #main .main_visual .visual_scroll {
+    position: absolute;
+    right: 0;
+    left: 55px;
+    bottom: -19px;
+    width: calc(100% - 210px);
+  }
+
+  #main .main_visual .visual_arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+  }
+
+  #main .main_visual .visual_arrow .swiper-button-next, #main .main_visual .visual_arrow .swiper-button-prev {
+    --swiper-navigation-size: 18px;
+  }
+
+  #main .main_visual .visual_arrow .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,-13px);
+    font-size: 1.8rem;
+    word-spacing: 5px;
+  }
+
+  #main .main_visual .visual_arrow .swiper-pagination-current, #main .main_visual .visual_arrow .swiper-pagination-total {
+    font-size: 1.8rem;
   }
 
   /*상품 영역*/
@@ -1900,6 +2117,7 @@
   }
 
   /*상품 컨텐츠 영역*/
+
   #main .product .swiper-slide img {
     display: block;
     width: 100%;
@@ -1919,62 +2137,16 @@
     padding: 0 5px;
   }
 
-
-
   /*인증서 영역*/
   #main .certificate .certificate_wrap .marquee_track {
     margin-top: 24px;
-  }
-
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  #main .certificate .marquee_track {
-    display: inline-flex;
-    column-gap: 10px;
-    animation: marquee 80s linear infinite;
-  }
-
-  #main .certificate .marquee_track li {
-    height: 215px;
-    text-align: center;
-  }
-
-  #main .certificate .marquee_track li img {
-    display: block;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    width: 170px;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
-  }
-
-  #main .certificate .marquee_track li p {
-    font-size: 1.5rem;
-  }
-
-  #main .certificate .marquee_track li .ks_wrap {
-    column-gap: 12px;
-  }
-
-  #main .certificate .marquee_track li img.ks {
-    width: 21px;
-    border-radius: 0;
-    box-shadow: none;
-    opacity: 0.6;
   }
 
   /*고객관련 영역(고객문의, 면적계산기, 전화번호)*/
   #main .customer {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
   }
 
   #main .customer .inquiry {
@@ -1988,6 +2160,7 @@
     right: 0;
     top: 0;
     display: block;
+    margin-top: 10px;
     padding: 8px 18px;
     border: 1px solid #BABABA;
     background: none;
@@ -2034,7 +2207,7 @@
   }
 
   /*면적계산기 영역*/
-  #main .customer .helpful>div {
+  #main .customer .helpful>div.help {
     width: calc((100% - 10px) / 2);
     height: 130px;
   }
@@ -2081,21 +2254,101 @@
     font-size: 1.8rem;
   }
 
+  /*면적계산기 팝업*/
+  #main .customer .calc_popup .calcpop_wrap table .tdm input {
+    width: 125px;
+    font-size: 2.2rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 64px;
+    width: 42px;
+    height: 6px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 29px;
+    height: 4px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 29px;
+    height: 4px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap .calc_head {
+    padding: 22px 35px;
+    background: #003975;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap .calc_content {
+    height: 360px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table {
+    margin: 21px auto;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table caption {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  
+  #main .customer .calc_popup .calcpop_wrap table th {
+    line-height: 0;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm{
+    display: block;
+    width: 100%;
+    margin: -10px 0;
+    font-size: 1.8rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm input {
+    font-size: 1.8rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table #btn01, #main .customer .calc_popup .calcpop_wrap table #btn02 {
+    padding: 12px 30px;
+    border-radius: 5px;
+  }
+
+
 
   /*회사가치, 대리점, 오시는길 영역*/
   #main .value {
     display: block;
+    margin: 0 auto 50px;
     padding: 30px 20px;
     border-radius: 0 10px 0 10px;
     overflow: hidden;
     background: url(../images/main/value_bg.jpg) left -150px bottom -457px no-repeat;
   }
 
-  #main .value>p {
+  #main .value .value_text p {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.7;
-    word-break: keep-all;
   }
 
   #main .value .place {
@@ -2123,8 +2376,363 @@
 
 }
 
-/*반응형 모바일 영역02*/
-@media screen and (max-width:390px) {
+/*480*/
+@media all and (max-width:480px) {
+  .inner {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  
+  /*비주얼영역*/
+  .swiper.main_visual {
+    width: 100%;
+    height: 400px;
+    margin-bottom: 80px;
+    padding-top: 55px;
+  }
+
+  .main_visual .visual01 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .main_visual .visual02 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .main_visual .visual03 {
+    width: 100%;
+    height: 400px;
+  }
+
+  .main_visual .visual_text h2 {
+    font-size: 2.2rem;
+  }
+
+  .main_visual .visual_text h2 i {
+    position: relative;
+    font-size: 2.2rem;
+  }
+
+  .main_visual .visual_text h2 i::before {
+    content: "";
+    top: -7px;
+    width: 4px;
+    height: 4px;
+  }
+  
+  #main .main_visual .visual_scroll {
+    position: absolute;
+    right: 0;
+    left: 43px;
+    bottom: -19px;
+    width: calc(100% - 260px);
+  }
+
+  #main .main_visual .visual_scroll {
+    position: absolute;
+    right: 0;
+    left: 55px;
+    bottom: -19px;
+    width: calc(100% - 210px);
+  }
+
+  #main .main_visual .visual_arrow {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 150px;
+  }
+
+  #main .main_visual .visual_arrow .swiper-button-next, #main .main_visual .visual_arrow .swiper-button-prev {
+    --swiper-navigation-size: 18px;
+  }
+
+  #main .main_visual .visual_arrow .swiper-pagination-fraction {
+    bottom: var(--swiper-pagination-bottom,-13px);
+    font-size: 1.8rem;
+    word-spacing: 5px;
+  }
+
+  #main .main_visual .visual_arrow .swiper-pagination-current, #main .main_visual .visual_arrow .swiper-pagination-total {
+    font-size: 1.8rem;
+  }
+
+  /*상품 영역*/
+  /*상품 탭 영역*/
+  #main .product .product_title .tabs {
+    margin-top: 30px;
+  }
+  
+  #main .product .product_title .tabs li {
+    width: calc(100% / 2);
+    padding: 10px 0px;
+    font-size: 2.0rem;
+  }
+
+  /*상품 컨텐츠 영역*/
+
+  #main .product .swiper-slide img {
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+  }
+
+  #main .product p.product_name {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 5px;
+    font-size: 1.6rem;
+  }
+
+  #main .product p.product_name.long {
+    position: absolute;
+    bottom: 10px;
+    padding: 0 5px;
+  }
+
+  /*인증서 영역*/
+  #main .certificate .certificate_wrap .marquee_track {
+    margin-top: 24px;
+  }
+
+  /*고객관련 영역(고객문의, 면적계산기, 전화번호)*/
+  #main .customer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  #main .customer .inquiry {
+    position: relative;
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  
+  #main .customer .inquiry .more_btn {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    margin-top: 10px;
+    padding: 8px 18px;
+    border: 1px solid #BABABA;
+    background: none;
+    font-size: 1.2rem;
+    transition: all 0.3s;
+  }
+
+  #main .customer .inquiry .more_btn:hover {
+    background: #003975;
+    color: #fff;
+  }
+
+  #main .customer .inquiry_list {
+    margin-top: 20px;
+  }
+
+  #main .customer .inquiry_list a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  #main .customer .inquiry_list a p {
+    display: inline-block;
+    width: 200px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    font-size: 1.5rem;
+    line-height: 1.4;
+  }
+
+  #main .customer .inquiry_list a p img {
+    width: 12px;
+    margin-left: 10px;
+  }
+    
+  #main .customer .inquiry_list a span {
+    margin-right: 5px;
+    font-size: 1.4rem;
+    opacity: 0.8;
+  }
+
+  /*면적계산기 영역*/
+  #main .customer .helpful>div.help {
+    width: calc((100% - 10px) / 2);
+    height: 130px;
+  }
+
+  
+  #main .customer .calc {
+    padding: 35px 15px;
+    border-radius: 0 10px 0 10px;
+    overflow: hidden;
+    background: #003975;
+  }
+
+  #main .customer .calc p {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+  }
+  
+  #main .customer .calc i {
+    font-size: 1.2rem;
+  }
+
+  #main .customer .call {
+    height: 230px;
+    margin-top: 0;
+    padding: 15px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+    background: none;
+  }
+
+  #main .customer .call p {
+    font-size: 1.3rem;
+  }
+
+  #main .customer .call p:nth-of-type(2) {
+    margin-top: 10px;
+  }
+
+  #main .customer .call strong {
+    font-size: 1.8rem;
+  }
+
+  #main .customer .call i {
+    font-size: 1.8rem;
+  }
+
+  /*면적계산기 팝업*/
+  #main .customer .calc_popup .calcpop_wrap table .tdm input {
+    width: 125px;
+    font-size: 2.2rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 64px;
+    width: 42px;
+    height: 6px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::before {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 29px;
+    height: 4px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap span.mo_close::after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    width: 29px;
+    height: 4px;
+    margin-right: 31px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap .calc_head {
+    padding: 22px 35px;
+    background: #003975;
+    font-size: 2.5rem;
+    color: #fff;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap .calc_content {
+    height: 360px;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table {
+    margin: 21px auto;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table caption {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: left;
+  }
+
+  
+  #main .customer .calc_popup .calcpop_wrap table th {
+    line-height: 0;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm{
+    display: block;
+    width: 100%;
+    margin: -10px 0;
+    font-size: 1.8rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm input {
+    font-size: 1.8rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table #btn01, #main .customer .calc_popup .calcpop_wrap table #btn02 {
+    padding: 12px 30px;
+    border-radius: 5px;
+  }
+
+
+
+  /*회사가치, 대리점, 오시는길 영역*/
+  #main .value {
+    display: block;
+    margin: 0 auto 50px;
+    padding: 30px 20px;
+    border-radius: 0 10px 0 10px;
+    overflow: hidden;
+    background: url(../images/main/value_bg.jpg) left -150px bottom -457px no-repeat;
+  }
+
+  #main .value .value_text p {
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 1.7;
+  }
+
+  #main .value .place {
+    display: flex;
+    justify-content: center;
+    column-gap: 34px;
+    margin-top: 20px;
+  }
+
+  #main .value .place a {
+    display: block;
+    padding: 12px 33px 12px 18px;
+    border: 1px solid #bababa;
+    border-radius: 50px;
+    background: url(../images/main/direct_hover_btn.png) right 15px top 15px / 5px no-repeat;
+    font-size: 1.0rem;
+    color: #fff;
+    transition: all 0.3s;
+  }
+
+  #main .value .place a:hover {
+    border: 1px solid #003975;
+    background: #003975 url(../images/main/direct_hover_btn.png) right 15px top 15px / 5px no-repeat;
+  }
+
+}
+
+/*400*/
+@media screen and (max-width:400px) {
   .inner {
     max-width: 100%;
   }
@@ -2169,7 +2777,7 @@
 
   .main_visual .visual_text h2 i::before {
     content: "";
-    top: -10px;
+    top: -7px;
     width: 4px;
     height: 4px;
   }
@@ -2189,7 +2797,7 @@
   #main .main_visual .visual_scroll {
     position: absolute;
     right: 0;
-    bottom: -19px;
+    bottom: -14px;
     width: calc(100% - 211px);
   }
 
@@ -2275,16 +2883,14 @@
 
   /*메이드 영역*/
   #main .ourmade {
-    padding-top: 80px;
+    padding: 50px 0;
   }
 
   #main .ourmade .ourmade_content {
-    margin-top: 30px;
+    margin-top: 20px;
   }
 
   #main .ourmade .ourmade_content .made_wrap {
-    display: block;
-    column-gap: 0;
     padding-bottom: 100px;
   }
   
@@ -2294,18 +2900,76 @@
   }
 
   #main .ourmade .ourmade_content .made img {
-    display: block;
-    width: 100%;
     height: 220px;
-    object-fit: cover;
     border-radius: 10px;
   }
 
+  /*메이드 버튼*/
   #main .ourmade .ourmade_content .made .add_btn {
     width: 35px;
     height: 35px;
     font-size: 3.5rem;
     line-height: 35px;
+  }
+
+  /*메이드01*/
+  #main .ourmade .ourmade_content .made01 .made .made_add>div:nth-child(1) {
+    position: absolute;
+    left: 28%;
+    top: 10%;
+  }
+
+  #main .ourmade .ourmade_content .made01 .made .made_add>div:nth-child(2) {
+    position: absolute;
+    left: 73%;
+    top: 17%
+  }
+
+  #main .ourmade .ourmade_content .made01 .made .made_add>div:nth-child(3) {
+    position: absolute;
+    left: 60%;
+    top: 32%;
+  }
+
+  /*메이드02*/
+  #main .ourmade .ourmade_content .made02 .made .made_add>div:nth-child(1) {
+    position: absolute;
+    left: 38%;
+    top: 40%;
+  }
+
+  #main .ourmade .ourmade_content .made02 .made .made_add>div:nth-child(2) {
+    position: absolute;
+    left: 17%;
+    top: 20%;
+  }
+
+  #main .ourmade .ourmade_content .made02 .made .made_add>div:nth-child(2) .made_infor {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  /*메이드03*/
+  #main .ourmade .ourmade_content .made03 .made .made_add>div:nth-child(1) {
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 32%;
+  }
+
+  #main .ourmade .ourmade_content .made03 .made .made_add>div:nth-child(2) {
+    position: relative;
+    position: absolute;
+    left: 80%;
+    top: 38%;
+  }
+
+  #main .ourmade .ourmade_content .made03 .made .made_add>div:nth-child(3) {
+    position: relative;
+    position: absolute;
+    left: 10%;
+    top: 43%;
   }
 
   #main .ourmade .ourmade_content .made .made_infor.infor_media {
@@ -2318,10 +2982,23 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    width: 350px;
+    width: calc(100% - 20px);
     padding: 10px;
     border-radius: 5px;
     background: #fff;
+  }
+  
+  /*메이드03 정보 위치*/
+  #main .ourmade .ourmade_content .made03 .made .made_add>div:nth-child(2) .made_infor {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  #main .ourmade .ourmade_content .made03 .made .made_add>div:nth-child(3) .made_infor {
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
   }
 
   #main .ourmade .ourmade_content .made .made_infor img {
@@ -2333,19 +3010,18 @@
   }
 
   #main .ourmade .ourmade_content .made .made_infor .infor_text {
-    width: 280px;
     margin-top: 20px;
   }
 
   #main .ourmade .ourmade_content .made .made_infor .infor_text p {
     margin-bottom: 4px;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 500;
   }
 
   #main .ourmade .ourmade_content .made .made_infor .infor_text span {
     display: block;
-    font-size: 1.5rem;
+    font-size: 1.6rem;
     font-weight: 400;
   }
 
@@ -2358,10 +3034,8 @@
   }
 
   #main .ourmade .ourmade_content .made .made_infor .close {
-    display: block;
-    margin: 0 auto 0;
-    padding: 15px 15px; 
-    font-size: 1.7rem;
+    padding: 15px 15px 5px; 
+    font-size: 1.6rem;
     text-align: center;
   }
 
@@ -2373,11 +3047,11 @@
 
   #main .made_right .made_title h5 {
     margin-bottom: 5px;
-    font-size: 2.8rem;
+    font-size: 2.2rem;
   }
 
   #main .made_right .made_title p {
-    font-size: 2.0rem;
+    font-size: 1.8rem;
     font-weight: 300;
   }
 
@@ -2410,9 +3084,9 @@
   /*메이드 화살표*/
   #main .ourmade .made_arrow {
     position: absolute;
-    right: 20px;
-    bottom: 13px;
-    width: 175px;
+    right: 10px;
+    bottom: 30px;
+    width: 119px;
     user-select: none;
   }
 
@@ -2428,49 +3102,18 @@
     margin-top: 24px;
   }
 
-  @keyframes marquee {
-    0% {
-      transform: translateX(0);
-    }
-    100% {
-      transform: translateX(-50%);
-    }
-  }
-
-  #main .certificate .marquee_track {
-    display: inline-flex;
-    column-gap: 10px;
-    animation: marquee 80s linear infinite;
-  }
-
   #main .certificate .marquee_track li {
-    height: 215px;
-    text-align: center;
+    width: 180px;
   }
+
 
   #main .certificate .marquee_track li img {
-    display: block;
-    margin-bottom: 30px;
-    border-radius: 15px;
-    width: 170px;
-    height: 100%;
-    object-fit: cover;
-    box-shadow: 3px 3px 10px rgba(0,0,0,0.1);
+    width: 40%;
+    margin-bottom: 25px;
   }
 
   #main .certificate .marquee_track li p {
-    font-size: 1.5rem;
-  }
-
-  #main .certificate .marquee_track li .ks_wrap {
-    column-gap: 12px;
-  }
-
-  #main .certificate .marquee_track li img.ks {
-    width: 21px;
-    border-radius: 0;
-    box-shadow: none;
-    opacity: 0.6;
+    font-size: 1.6rem;
   }
 
   /*고객관련 영역(고객문의, 면적계산기, 전화번호)*/
@@ -2516,7 +3159,7 @@
 
   #main .customer .inquiry_list a p {
     display: inline-block;
-    width: 200px;
+    width: 130px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -2536,7 +3179,7 @@
   }
 
   /*면적계산기 영역*/
-  #main .customer .helpful>div {
+  #main .customer .helpful>div.help {
     width: calc((100% - 10px) / 2);
     height: 130px;
   }
@@ -2584,6 +3227,7 @@
   }
 
 
+
   /*회사가치, 대리점, 오시는길 영역*/
   #main .value {
     display: block;
@@ -2593,7 +3237,13 @@
     background: url(../images/main/value_bg.jpg) left -150px bottom -457px no-repeat;
   }
 
-  #main .value>p {
+  #main .value .value_text {
+    width: 100%;
+    padding: 0 20px;
+    margin: 0 auto;
+  }
+
+  #main .value .value_text p {
     font-size: 1.2rem;
     font-weight: 500;
     line-height: 1.7;
@@ -2601,10 +3251,11 @@
   }
 
   #main .value .place {
+    width: 100%;
     display: flex;
     justify-content: center;
     column-gap: 34px;
-    margin-top: 20px;
+    margin: 20px auto 0;
   }
 
   #main .value .place a {
