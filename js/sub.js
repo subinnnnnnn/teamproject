@@ -6,9 +6,10 @@ $(function(){
   $("#lnb>li").mouseleave(function(){
     $(this).children(".depth2").stop().slideUp(300);
   });
-  $(document).click(function(){
-        $("#lnb .depth2").stop().slideUp(300);
- }); 
+  $("#lnb>li").click(function(){
+    $(this).children(".depth2").stop().slideToggle(300);
+  });
+
 
   //컬러차트
     var swiper = new Swiper(".chart", {
@@ -56,3 +57,4 @@ $(function(){
   });  
 
 });
+
