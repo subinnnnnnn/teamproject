@@ -1496,7 +1496,10 @@
   .write_wrap table input{
     font-size:1.2rem;
   }
-
+  /*버튼*/
+  .button_wrap{
+    margin-top:50px;
+  }
 
   /*지우*/
   /*04_01_ceo인사말*/
