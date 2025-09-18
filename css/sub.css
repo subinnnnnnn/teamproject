@@ -999,7 +999,7 @@ ul.paging li.on a{
   white-space:nowrap;
 }
 #container .bbs table.customer tr td img{
-  vertical-align:bottom;
+  vertical-align:sub;
 }
 /*대리점*/
 #container .sub_visual.customer_01 .img {
