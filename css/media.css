@@ -21,6 +21,9 @@
   section.tile03 h4{
     letter-spacing:-0.30rem;
   }
+  #container .color_chart .swiper-button-next, #container .color_chart .swiper-button-prev{
+    display:none;
+  }
 
   /*지우*/
   /*04_01_ceo인사말*/
