@@ -3,7 +3,7 @@ $(function(){
   //메인비주얼
   var main_visual = new Swiper(".main_visual", {
     loop: true,
-    autopla: {
+    autoplay: {
       delay: 3500,
       disableOnInteraction: false,
     },
@@ -36,7 +36,7 @@ $(function(){
 
 
   //상품 슬라이드
-  var swiper = new Swiper(".product_box", {
+  var product_box = new Swiper(".product_box", {
     slidesPerView: 4,
     spaceBetween: 16,
     loop: true,
@@ -94,11 +94,11 @@ $(function(){
 
   //메이드 영역
   //메이드 슬라이드
-  var swiper = new Swiper(".ourmade_content", {
+  var ourmade_content = new Swiper(".ourmade_content", {
     loop: true,
     navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
+      nextEl: ".ourmade .swiper-button-next",
+      prevEl: ".ourmade .swiper-button-prev",
     },
   });
 
@@ -198,5 +198,7 @@ $(function(){
   $(".calc_popup .mo_close").click(function(){
     $(".calc_popup").hide();
   });
+
+
 
 });

@@ -57,26 +57,28 @@ $(function(){
 
   //위로가기
   $(window).scroll(function(){
-  if($(window).scrollTop()>=200){
-    $(".btn_top").fadeIn();
-    $("#header").addClass("fixed")
-  } else {
-    $(".btn_top").fadeOut();
-    $("#header").removeClass("fixed")                
-  }
-});
+    if($(window).scrollTop()>=200){
+      $(".btn_top").fadeIn();
+      $("#header").addClass("fixed")
+    } else {
+      $(".btn_top").fadeOut();
+      $("#header").removeClass("fixed")                
+    }
+  });
 
-//면적계산기 팝업
-$("li.calc_link a").click(function(){
-  $(".calc_popup").show();
-});
 
-$(".calc_popup .close").click(function(){
+  //면적계산기 팝업
   $(".calc_popup").hide();
-});
-$(".calc_popup .mo_close").click(function(){
-  $(".calc_popup").hide();
-});
+  $(".calc_link a").click(function(){
+    $(".calc_popup").show();
+  });
+
+  $(".calc_popup .close").click(function(){
+    $(".calc_popup").hide();
+  });
+  $(".calc_popup .mo_close").click(function(){
+    $(".calc_popup").hide();
+  });
 
 
 });
