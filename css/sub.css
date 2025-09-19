@@ -137,9 +137,9 @@ section h4::before{
 #container .sub_depth .lnb_inner #lnb ul.depth2{
   display:none;
   position:absolute;
-  top:80%;
+  /*top:80%;*/
   left:0;
-  z-index:-1;
+  z-index:96;
   padding:20px;  
   width:100%;
   color:#555;
