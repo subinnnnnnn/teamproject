@@ -71,7 +71,7 @@
               <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
               <li><a href="../05_customer/02_agency.html">대리점</a></li>
               <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
-              <li><a href="#">면적계산기</a></li>
+              <li class="calc_link"><a href="#">면적계산기</a></li>
             </ul>
           </li>
         </ul>
@@ -124,7 +124,7 @@
                 <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
                 <li><a href="../05_customer/02_agency.html">대리점</a></li>
                 <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
-                <li><a href="#">면적계산기</a></li>
+                <li class="calc_link"><a href="#">면적계산기</a></li>
               </ul>
             </li>
           </ul>
@@ -165,7 +165,7 @@
               <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
               <li><a href="../05_customer/02_agency.html">대리점</a></li>
               <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
-              <li><a href="../05_customer/04_calculator.html">면적계산기</a></li>      
+              <li class="calc_link"><a href="#">면적계산기</a></li>     
             </ul>
           </li>
         </ul>
@@ -266,7 +266,35 @@
     <!--위로가기-->
     <div class="btn_top">
       <a href="#wrap">Top</a>
-    </div>     
+    </div>
+    <!--면적계산기-->
+    <div class="calc_popup">
+      <div class="calcpop_wrap">
+        <span class="mo_close"></span>
+        <div class="calc_head">면적계산기</div>
+        <div class="calc_content">
+          <table>
+            <caption>넓이단위변환</caption>
+            <tbody>
+              <tr>
+                <th scope="row" abbr="평 → m²"><span>평 → m²</span></th>
+                <td class="tdm"><input type="text" id="p1"> 평</td>
+                <td class="cen"><a href="javascript:;" id="btn01">변환</a></td>
+                <td class="tdm"><input type="text" id="m1"> 평방미터(m²)</td>
+              </tr>
+              <tr>
+                <th scope="row" abbr="m² → 평"><span>m² → 평</span></th>
+                <td class="tdm"><input type="text" id="m2" > 평방미터(m²)</td>
+                <td class="cen"><a href="javascript:;" id="btn02">변환</a></td>
+                <td class="tdm"><input type="text" id="p2"> 평</td>
+              </tr>
+            </tbody>
+          </table>
+          <div class="close">닫기</div>
+        </div>
+      </div>
+    </div>
+    <!--//면적계산기-->         
   </main>
   <!--//container-->
   <!--푸터영역-->
