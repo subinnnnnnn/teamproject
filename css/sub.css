@@ -35,10 +35,7 @@ section h4::before{
 .min_h850{
   min-height:850px;
 }
-.zindex{
-  position:relative;
-  z-index:1;
-}
+
 /*석재타일*/
 #container{
   /*overflow:hidden;*/
