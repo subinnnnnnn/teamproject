@@ -1199,9 +1199,13 @@
 
   .main_visual .visual_text h2 i::before {
     content: "";
-    top: -17px;
+    top: -8px;
     width: 8px;
     height: 8px;
+  }
+
+  .main_visual .visual03 .visual_text h2 i::before {
+    top: -5px;
   }
 
   .main_visual .visual_text p {
