@@ -1,14 +1,33 @@
 $(function(){
-    //서브메뉴
-  $("#lnb>li").mouseover(function(){
-    $(this).children(".depth2").stop().slideDown(300);
-  });
-  $("#lnb>li").mouseleave(function(){
-    $(this).children(".depth2").stop().slideUp(300);
-  });
-  $("#lnb>li").click(function(){
-    $(this).children(".depth2").stop().slideToggle(300);
-  });
+//서브메뉴
+ // $("#lnb>li").mouseover(function(){
+//    $(this).children(".depth2").stop().slideDown(300);
+ // });
+ // $("#lnb>li").mouseleave(function(){
+ //   $(this).children(".depth2").stop().slideUp(300);
+ // });
+ // $("#lnb>li").click(function(){
+ //   $(this).children(".depth2").stop().slideToggle(300);
+ // });
+  // 1024px을 기준으로 PC와 모바일 환경을 구분합니다.
+  const isMobile = window.innerWidth <= 1024;
+  // 모바일이 아닐 경우 (PC 환경)
+  if (!isMobile) {
+      $("#lnb > li").mouseover(function() {
+          $(this).children(".depth2").stop().slideDown(300);
+      });
+
+      $("#lnb > li").mouseleave(function() {
+          $(this).children(".depth2").stop().slideUp(300);
+      });
+  }
+  // 모바일 환경일 경우
+  else {
+      $("#lnb > li").click(function() {
+          // slideToggle()을 사용해 클릭 시 메뉴를 펼치거나 접습니다.
+          $(this).children(".depth2").stop().slideToggle(300);
+      });
+  }  
 
 
   //컬러차트
@@ -57,4 +76,5 @@ $(function(){
   });  
 
 });
+
 
