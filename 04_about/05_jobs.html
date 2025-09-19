@@ -64,7 +64,7 @@
                 <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
                 <li><a href="../05_customer/02_agency.html">대리점</a></li>
                 <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
-                <li><a href="../05_customer/03_contact.html">면적계산기</a></li>
+                <li class="calc_link"><a href="#">면적계산기</a></li>
               </ul>
             </li>
           </ul>
@@ -118,7 +118,7 @@
                   <li><a href="../05_customer/01_inquiry.html">고객문의</a></li>
                   <li><a href="../05_customer/02_agency.html">대리점</a></li>
                   <li><a href="../05_customer/03_contact.html">담당자안내</a></li>
-                  <li><a href="#">면적계산기</a></li>
+                  <li class="calc_link"><a href="#">면적계산기</a></li>
                 </ul>
               </li>
             </ul>
@@ -232,33 +232,23 @@
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_process02.png" alt="서류 전형"></div>
-              <p>
-                서류 전형
-              </p>
+              <p>서류 전형</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_process03.png" alt="면접 전형"></div>
-              <p>
-                면접 전형
-              </p>
+              <p>면접 전형</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_process04.png" alt="건강검진"></div>
-              <p>
-                건강검진
-              </p>
+              <p>건강검진</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_process05.png" alt="인턴3개월"></div>
-              <p>
-                인턴3개월
-              </p>
+              <p>인턴3개월</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_process06.png" alt="최종합격"></div>
-              <p>
-                최종합격
-              </p>
+              <p>최종합격</p>
             </li>
           </ul>
         </div>
@@ -271,43 +261,85 @@
           <ul class="people_process benefits">
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_benefits01.png" alt="4대 사회보험 가입"></div>
-              <p>
-                4대 사회보험 가입
-              </p>
+              <p>4대 사회보험 가입</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_benefits02.png" alt="출,퇴근지원"></div>
-              <p>
-                출,퇴근지원
-              </p>
+              <p>출,퇴근지원</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_benefits03.png" alt="포상제도"></div>
-              <p>
-                포상제도
-              </p>
+              <p>포상제도</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_benefits04.png" alt="명절,휴가 지원"></div>
-              <p>
-                명절,휴가 지원
-              </p>
+              <p>명절,휴가 지원</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_benefits05.png" alt="건강진단"></div>
-              <p>
-                건강진단
-              </p>
+              <p>건강진단</p>
             </li>
             <li>
               <div class="icon"><img src="../images/sub/04_about/05_jobs/icon_benefits06.png" alt="건강진단"></div>
-              <p>
-                여가생활지원
-              </p>
+              <p>여가생활지원</p>
             </li>
           </ul>
         </div>
       </section>
+      <!--면적 계산기-->
+      <div class="calc_popup">
+        <div class="calcpop_wrap">
+          <span class="mo_close"></span>
+          <div class="calc_head">면적계산기</div>
+          <div class="calc_content">
+            <table>
+              <caption>넓이단위변환</caption>
+              <tbody>
+                <tr>
+                  <th scope="row" abbr="평 → m²"><span>평 → m²</span></th>
+                  <td class="tdm"><input type="text" id="p1"> 평</td>
+                  <td class="cen"><a href="javascript:;" id="btn01">변환</a></td>
+                  <td class="tdm"><input type="text" id="m1"> 평방미터(m²)</td>
+                </tr>
+                <tr>
+                  <th scope="row" abbr="m² → 평"><span>m² → 평</span></th>
+                  <td class="tdm"><input type="text" id="m2" > 평방미터(m²)</td>
+                  <td class="cen"><a href="javascript:;" id="btn02">변환</a></td>
+                  <td class="tdm"><input type="text" id="p2"> 평</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="close">닫기</div>
+          </div>
+        </div>
+      </div>
+      <!--면적 계산기-->
+      <div class="calc_popup">
+        <div class="calcpop_wrap">
+          <span class="mo_close"></span>
+          <div class="calc_head">면적계산기</div>
+          <div class="calc_content">
+            <table>
+              <caption>넓이단위변환</caption>
+              <tbody>
+                <tr>
+                  <th scope="row" abbr="평 → m²"><span>평 → m²</span></th>
+                  <td class="tdm"><input type="text" id="p1"> 평</td>
+                  <td class="cen"><a href="javascript:;" id="btn01">변환</a></td>
+                  <td class="tdm"><input type="text" id="m1"> 평방미터(m²)</td>
+                </tr>
+                <tr>
+                  <th scope="row" abbr="m² → 평"><span>m² → 평</span></th>
+                  <td class="tdm"><input type="text" id="m2" > 평방미터(m²)</td>
+                  <td class="cen"><a href="javascript:;" id="btn02">변환</a></td>
+                  <td class="tdm"><input type="text" id="p2"> 평</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="close">닫기</div>
+          </div>
+        </div>
+      </div>
       <!--위로가기-->
       <div class="btn_top">
         <a href="#wrap">Top</a>
