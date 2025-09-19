@@ -1111,6 +1111,7 @@
     font-size:1.2rem;
   }
   .search_box .submit_box input{
+    padding:10px 80px 10px 5px; 
     text-indent:5px;
   }
   .search_box .select_area select{
@@ -1478,13 +1479,11 @@
     padding:20px;
   }
   /*글쓰기*/
-  .write_wrap table input[type="text"].email{
-    width:40%;
-  }
-  .write_wrap table select {
+  .write_wrap table select{
     padding:7px 10px;
     width:30%;
     font-size:1.4rem;
+    border-radius:0;
   }
   .write_wrap table td, .write_wrap table th{
     padding:5px 10px;
@@ -1496,6 +1495,19 @@
   .write_wrap table input{
     font-size:1.2rem;
   }
+  .write_wrap table input[type="password"]{
+    width:75%;
+  }
+  .write_wrap table input[type="text"]#wr_name{
+    width:100%;
+  }
+  .write_wrap table input[type="text"].email{
+    width:57%;
+  }
+  .write_wrap .privacy_comment .privacy_agree p{
+    line-height:180%;
+  }
+
   /*버튼*/
   .button_wrap{
     margin-top:50px;
