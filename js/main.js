@@ -40,7 +40,7 @@ $(function(){
     slidesPerView: 4,
     spaceBetween: 16,
     loop: true,
-    autopla: {
+    autoplay: {
       delay: 2500,
       disableOnInteraction: false,
     },
