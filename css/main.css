@@ -377,6 +377,7 @@
   text-align: center;
   user-select: none;
 }
+
 #main .made_right .made_tile p{
   font-size:2.0rem;
 }
@@ -388,7 +389,8 @@
 }
 
 #main .made_right .made_tile img.on {
-  border: 4px solid #39B54A;
+  outline: 4px solid #39B54A;
+  outline-offset: -4px;
 }
 
 /*메이드01*/
