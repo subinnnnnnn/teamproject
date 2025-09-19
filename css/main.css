@@ -33,7 +33,7 @@
   display: block;
   width: 100%;
   height: 900px;
-  background: url(../images/main/visual01.jpg) 0 0 / cover no-repeat;
+  background: url(../images/main/visual01.jpg) center 0 / cover no-repeat;
 
 }
 
@@ -41,14 +41,14 @@
   display: block;
   width: 100%;
   height: 900px;
-  background: url(../images/main/visual02.jpg) 0 0 / cover no-repeat;
+  background: url(../images/main/visual02.jpg) 0 center / cover no-repeat;
 }
 
 .main_visual .visual03 {
   display: block;
   width: 100%;
   height: 900px;
-  background: url(../images/main/visual03.jpg) 0 0 /cover no-repeat;
+  background: url(../images/main/visual03.jpg) 0 center /cover no-repeat;
 }
 
 .main_visual .visual_text {
@@ -1438,6 +1438,10 @@
   }
 
   /*인증서 영역*/
+  #main .certificate .certificate_wrap .marquee_track:hover {
+    animation-play-state: running;
+  }
+
   #main .certificate .certificate_wrap .marquee_track {
     margin-top: 40px;
   }
@@ -1463,7 +1467,7 @@
   }
 
   #main .certificate .marquee_track li img.ks {
-    width: 32px;
+    width: 28px;
     border-radius: 0;
     box-shadow: none;
     opacity: 0.6;
@@ -1547,12 +1551,12 @@
   }
 
   /*면적계산기 팝업*/
-  table,
-  thead,
-  tbody,
-  th,
-  td,
-  tr {
+  .calc_popup table,
+  .calc_popup thead,
+  .calc_popup tbody,
+  .calc_popup th,
+  .calc_popup td,
+  .calc_popup tr {
     display: block;
     width: 100%;
   }
@@ -1570,9 +1574,9 @@
     content: "";
     position: absolute;
     right: 0px;
-    top: 68px;
+    top: 66px;
     display: block;
-    width: 70px;
+    width: 50px;
     height: 6px;
     margin-right: 31px;
     border-radius: 50px;
@@ -1584,9 +1588,9 @@
     content: "";
     position: absolute;
     right: 0px;
-    top: 68px;
+    top: 66px;
     display: block;
-    width: 70px;
+    width: 50px;
     height: 6px;
     margin-right: 31px;
     border-radius: 50px;
@@ -1596,6 +1600,8 @@
 
   #main .customer .calc_popup .calcpop_wrap .calc_head {
     width: 100%;
+    padding: 40px 25px;
+    font-size: 3.5rem;
   }
 
   #main .customer .calc_popup .calcpop_wrap .calc_content {
@@ -1607,7 +1613,7 @@
   #main .customer .calc_popup .calcpop_wrap table {
     display: block;
     width: 100%;
-    margin: 80px auto;
+    margin: 35px auto;
   }
 
   #main .customer .calc_popup .calcpop_wrap table tbody {
@@ -1617,6 +1623,7 @@
 
   #main .customer .calc_popup .calcpop_wrap table caption {
     display: block;
+    font-size: 3.5rem;
   }
 
   #main .customer .calc_popup .calcpop_wrap table th {
@@ -1737,7 +1744,7 @@
   }
 
   .main_visual .visual_text p {
-    font-size: 1.8rem;
+    font-size: 1.2rem;
   }
 
   /*메인비주얼 화살표*/
@@ -1929,9 +1936,9 @@
   /*메이드 화살표*/
   #main .ourmade .made_arrow {
     position: absolute;
-    right: 20px;
+    right: 10px;
     bottom: 13px;
-    width: 175px;
+    width: 137px;
     user-select: none;
   }
 
@@ -2417,9 +2424,13 @@
 
   .main_visual .visual_text h2 i::before {
     content: "";
-    top: -7px;
+    top: -5px;
     width: 4px;
     height: 4px;
+  }
+
+  .main_visual .visual03 .visual_text h2 i::before {
+    top: -2px;
   }
   
   #main .main_visual .visual_scroll {
@@ -2490,6 +2501,31 @@
     position: absolute;
     bottom: 10px;
     padding: 0 5px;
+  }
+
+  /*메이드 영역*/
+
+  /*메이드02*/
+  #main .ourmade .ourmade_content .made02 .made .made_add>div:nth-child(2) .made_infor {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }  
+
+  /*메이드03*/
+  #main .ourmade .ourmade_content .made03 .made .made_add>div:nth-child(2) .made_infor {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+  }
+
+  #main .ourmade .ourmade_content .made03 .made .made_add>div:nth-child(3) .made_infor {
+    position: fixed;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
   }
 
   /*인증서 영역*/
@@ -2569,7 +2605,7 @@
 
   
   #main .customer .calc {
-    padding: 35px 15px;
+    padding: 41px 15px;
     border-radius: 0 10px 0 10px;
     overflow: hidden;
     background: #003975;
@@ -2629,8 +2665,8 @@
     content: "";
     position: absolute;
     right: 0px;
-    top: 40px;
-    width: 29px;
+    top: 35px;
+    width: 25px;
     height: 4px;
     margin-right: 31px;
   }
@@ -2639,16 +2675,16 @@
     content: "";
     position: absolute;
     right: 0px;
-    top: 40px;
-    width: 29px;
+    top: 35px;
+    width: 25px;
     height: 4px;
     margin-right: 31px;
   }
 
   #main .customer .calc_popup .calcpop_wrap .calc_head {
-    padding: 22px 35px;
+    padding: 22px 25px;
     background: #003975;
-    font-size: 2.5rem;
+    font-size: 2.0rem;
     color: #fff;
   }
 
@@ -2662,7 +2698,7 @@
 
   #main .customer .calc_popup .calcpop_wrap table caption {
     margin-bottom: 25px;
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     font-weight: 500;
     text-align: left;
   }
@@ -2672,20 +2708,26 @@
     line-height: 0;
   }
 
+  #main .customer .calc_popup .calcpop_wrap table th span {
+    font-size: 1.8rem;
+  }
+
   #main .customer .calc_popup .calcpop_wrap table .tdm{
     display: block;
     width: 100%;
-    margin: -10px 0;
-    font-size: 1.8rem;
+    margin: -13px 0;
+    font-size: 1.4rem;
   }
 
   #main .customer .calc_popup .calcpop_wrap table .tdm input {
-    font-size: 1.8rem;
+    font-size: 1.4rem;
   }
 
   #main .customer .calc_popup .calcpop_wrap table #btn01, #main .customer .calc_popup .calcpop_wrap table #btn02 {
+    margin: -12px 0;
     padding: 12px 30px;
     border-radius: 5px;
+    font-size: 1.5rem;
   }
 
 

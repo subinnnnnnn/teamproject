@@ -1486,6 +1486,7 @@ ul.paging li.on a{
 }
 #container .Message .img {
   width: calc(100% - 722px);
+  border-radius: 0 20px 0 20px;
   background: url(../images/sub/04_about/01_ceo/company.jpg) 0 0 / cover no-repeat;
 }
 #container .Message .text_box {
@@ -1516,7 +1517,7 @@ ul.paging li.on a{
 #container .company_history .history_img img {
   display: block;
   width: 100%;
-  border-radius: 20px;
+  border-radius: 0 20px 0 20px;
 }
 #container .company_history .wep {
   width: calc((100% - 50px) / 2);
@@ -1756,7 +1757,6 @@ ul.paging li.on a{
 }
 
 #container .process .people_process p {
-  padding: 0 10px;
   font-size: 2.2rem;
   text-align: center;
   word-break: keep-all;
@@ -1842,6 +1842,7 @@ ul.paging li.on a{
 }
 #container .map_container .map_infor p {
   font-size: 2.0rem;
+  word-break: keep-all;
 }
 #container .map_container.seoul .map_infor > div:nth-child(1) {
   width: 100%;

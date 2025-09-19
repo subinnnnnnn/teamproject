@@ -207,37 +207,48 @@
   }
   /*ceo인사말*/
   #container .Message {
-    display: flex;
-    column-gap: 40px;
+    display: block;
   }
   #container .Message .img {
-    width: calc(100% - 490px);
+    width: 100%;
+    padding: 150px 0;
     background: url(../images/sub/04_about/01_ceo/company.jpg) 0 0 / cover no-repeat;
   }
   #container .Message .text_box {
-    width: 450px;
+    width: 100%;
+    margin-top: 50px;
   }
   #container .Message p {
-    margin-bottom: 30px;
-    font-size: 2.0rem;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
   }
   #container .Message p.ceo_name {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
   }
 
   /*04_02_회사연혁*/
+  #container .company_history {
+    position: relative;
+    display: block;
+    width: 100%;
+  }
+  #container .company_history .wep {
+    width: 100%;
+  }
+  #container .company_history .line {
+    display: none;
+  }
+  #container .company_history .history_text {
+    margin-top: 50px;
+  }
   #container .company_history .history_text li {
     margin-bottom: 40px;
   }
   #container .company_history .history_text h5 {
-    font-size: 4.5rem;
-    font-weight: 500;
-    line-height: 0.8;
+    font-size: 3.8rem;
   }
   #container .company_history .history_text .text {
-    column-gap: 10px;
     margin-bottom: 35px;
-    font-size: 2.0rem;
   }
 
   /*04_03_조직도*/
@@ -382,7 +393,6 @@
   }
 
   #container .process .people_process p {
-    padding: 0 10px;
     font-size: 2.2rem;
     text-align: center;
     word-break: keep-all;
@@ -849,7 +859,6 @@
     background: #f4f4f4;
   }
   #container .process .people_process p {
-    padding: 0 10px;
     font-size: 1.6rem;
     text-align: center;
     word-break: keep-all;
@@ -1483,7 +1492,6 @@
     padding:7px 10px;
     width:30%;
     font-size:1.4rem;
-    border-radius:0;
   }
   .write_wrap table td, .write_wrap table th{
     padding:5px 10px;
@@ -1559,6 +1567,9 @@
   }
   
   /*04_02_회사연혁*/
+  #container .company_history .history_img img {
+    border-radius: 0 10px 0 10px;
+  }
   #container .company_history .history_text {
     margin-top: 50px;
   }
@@ -1573,12 +1584,12 @@
   }
   #container .company_history .history_text .text {
     column-gap: 10px;
-    margin: 20px 0 25px;
+    margin: 15px 0;
     font-size: 1.3rem;
   }
   #container .company_history .history_text .text strong {
     font-size: 1.5rem;
-    line-height: 1;
+    line-height: 1.3;
   }
   #container .company_history .history_text .text p {
     margin-top: 0;
@@ -1702,7 +1713,6 @@
     background: url(../images/sub/04_about/05_jobs/process_arrow.png)0 0 / 12px no-repeat;
   }
   #container .process .people_process p {
-    padding: 0 10px;
     font-size: 1.4rem;
     text-align: center;
     word-break: keep-all;
@@ -1862,8 +1872,16 @@
     padding:10px 0;
     font-size:1.8rem;
   }
+  /*쓰기 페이지*/
+  .write_wrap table input[type="text"].email{
+    width:100%;
+  }
+  .write_wrap table select{
+    margin-top:10px;
+    width:88%;
+  }
 
-/*지우*/
+  /*지우*/
   /*04_01_ceo인사말*/
 
   /*회사정신*/
@@ -1968,7 +1986,6 @@
     background: url(../images/sub/04_about/05_jobs/process_arrow.png)0 0 / 7px no-repeat;
   }
   #container .process .people_process p {
-    padding: 0 3px;
     font-size: 1.3rem;
   }
 
@@ -2013,4 +2030,5 @@
   #container .map_container .map_infor p {
     font-size: 1.3rem;
   }
+
 }
