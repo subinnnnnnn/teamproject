@@ -66,4 +66,17 @@ $(function(){
   }
 });
 
+//면적계산기 팝업
+$("li.calc_link a").click(function(){
+  $(".calc_popup").show();
+});
+
+$(".calc_popup .close").click(function(){
+  $(".calc_popup").hide();
+});
+$(".calc_popup .mo_close").click(function(){
+  $(".calc_popup").hide();
+});
+
+
 });
