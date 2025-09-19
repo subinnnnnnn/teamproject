@@ -57,8 +57,6 @@
     font-display:swap;
 }
 
-
-
 /*헤더영역*/
 #header {
   position: fixed;
@@ -271,6 +269,120 @@
   color:#fff;
 }
 
+/*면적계산기 팝업*/
+.calc_popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.calc_popup .calcpop_wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.calc_popup .calcpop_wrap .calc_head {
+  padding: 40px 35px;
+  background: #003975;
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.calc_popup .calcpop_wrap .calc_content {
+  padding: 0 20px;
+  height: 650px;
+  overflow-y: auto;
+}
+
+.calc_popup .calcpop_wrap table {
+  width: 1200px;
+  margin: 80px auto;
+}
+
+.calc_popup .calcpop_wrap table tbody {
+  border-top: 2px solid #003975;
+  border-bottom: 2px solid #003975;
+}
+
+.calc_popup .calcpop_wrap table caption {
+  margin-bottom: 50px;
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.calc_popup .calcpop_wrap table th, .calc_popup .calcpop_wrap table td {
+  padding: 30px 20px;
+  font-size: 2.0rem;
+  font-weight: 300;
+}
+
+.calc_popup .calcpop_wrap table th {
+  width: 150px;
+  border: 1px solid #ddd;
+  border-left: none;
+}
+
+.calc_popup .calcpop_wrap table th span {
+  font-size: 2.0rem;
+}
+
+.calc_popup .calcpop_wrap table .tdm {
+  width: calc((100% - 300px) / 2);
+}
+
+.calc_popup .calcpop_wrap table .cen {
+  width: 150px;
+}
+
+.calc_popup .calcpop_wrap table tr:nth-child(1) {
+  border-bottom: 1px solid #ddd;
+}
+
+.calc_popup .calcpop_wrap table input {
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.calc_popup .calcpop_wrap table #btn01, 
+.calc_popup .calcpop_wrap table #btn02{
+  padding: 22px 30px;
+  border-radius: 10px;
+  background: #39B54A;
+  font-size: 2.0rem;
+  color: #fff;
+  text-align: center;
+}
+
+.calc_popup .calcpop_wrap .calc_content .close{
+  position: absolute;
+  right: 68px;
+  bottom: 48px;
+  padding: 30px 55px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f0f0f0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.calc_popup .calcpop_wrap span.mo_close{
+  display: none;
+}
+
 /*미디아 영역*/
 @media (max-width: 1340px) and (min-width: 1200px) {
   .inner {
@@ -343,6 +455,28 @@
     display: block;
     width: 100%;
   }
+
+  /*면적계산기 팝업*/
+  .calc_popup .calcpop_wrap {
+    width: 90%;
+  }
+
+  .calc_popup .calcpop_wrap table {
+    width: 100%;
+    margin: 80px auto;
+  }
+
+  .calc_popup .calcpop_wrap table th {
+    width: 140px;
+  }
+
+  .calc_popup .calcpop_wrap table .tdm {
+    width: calc((100% - 280px) / 2);
+  }
+
+  .calc_popup .calcpop_wrap table .cen {
+    width: 140px;
+  }  
 }
 
 @media screen and (max-width:1200px){
@@ -423,7 +557,26 @@
     width: 100%;
   }
   
+  .calc_popup .calcpop_wrap {
+    width: 90%;
+  }
 
+  .calc_popup .calcpop_wrap table {
+    width: 100%;
+    margin: 80px auto;
+  }
+
+  .calc_popup .calcpop_wrap table th {
+    width: 140px;
+  }
+
+  .calc_popup .calcpop_wrap table .tdm {
+    width: calc((100% - 280px) / 2);
+  }
+
+  .calc_popup .calcpop_wrap table .cen {
+    width: 140px;
+  }
 
 
 }
@@ -562,7 +715,7 @@
     font-size: 1.8rem;
   }
 
-  #header .media_submenu_bg {
+  #header .media_menu .media_submenu_bg {
     position: fixed;
     left: 0;
     top: 0;
@@ -570,7 +723,171 @@
     height: 100vh;
     background: rgba(0,0,0,0.5);
   }
+  /*면적계산기 팝업*/
+.helpful {
+  width: calc(100% - 888px);
+}
 
+.calc {
+  height: 180px;
+  padding: 48px 35px;
+  border-radius: 0 20px 0 20px;
+  overflow: hidden;
+  background: #003975 url(../images/main/icon_calculator.png) right 38px top 20px no-repeat;
+  color: #fff;
+  cursor: pointer;
+}
+
+.calc p {
+  margin-bottom: 15px;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.calc i {
+  font-size: 2.0rem;
+}
+
+.call {
+  height: 230px;
+  padding: 32px 35px;
+  margin-top: 28px;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  background: url(../images/main/icon_call.png) right 45px bottom 40px no-repeat;
+}
+
+.call p {
+  font-size: 2.0rem;
+}
+
+.call p:nth-of-type(2) {
+  margin-top: 30px;
+}
+
+.call strong {
+  font-size: 3.0rem;
+  font-weight: 500;
+}
+
+.call i {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+/*면적계산기 팝업*/
+.calc_popup {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 999;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+
+.calc_popup .calcpop_wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 1270px;
+  border-radius: 20px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.calc_popup .calcpop_wrap .calc_head {
+  padding: 40px 35px;
+  background: #003975;
+  font-size: 4.5rem;
+  color: #fff;
+}
+
+.calc_popup .calcpop_wrap .calc_content {
+  padding: 0 20px;
+  height: 650px;
+  overflow-y: auto;
+}
+
+.calc_popup .calcpop_wrap table {
+  width: 1200px;
+  margin: 80px auto;
+}
+
+.calc_popup .calcpop_wrap table tbody {
+  border-top: 2px solid #003975;
+  border-bottom: 2px solid #003975;
+}
+
+.calc_popup .calcpop_wrap table caption {
+  margin-bottom: 50px;
+  font-size: 4.5rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.calc_popup .calcpop_wrap table th, .calc_popup .calcpop_wrap table td {
+  padding: 30px 20px;
+  font-size: 2.0rem;
+  font-weight: 300;
+}
+
+.calc_popup .calcpop_wrap table th {
+  width: 150px;
+  border: 1px solid #ddd;
+  border-left: none;
+}
+
+.calc_popup .calcpop_wrap table th span {
+  font-size: 2.0rem;
+}
+
+.calc_popup .calcpop_wrap table .tdm {
+  width: calc((100% - 300px) / 2);
+}
+
+.calc_popup .calcpop_wrap table .cen {
+  width: 150px;
+}
+
+.calc_popup .calcpop_wrap table tr:nth-child(1) {
+  border-bottom: 1px solid #ddd;
+}
+
+.calc_popup .calcpop_wrap table input {
+  padding: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+}
+
+.calc_popup .calcpop_wrap table #btn01, 
+.calc_popup .calcpop_wrap table #btn02 {
+  padding: 22px 30px;
+  border-radius: 10px;
+  background: #39B54A;
+  font-size: 2.0rem;
+  color: #fff;
+  text-align: center;
+}
+
+.calc_popup .calcpop_wrap .calc_content .close {
+  position: absolute;
+  right: 68px;
+  bottom: 48px;
+  padding: 30px 55px;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #f0f0f0;
+  font-size: 2.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.calc_popup .calcpop_wrap span.mo_close {
+  display:none;
+}
   /*푸터영역*/
   #footer {
     padding: 50px 0;
