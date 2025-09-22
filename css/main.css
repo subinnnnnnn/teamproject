@@ -2325,7 +2325,6 @@
     text-align: left;
   }
 
-  
   #main .customer .calc_popup .calcpop_wrap table th {
     line-height: 0;
   }
@@ -2339,6 +2338,22 @@
 
   #main .customer .calc_popup .calcpop_wrap table .tdm input {
     font-size: 1.8rem;
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm input#p1 {
+    width: calc(100% - 30px);
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm input#m1 {
+    width: calc(100% - 115px);
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm input#p2 {
+    width: calc(100% - 30px);
+  }
+
+  #main .customer .calc_popup .calcpop_wrap table .tdm input#m2 {
+    width: calc(100% - 115px);
   }
 
   #main .customer .calc_popup .calcpop_wrap table #btn01, #main .customer .calc_popup .calcpop_wrap table #btn02 {
