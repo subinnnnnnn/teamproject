@@ -336,6 +336,8 @@ section h4::before{
   flex-wrap:wrap;
   gap:50px 19px;
   margin-top:50px;
+  /*글쓰기 버튼때문에 추가*/
+  margin-bottom:50px;
 }
 #container .gallery_wrap ul.gallery li{
   width:calc((100% - 38px) / 3);
@@ -1432,6 +1434,7 @@ ul.paging li.on a{
 .write_wrap .privacy_comment label{
   margin-left:10px;
   font-size:1.6rem;
+  cursor:pointer;
 }
 
 
