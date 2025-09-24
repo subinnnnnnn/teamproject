@@ -27,15 +27,17 @@ $(function(){
   //상품 탭 요소
   $("#main .product .tabs li").eq(0).addClass("on");
   $("#main .product .product_content>.product_box").eq(1).hide();
+  $("#main .product .product_arrow_wrap .product_arrow").eq(1).hide();
 
   $("#main .product .tabs li").click(function(){
     $(this).addClass("on").siblings().removeClass("on");
     let indexNum = $(this).index();
     $("#main .product .product_content>.product_box").eq(indexNum).show().siblings().hide();
+    $("#main .product .product_arrow_wrap>div").eq(indexNum).show().siblings().hide();
   });
 
 
-  //상품 슬라이드
+  //상품 슬라이드01
   var product_box = new Swiper(".product_box", {
     slidesPerView: 4,
     spaceBetween: 16,
@@ -45,8 +47,54 @@ $(function(){
       disableOnInteraction: false,
     },
     navigation: {
-      nextEl: ".product_arrow .swiper-button-next",
-      prevEl: ".product_arrow .swiper-button-prev",
+      nextEl: ".product_arrow.proarrow01 .swiper-button-next",
+      prevEl: ".product_arrow.proarrow01 .swiper-button-prev",
+    },
+
+
+    breakpoints: {
+      0: { 
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+
+      768: { 
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      
+      835: { 
+        slidesPerView: 2.5,
+        spaceBetween: 16,
+      },
+      
+      1200: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+
+      1340: {
+        slidesPerView: 4,
+        spaceBetween: 16,
+      },
+
+    },
+
+
+  });
+
+  //상품 슬라이드02
+  var product_box = new Swiper(".product_box", {
+    slidesPerView: 4,
+    spaceBetween: 16,
+    loop: true,
+    autoplay: {
+      delay: 2500,
+      disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: ".product_arrow.proarrow02 .swiper-button-next",
+      prevEl: ".product_arrow.proarrow02 .swiper-button-prev",
     },
 
 
